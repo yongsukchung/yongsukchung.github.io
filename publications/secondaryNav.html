@@ -12,25 +12,25 @@
     <a href="/publications" class="list-group-item list-group-item-action">
         2016-2023
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?startyear=2011&endyear=2015" class="list-group-item list-group-item-action">
         2011-2015
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?startyear=2006&endyear=2010" class="list-group-item list-group-item-action">
         2006-2010
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?startyear=1996&endyear=2005" class="list-group-item list-group-item-action">
         1996-2005
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?startyear=1991&endyear=1995" class="list-group-item list-group-item-action">
         1991-1995
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?startyear=1986&endyear=1990" class="list-group-item list-group-item-action">
         1986-1990
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/?journal=pre-prints" class="list-group-item list-group-item-action">
         Pre-Prints
     </a>
-    <a href="/publications" class="list-group-item list-group-item-action">
+    <a href="/publications/covers" class="list-group-item list-group-item-action">
         Journal Covers
     </a>
     <div class="list-group-item list-group-item-dark bg-info flex-column align-items-start">
@@ -67,67 +67,3 @@
         </div>
     </div>
 </div>
-<script>
-    $(function () {
-        const data = [
-            {
-                text: "Plant Sciences Institute",
-                additionalDetails: "lowa Stae University",
-                path: 'https://www.psi.iastate.edu/'
-            },
-            {
-                text: "AG2PI ",
-                additionalDetails: "Agricultural Genome to Phenome Initiative",
-                path: 'https://www.ag2pi.org/'
-            },
-            {
-                text: "AIIRA ",
-                additionalDetails: "AI Institue for Resilient Agriculture",
-                path: 'https://aiira.iastate.edu/'
-            },
-            {
-                text: "G2F ",
-                additionalDetails: "The Genomes To Fields Initiative",
-                path: 'https://www.genomes2fields.org/'
-            },
-            {
-                text: "GTF ",
-                additionalDetails: "Genomic Technologies Facility",
-                path: 'https://www.plantgenomics.iastate.edu/'
-            },
-            {
-                text: "New & Media Resources ",
-                path: '/media'
-            },
-            {
-                text: "Protocols ",
-                path: '#'
-            },
-            {
-                text: "How to Find Us ",
-                path: '#'
-            },
-            {
-                text: "Recycling Policy ",
-                path: '#'
-            },
-            {
-                text: "Lab Intranet ",
-                path: '#'
-            },
-        ]
-        const secondaryNav = $('#homeSecondaryNav')
-        data.forEach((e) => {
-            secondaryNav.append(
-                `<a href="${e.path}" class="list-group-item list-group-item-action">
-                ${e.text}
-                ${e.additionalDetails != undefined
-                    ? `<br />(${e.additionalDetails})`
-                    : ''}
-                
-            
-            </a>`)
-        })
-    })
-
-</script>

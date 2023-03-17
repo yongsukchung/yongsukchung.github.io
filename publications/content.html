@@ -1,1 +1,9 @@
 <div>Publications</div>
+
+<script>
+    let urlParams = new URLSearchParams(window.location.search)
+    let startYear = urlParams.get('startyear')
+    let endYear = urlParams.get('endyear')
+    let order = urlParams.get('order')
+    let format = urlParams.get('format')
+</script>
