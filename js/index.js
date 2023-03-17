@@ -4,13 +4,20 @@ $(function () {
     $('#footer').load('../../common/footer.html')
     // $('#brandingOther').load('images/personnelbranding.jpg')
     $('#pageContent').load('content.html');
-    // $('#primaryNav').on('click', '.nav-link', function (event) {
-    //     event.preventDefault()
+    $('#primaryNav').on('click', '.nav-link', function (event) {
 
-    //     var href = $(this).attr('href')
+        $('.nav-link').removeClass('active');
 
-    //     $('#pageContent').load(`components/${href}/page.html`)
-    //     $('#secondaryNav').load(`components/${href}/secondaryNav.html`)
-    // });
-    
+        $(this).addClass('active');
+
+        var href = $(this).attr('href');
+        if (href == '/') return
+        history.pushState(null, null, href);
+
+        $('#secondaryNav').load(`${href}/secondaryNav.html`)
+        $('#pageContent').load(`${href}/content.html`);
+
+        event.preventDefault();
+    });
+
 })
