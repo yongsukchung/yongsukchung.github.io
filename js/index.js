@@ -1,5 +1,7 @@
 $(function () {
-    let path = window.location.pathname.replace("index.html", "")
+    let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
+    console.log(path)
+    path = path.join('/')
     console.log(path)
     $("#primaryNav").load("../../common/primaryNav.html")
     $("#secondaryNav").load(`../../${path}/secondaryNav.html`)
