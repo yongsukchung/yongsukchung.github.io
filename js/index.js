@@ -1,12 +1,11 @@
 $(function () {
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
-    console.log(path)
+    if (path.length === 0) path = ['home']
     path = path.join('/')
-    console.log(path)
     $("#primaryNav").load("../../common/primaryNav.html")
     $("#secondaryNav").load(`../../${path}/secondaryNav.html`)
+    $("#brandingOther").html('<img src="../../images/personnelbranding.jpg" style="height:81px" />')
     $('#footer').load('../../common/footer.html')
-    // $('#brandingOther').load('images/personnelbranding.jpg')
     $('#content').load(`../../${path}/content.html`);
     $('#primaryNav').on('click', '.nav-link', function (event) {
 
