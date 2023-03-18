@@ -1,27 +1,58 @@
-<div>Funded Projects (Sorted by project start date descending order)</div>
-<div id="research-project-list" class="container-fluid">
+<div class="container-fluid">
 
+    <div class="justify-content-between">Funded Projects (Sorted by project start date descending order)</div>
+    <div id="research-project-list" class="">
+
+    </div>
 </div>
 
 <script>
-    $(function() {
+    $(function () {
         let projects = [
             {
-                header: "p1"
+                header: "NIFA AG2PI Collaborative: Continuing to Seed the Future of Agricultural Genome to Phenome Research",
+                fundingAgency: "Funding Agency: United States Department of Agriculture (USDA)",
+                award: " 2022-70412-38454",
+                principleInvestigator: "Patrick Schnable",
+                coPrincileInvestigator: "Jennifer Clarke, Jack Dekkers, Brenda Murdoch, Chris Tuggle",
+                startDate: "September 15, 2022",
+                endDate: "September 14, 2024",
+                description: "To address the challenges and opportunities of achieving sustainable genetic improvement of agricultural species, thereby enhancing the sustainability and profitability of US agriculture, the current agricultural genome to phenome initiative (AG2PI) project has built a large transdisciplinary community of researchers spanning crops and livestock, as well as integrative disciplines (e.g., engineers, data scientists, and social scientists). The overall objective of the AG2PI is to provide competitive funds to conduct AG2P research that will benefit the broader community. The project will: implement a vision for AG2P research that has been developed with community input over the past two years by providing seed grants that will help close research gaps and support new and emerging opportunities. It features a robust project management plan, involving leaders with the requisite experience in managing large complex projects (including seed grant programs), implementation plans based on best practices, and the science of team science, coupled with a robust assessment plan to refine best practices. A comprehensive and inclusive scientific advisory board, stakeholders, and partner organizations will assist the team with meeting its objectives and ensuring that its activities coordinate and complement existing AG2P programs in crops and livestock. The project will continue developing a cross-kingdom community prepared to tackle AG2P research and offer opportunities to develop novel and creative solutions to enhance our understanding of both kingdoms, for the benefit of US agriculture and society. The current AG2PI team is well positioned to accomplish these tasks to produce quick results with proven procedures and processes."
             }, {
-                header: "p2"
+                header: "NIFA AG2PI Collaborative: Continuing to Seed the Future of Agricultural Genome to Phenome Research",
+                fundingAgency: "Funding Agency: United States Department of Agriculture (USDA)",
+                award: " 2022-70412-38454",
+                principleInvestigator: "Patrick Schnable",
+                coPrincileInvestigator: "Jennifer Clarke, Jack Dekkers, Brenda Murdoch, Chris Tuggle",
+                startDate: "September 15, 2022",
+                endDate: "September 14, 2024",
+                description: "To address the challenges and opportunities of achieving sustainable genetic improvement of agricultural species, thereby enhancing the sustainability and profitability of US agriculture, the current agricultural genome to phenome initiative (AG2PI) project has built a large transdisciplinary community of researchers spanning crops and livestock, as well as integrative disciplines (e.g., engineers, data scientists, and social scientists). The overall objective of the AG2PI is to provide competitive funds to conduct AG2P research that will benefit the broader community. The project will: implement a vision for AG2P research that has been developed with community input over the past two years by providing seed grants that will help close research gaps and support new and emerging opportunities. It features a robust project management plan, involving leaders with the requisite experience in managing large complex projects (including seed grant programs), implementation plans based on best practices, and the science of team science, coupled with a robust assessment plan to refine best practices. A comprehensive and inclusive scientific advisory board, stakeholders, and partner organizations will assist the team with meeting its objectives and ensuring that its activities coordinate and complement existing AG2P programs in crops and livestock. The project will continue developing a cross-kingdom community prepared to tackle AG2P research and offer opportunities to develop novel and creative solutions to enhance our understanding of both kingdoms, for the benefit of US agriculture and society. The current AG2PI team is well positioned to accomplish these tasks to produce quick results with proven procedures and processes."
             }, {
-                header: "p3"
+                header: "NIFA AG2PI Collaborative: Continuing to Seed the Future of Agricultural Genome to Phenome Research",
+                fundingAgency: "Funding Agency: United States Department of Agriculture (USDA)",
+                award: " 2022-70412-38454",
+                principleInvestigator: "Patrick Schnable",
+                coPrincileInvestigator: "Jennifer Clarke, Jack Dekkers, Brenda Murdoch, Chris Tuggle",
+                startDate: "September 15, 2022",
+                endDate: "September 14, 2024",
+                description: "To address the challenges and opportunities of achieving sustainable genetic improvement of agricultural species, thereby enhancing the sustainability and profitability of US agriculture, the current agricultural genome to phenome initiative (AG2PI) project has built a large transdisciplinary community of researchers spanning crops and livestock, as well as integrative disciplines (e.g., engineers, data scientists, and social scientists). The overall objective of the AG2PI is to provide competitive funds to conduct AG2P research that will benefit the broader community. The project will: implement a vision for AG2P research that has been developed with community input over the past two years by providing seed grants that will help close research gaps and support new and emerging opportunities. It features a robust project management plan, involving leaders with the requisite experience in managing large complex projects (including seed grant programs), implementation plans based on best practices, and the science of team science, coupled with a robust assessment plan to refine best practices. A comprehensive and inclusive scientific advisory board, stakeholders, and partner organizations will assist the team with meeting its objectives and ensuring that its activities coordinate and complement existing AG2P programs in crops and livestock. The project will continue developing a cross-kingdom community prepared to tackle AG2P research and offer opportunities to develop novel and creative solutions to enhance our understanding of both kingdoms, for the benefit of US agriculture and society. The current AG2PI team is well positioned to accomplish these tasks to produce quick results with proven procedures and processes."
             }
         ]
         projects.forEach(e => {
 
             $('#research-project-list').append(
-                `<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">${e.header}</div>
+                `<div class="card border-dark mb-3" >
+                <div class="card-header bg-info">${e.header}</div>
                 <div class="card-body">
-                    <h4 class="card-title">Primary card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class=card-title"><b>Funding Agency: ${e.fundingAgency}</b><div>
+                    <div class=card-title"><b>Award #:</b> ${e.award}<div>
+                    <br />
+                    <div class=card-title"><b>Principle Investigator(s):</b> ${e.principleInvestigator}<div>
+                    <div class=card-title"><b>Co-Principle Investigator(s):</b> ${e.coPrincileInvestigator}<div>
+                    <div class="card-text">Project Start Date: ${e.startDate}</div>
+                    <div class="card-text">Project End Date: ${e.endDate}</div>
+                    <br />
+                    <p class="card-text">${e.description}</p>
                 </div>
                 </div>`
             )

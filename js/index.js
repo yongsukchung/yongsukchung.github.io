@@ -12,7 +12,8 @@ $(function () {
 
     path = path.join('/')
     $("#secondaryNav").load(`../../${path}/secondaryNav.html`)
-    $("#brandingOther").html('<img src="../../images/personnelbranding.jpg" style="height:81px" />')
+    $("#brandingOther").addClass('container-fluid')
+    $("#brandingOther").html('<img src="../../images/personnelbranding.jpg" alt="brading-banner"/>')
     $('#content').load(`../../${path}/content.html`)
     $('#primaryNav').on('click', '.nav-link', function (event) {
         let href = $(this).attr('href').split('/').filter(Boolean)[0]
