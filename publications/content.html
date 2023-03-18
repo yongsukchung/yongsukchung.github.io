@@ -1,4 +1,25 @@
-<div>Publications</div>
+<div class="container-fluid">
+
+    <div>Publications (<span id="start-year-title"></span> ~ <span id="end-year-title"></span>)</div>
+
+    <div id="legend" class="text-muted my-2">
+        <div id="legend-header" class="mb-1">Notes/Symbols Legend</div>
+        <div class="mb-1">
+            * Authors contributed equally to the article
+        </div>
+        <div>
+            <b>Impact Factors:</b> 2021 Journal Citation Reports (<a href="https://clarivate.com/" target="_blank">Clarivate Analytics</a>, June 2022)
+        </div>
+        <div>
+            <b>PMID:</b> <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">National Center for Biotechnology Information</a> (NCBI) <a href="https://www.ncbi.nlm.nih.gov/pubmed/" target="_blank">Pubmed ID</a>
+        </div>
+    </div>
+
+    <div id="publication-list">
+
+    </div>
+</div>
+
 
 <script>
     urlParams = new URLSearchParams(window.location.search)
@@ -6,4 +27,127 @@
     endYear = urlParams.get('endyear')
     order = urlParams.get('order')
     format = urlParams.get('format')
+
+    $(function() {
+
+        const data = {
+            "2023": [
+                {
+                    id: 1,
+                    authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
+                    year: 2023,
+                    title: "Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
+                    journal: {
+                        name: "J Field Robotics",
+                        fullName: "Journal of Field Robotics",
+                        link: "https://onlinelibrary.wiley.com/journal/15564967"
+                    },
+                    doi: {
+                        name: "doi:10.1002/rob.22166",
+                        link: "https://doi.org/doi:10.1002/rob.22166"
+                    },
+                    additional: {
+                        abstract: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166",
+                        supplementMaterials: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166#support-information-section",
+                        impactFactor: 6.4,
+                        publicationDate: "27 February 2023"
+                    }
+                },
+                {
+                    id: 2,
+                    authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
+                    year: 2023,
+                    title: "2 Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
+                    journal: {
+                        name: "J Field Robotics",
+                        fullName: "Journal of Field Robotics",
+                        link: "https://onlinelibrary.wiley.com/journal/15564967"
+                    },
+                    doi: {
+                        name: "doi:10.1002/rob.22166",
+                        link: "https://doi.org/doi:10.1002/rob.22166"
+                    },
+                    additional: {
+                        abstract: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166",
+                        supplementMaterials: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166#support-information-section",
+                        impactFactor: 6.4,
+                        publicationDate: "27 February 2023"
+                    }
+                }
+            ],
+            "2022": [
+                {
+                    id: 1,
+                    authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
+                    year: 2023,
+                    title: "Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
+                    journal: {
+                        name: "J Field Robotics",
+                        fullName: "Journal of Field Robotics",
+                        link: "https://onlinelibrary.wiley.com/journal/15564967"
+                    },
+                    doi: {
+                        name: "doi:10.1002/rob.22166",
+                        link: "https://doi.org/doi:10.1002/rob.22166"
+                    },
+                    additional: {
+                        abstract: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166",
+                        supplementMaterials: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166#support-information-section",
+                        impactFactor: 6.4,
+                        publicationDate: "27 February 2023"
+                    }
+                }
+            ]
+        }
+
+        if (startYear !== undefined)
+            $('#start-year-title').text(startYear)
+        if (endYear !== undefined)
+            $('#end-year-title').text(endYear)
+
+        for (const [key, value] of Object.entries(data)) {
+
+            // Add year title
+            $('#publication-list')
+                .append(`
+                    <div class="year">
+                        ${key} <span class="article_count">(${value.length} articles)</span>
+                        <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
+                    
+                    </div>
+                `)
+
+            // Add articles title
+            $('#publication-list')
+            .append(`
+            <div class="year-articles">
+                <ul id="year-articles-list-${key}">
+                    
+                </ul>
+                
+            </div>
+                `)
+
+            // Add artiles
+                    
+            for (const article of value) {
+                $(`#year-articles-list-${key}`)
+                .append(`
+                <li>
+                    <div id="${article.id}" class="article">
+                        <span class="authors">${article.authors}</span> 
+                        <span class="year">(${article.year})</span> 
+                        <span class="title font-bold">${article.title}</span>. 
+                        <span class="journal font-bold" full-name="${article.journal.fullName}"><a href="${article.journal.link}" target="_blank">${article.journal.name}</a></span>.
+                        <span class="doi font-italic"><a href="${article.doi.link}" target="_blank">${article.doi.name}</a></span>
+                        <br>
+                        <div class="additional">[ <a class="abstract" href="${article.additional.abstract}" target="_blank">Abstract</a> | <a class="supp_material" href="${article.additional.supplementMaterials}" target="_blank">Supplemental Materials</a> | <span class="impact-factor">Impact Factor: ${article.additional.impactFactor}</span> | <span class="publication-date text-muted">${article.additional.publicationDate}</span> ]</div>
+                    </div>
+                </li>
+                `)
+            }
+
+            
+        }
+    })
 </script>
