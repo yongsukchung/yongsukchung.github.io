@@ -1,25 +1,21 @@
 $(function () {
+
+    $('#footer').load('../../common/footer.html')
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
-    if (path.length === 0) path = ['home']
+    
+    if (path.length === 0) path.push('home')
+
+    $("#primaryNav").load("../../common/primaryNav.html", () => {
+        let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
+        $(`#nav-link-${path[0]}`).addClass('active')
+    })
+
     path = path.join('/')
-    $("#primaryNav").load("../../common/primaryNav.html")
     $("#secondaryNav").load(`../../${path}/secondaryNav.html`)
     $("#brandingOther").html('<img src="../../images/personnelbranding.jpg" style="height:81px" />')
-    $('#footer').load('../../common/footer.html')
-    $('#content').load(`../../${path}/content.html`);
+    $('#content').load(`../../${path}/content.html`)
     $('#primaryNav').on('click', '.nav-link', function (event) {
-
-        $('.nav-link').removeClass('active');
-        $(this).addClass('active');
-        
-        let href = $(this).attr('href');
-        if (href == '/') return
-        history.pushState(null, null, href);
-
-        $('#secondaryNav').load(`../../${href}/secondaryNav.html`)
-        $('#content').load(`../../${href}/content.html`);
-
-        event.preventDefault();
-    });
-
+        let href = $(this).attr('href').split('/').filter(Boolean)[0]
+        if (href === path) event.preventDefault()
+    })
 })

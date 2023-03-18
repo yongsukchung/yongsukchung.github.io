@@ -1,1 +1,30 @@
-<div>Research</div>
+<div>Funded Projects (Sorted by project start date descending order)</div>
+<div id="research-project-list" class="container-fluid">
+
+</div>
+
+<script>
+    $(function() {
+        let projects = [
+            {
+                header: "p1"
+            }, {
+                header: "p2"
+            }, {
+                header: "p3"
+            }
+        ]
+        projects.forEach(e => {
+
+            $('#research-project-list').append(
+                `<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">${e.header}</div>
+                <div class="card-body">
+                    <h4 class="card-title">Primary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                </div>`
+            )
+        })
+    })
+</script>
