@@ -23,8 +23,8 @@
 
 <script>
     urlParams = new URLSearchParams(window.location.search)
-    startYear = urlParams.get('startyear')
-    endYear = urlParams.get('endyear')
+    startYear = urlParams.get('startyear') || 2016
+    endYear = urlParams.get('endyear') || 2023
     order = urlParams.get('order')
     format = urlParams.get('format')
 

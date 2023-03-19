@@ -1,19 +1,40 @@
 <h1>Equipment</h1>
 <div id="equeiment-photos">
     <table class="table table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Thumbnail</th>
-                <th scope="col">Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-active">
-                <td scope="row">
-                    <img src="https://schnablelab.plantgenomics.iastate.edu/images/research/equipment/01.jpg" alt="equiment" class="img-thumbnail" />
-                </td>
-                <td>Robbins Scientific Hydra Microdispenser</td>
-            </tr>
+        <tbody id="equipment-table-body">
+            
         </tbody>
     </table>
 </div>
+
+<script>
+    $(function() {
+        const data = [
+            {
+                title: "Robbins Scientific Hydra Microdispenser",
+                src: "https://schnablelab.plantgenomics.iastate.edu/images/research/equipment/01.jpg"
+            },
+            {
+                title: "Robbins Scientific Hydra Microdispenser",
+                src: "https://schnablelab.plantgenomics.iastate.edu/images/research/equipment/01.jpg"
+            },
+            {
+                title: "Robbins Scientific Hydra Microdispenser",
+                src: "https://schnablelab.plantgenomics.iastate.edu/images/research/equipment/01.jpg"
+            }
+        ]
+
+        data.forEach(equipment => {
+            $('#equipment-table-body')
+            .append(`
+                <tr class="table-active">
+                    <td scope="row">
+                        <img src="${equipment.src}" alt="equiment" class="img-thumbnail" style="width:20%;height:auto;" />
+                    </td>
+                    <td>${equipment.title}</td>
+                </tr>
+            `)
+        })
+        
+    })
+</script>
