@@ -1,5 +1,14 @@
 $(function () {
 
+    let themeInLocalStorage = window.localStorage.getItem('theme')
+    let theme = (themeInLocalStorage === null) ? 'superhero' : themeInLocalStorage
+    $('head').append(`
+    <link href="../../css/${theme}-bootstrap.min.css" rel="stylesheet" id="theme-css" />
+    `)
+    .append(`
+        <title>Lab</title>
+    `)
+
     $('#footer').load('../../common/footer.html')
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
     
