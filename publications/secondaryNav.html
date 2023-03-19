@@ -40,30 +40,80 @@
     </div>
     <div class="list-group-item">
         <div class="form-group row">
-            <label for="start-year-form" class="form-label mt-2 col-5">Start year</label>
+            <label for="start-year" class="form-label  col-6">Start year</label>
             <div class="col-6">
-                <select class="form-select col-7" id="start-year-form">
-                    <option>2023</option>
-                    <option>2022</option>
-                    <option>2021</option>
-                    <option>2020</option>
-                    <option>2019</option>
+                <select class="form-select col-6" id="start-year" name="start-year">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
                 </select>
             </div>
         </div>
     </div>
     <div class="list-group-item">
         <div class="form-group row">
-            <label for="end-year-form" class="form-label mt-2 col-5">End year</label>
+            <label for="end-year" class="form-label col-6">End year</label>
             <div class="col-6">
-                <select class="form-select col-7" id="end-year-form">
-                    <option>2023</option>
-                    <option>2022</option>
-                    <option>2021</option>
-                    <option>2020</option>
-                    <option>2019</option>
+                <select class="form-select col-6" id="end-year" name="end-year">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
                 </select>
             </div>
         </div>
     </div>
+    <div class="list-group-item list-group-item-dark bg-info flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Publications Ordering</h5>
+        </div>
+    </div>
+    <div class="list-group-item">
+        <div class="">
+            <select class="form-select" id="order" name="order">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+    </div>
+    <div class="list-group-item list-group-item-dark bg-info flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Citation Style</h5>
+        </div>
+    </div>
+    <div class="list-group-item">
+        <div class="">
+            <select class="form-select" id="format" name="format">
+                <option value="default">Default</option>
+                <option value="apa">APA Style</option>
+                <option value="mla">MLA Style</option>
+                <option value="chicago">Chicago Style</option>
+            </select>
+        </div>
+    </div>
+    <div class="list-group-item d-grid">
+        <input class="btn btn-lg btn-primary" id="apply-filters-button" type="submit" value="Apply Filter" />
+    </div>
 </div>
+
+<script>
+    $(function () {
+        $("#apply-filters-button").on("click", () => {
+
+            const params = new URLSearchParams(window.location.search)
+
+            const startYear = document.getElementById("start-year").value;
+            const endYear = document.getElementById("end-year").value;
+            const citationStyle = document.getElementById("format").value;
+            const publicationOrdering = document.getElementById("order").value;
+            const journal = (params.get("journal") == null) ? "default" : params.get("journal")
+
+            const url = `/publications/?journal=${journal}&startyear=${startYear}&endyear=${endYear}&format=${citationStyle}&order=${publicationOrdering}`;
+
+            window.location.href = url;
+        })
+    })
+</script>
