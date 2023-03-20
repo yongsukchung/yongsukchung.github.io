@@ -30,8 +30,7 @@
 
     $(function() {
 
-        const data = {
-            "2023": [
+        const data = [
                 {
                     id: 1,
                     authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
@@ -56,7 +55,7 @@
                 {
                     id: 2,
                     authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
-                    year: 2023,
+                    year: 2021,
                     title: "2 Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
                     journal: {
                         name: "J Field Robotics",
@@ -73,13 +72,32 @@
                         impactFactor: 6.4,
                         publicationDate: "27 February 2023"
                     }
-                }
-            ],
-            "2022": [
+                },
                 {
-                    id: 1,
+                    id: 3,
                     authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
-                    year: 2023,
+                    year: 2022,
+                    title: "Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
+                    journal: {
+                        name: "J Field Robotics",
+                        fullName: "Journal of Field Robotics",
+                        link: "https://onlinelibrary.wiley.com/journal/15564967"
+                    },
+                    doi: {
+                        name: "doi:10.1002/rob.22166",
+                        link: "https://doi.org/doi:10.1002/rob.22166"
+                    },
+                    additional: {
+                        abstract: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166",
+                        supplementMaterials: "https://onlinelibrary.wiley.com/doi/10.1002/rob.22166#support-information-section",
+                        impactFactor: 6.4,
+                        publicationDate: "27 February 2023"
+                    }
+                },
+                {
+                    id: 3,
+                    authors: "Xiang L, J Gai, Y Bao, J Yu, PS Schnable, L Tang",
+                    year: 2022,
                     title: "Field-based robotic leaf angle detection and characterization of maize plants using stereo vision and deep convolutional neural networks",
                     journal: {
                         name: "J Field Robotics",
@@ -98,15 +116,20 @@
                     }
                 }
             ]
-        }
 
         if (startYear !== undefined)
             $('#start-year-title').text(startYear)
         if (endYear !== undefined)
             $('#end-year-title').text(endYear)
 
-        for (const [key, value] of Object.entries(data)) {
+        const years = [...new Set(data.map(e => e.year))]
 
+        const yearPublications = {}
+
+        years.forEach(year => yearPublications[year] = data.filter(e => e.year === year))
+
+
+        for (const [key, value] of Object.entries(yearPublications)) {
             // Add year title
             $('#publication-list')
                 .append(`
