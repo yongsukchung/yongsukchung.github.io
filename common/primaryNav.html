@@ -34,13 +34,13 @@
     $(function() {
         $('#theme-toggle').on('click', function(event) {
             let currentDarkTheme = window.localStorage.getItem('theme')
-            if (currentDarkTheme === null || currentDarkTheme === 'lumen')
+            if (currentDarkTheme === null || currentDarkTheme === 'minty')
             {
-                window.localStorage.setItem('theme', 'superhero')
+                window.localStorage.setItem('theme', 'solar')
             }
             else
             {
-                window.localStorage.setItem('theme', 'lumen')
+                window.localStorage.setItem('theme', 'minty')
             }
         })
     })
