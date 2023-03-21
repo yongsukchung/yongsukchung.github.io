@@ -6,7 +6,7 @@
         "journal": {
             "title": "The Korean Journal of Crop Science",
             "volume": "67",
-            "pageNumbers": " 274-284"
+            "pages": " 274-284"
         }
     },
     {
@@ -14,18 +14,25 @@
         "year": 2022,
         "title": " Diversity study of common buckwheat germplasm in the Republic of Korea using GBS",
         "journal": {
-            "title": "Plant Biotechnology Reports (on-line first)",
+            "title": "Plant Biotechnology Reports",
             "onlineFirst": true,
-            "volume": "SCIE, IF 2.496"
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.496
+            }
         }
     },
     {
-        "authors": "Furan MA, Yıldız M, Karatas MD, Chung YS",
+        "authors": "Furan MA, Yildiz M, Karatas MD, Chung YS",
         "year": 2022,
         "title": " Phylogenetic inference and secondary structure predictions of Turkish genotypes of Coriandrum sativum (L.) based on ITS4 and ITS5 nrDNA sequences",
         "journal": {
-            "title": "Plant Biotechnology Reports (on-line first)",
-            "volume": "SCIE, IF 2.496"
+            "title": "Plant Biotechnology Reports",
+            "onlineFirst": true,
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.496
+            }
         }
     },
     {
@@ -35,7 +42,356 @@
         "journal": {
             "title": "Journal of Environmental Science International",
             "volume": "31",
-            "pageNumbers": "815-824"
+            "pages": "815-824"
+        }
+    },
+    {
+        "authors": "Sathasivam R, Choi M, Radhakrishnan R, Kwon H, Yoon J, Yang SH, Kim JK, Chung YS, Park SU",
+        "year": 2022,
+        "title": "Effects of various Agrobacterium rhizogenes strains on hairy root induction and analyses of primary and secondary etabolites in Ocimum basilicum",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "13",
+            "articleId": "983776",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 6.627
+            }
+        }
+    },
+    {
+        "authors": "Ali A, Altaf MT, Nadeem MA, SHAH AN, Azeem H, Baloch FS, Karaköy T, Hussain T, Duangpan S, AASIM M, Chung YS",
+        "year": 2022,
+        "title": "Recent Advancement in OMICS approaches to enhance abiotic stress tolerance in Legumes",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "articleId": "3222",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 6.627
+            }
+        }
+    },
+    {
+        "authors": "Chung YS, Yoon SU, Heo S, Kim YS, Ahn J, Han GD",
+        "year": 2022,
+        "title": " Characterization of Tree Composition using Images from SENTINEL-2",
+        "journal": {
+            "title": " A Case Study with Semiyang Oreum Journal of Environmental Science International",
+            "volume": "31",
+            "pages": "735-741"
+        }
+    },
+    {
+        "authors": "Han GD, Choi JM, Choi I, Kim Y, Heo S, Chung YS",
+        "year": 2022,
+        "title": "From crop specific to variety specific in crop modeling for the smart farm: A case study with blueberry",
+        "journal": {
+            "title": "Plos One",
+            "volume": "17",
+            "issue": 8,
+            "articleId": "e0273845",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 3.752
+            }
+        }
+    },
+    {
+        "authors": "Aasim M, Katirci R, Baloch F, Mustafa Z, Bakhsh A, Nadeem M, Ali S, Hatipoğlu R, Çiftçi V, Habyarimana E, Karaköy T. Chung YS",
+        "year": 2022,
+        "title": "Innovation in the Breeding of Common Bean Through a Combined Approach of in vitro Regeneration and Machine Learning Algorithms",
+        "journal": {
+            "title": "Frontiers in Genetics",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.772
+            }
+        }
+    },
+    {
+        "authors": "Ngwangum NJ, Tayade R, Liny L, Yoon JB, Chung YS, Kim Y.",
+        "year": 2022,
+        "title": "Utilization of Imaging Data from Different Sources for Bacterial and Fungal Diseases Detection in Major Crops in the Digital Era: A Review",
+        "journal": {
+            "title": "Journal of Agiculture and Environmental Sciences",
+            "pages": "97-117"
+        }
+    },
+    {
+        "authors": "Han GD, DH Jung, Heo S, Chung YS",
+        "year": 2022,
+        "title": "SPAD value difference between blueberry cultivar ‘STAR’ by planted ground and pot",
+        "journal": {
+            "title": "Phyton",
+            "volume": "91",
+            "pages": "2583-2590",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 1.407
+            }
+        }
+    },
+    {
+        "authors": "Han GD, Jung JH, Sun HJ, Chung YS",
+        "year": 2022,
+        "title": "Radiation treatment to turfgrass cultivar to improve drought tolerance cultivar breeding",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "1",
+            "pages": "1-4",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.496
+            }
+        }
+    },
+    {
+        "authors": "Han GD and Chung YS.",
+        "year": 2022,
+        "title": "Data Structure for Efficient Use of Genetic Resources: A Case Study of Buckwheat",
+        "journal": {
+            "title": "Korean Journal of Breedng Science",
+            "volume": "54",
+            "pages": "98-103"
+        }
+    },
+    {
+        "authors": "Han GD, Jung JH, Chung YS.",
+        "year": 2022,
+        "title": "Inflorescence appearance timing and production rate traits in wild Zoysiagrass (Zoysia spp)",
+        "journal": {
+            "title": "Journal of Phytology",
+            "volume": "14",
+            "pages": "50-53"
+        }
+    },
+    {
+        "authors": "Han GD, Heo S, Chio JM, Chung YS.",
+        "year": 2022,
+        "title": "SPAD: potential phenotyping method for characterization of blueberry",
+        "journal": {
+            "title": "Molecular Biology Reports",
+            "volume": "8",
+            "pages": "1-6",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.742
+            }
+        }
+    },
+    {
+        "authors": "Baloch FS, Nadeem MA, Sönmez F, Habyarimana E, Mustafa Z, Karaköy T, Coemertpa G, Alsaleh A, Ç iftçi V, Sun S, Chung YS. Magnesium-a Forgotten Element: Phenotypic Variation and Genome Wide Association Study in Turkish Common Bean Germplasm.",
+        "year": 2022,
+        "title": "Magnesium-a Forgotten Element: Phenotypic Variation and Genome Wide Association Study in Turkish Common Bean Germplasm",
+        "journal": {
+            "title": "Frontiers in genetics",
+            "volume": "13",
+            "articleId": "848663",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.772
+            }
+        }
+    },
+    {
+        "authors": "Yoon SU, Ahn J, Kim YS, Han GD, Chung YS, Lee SJ.",
+        "year": 2022,
+        "title": "Monitoring Temperature Variation in Rising Small Defunct Volcano on Jeju Island, Republic of Korea, Using High-Resolution Sentinel-2 Images",
+        "journal": {
+            "title": "Atmosphere",
+            "volume": "13",
+            "issue": 576,
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 3.110
+            }
+        }
+    },
+    {
+        "authors": "Heo S, Choi JM, Le AT, Eun CH, Kim IJ, Chung YS.",
+        "year": 2022,
+        "title": "The effect of gamma-irradiation on the changes of photosynthetic efficiency in Kanpei (Citrus unshiu × C. sinensis)",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "16",
+            "issue": "251-5",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.496
+            }
+        }
+    },
+    {
+        "authors": "Le AT, Yu JK, Han GD, Do TK, Chung YS.",
+        "year": 2022,
+        "title": "Potential Use of Colored LED Lights to Increase the Production of Bioactive Metabolites Hedyotis corymbosa (L.) Lam. Plants",
+        "journal": {
+            "title": "Plants",
+            "volume": "11",
+            "issue": "225",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.658
+            }
+        }
+    },
+    {
+        "authors": "Kim YS, Chung YS, Heo S",
+        "title": "Image analysis as a potential tool for marker-assisted selection",
+        "year": 2021,
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "10",
+            "issue": "1-7",
+            "indexing": {
+                "SCIE": "true"
+            }
+        }
+    },
+    {
+        "authors": "Tripathi P, Abdullah JS, Kim J, Chung YS, Kim SH, Hamayun M, Kim Y.",
+        "year": 2021,
+        "title": "Investigation of Root Morphological Traits Using 2D-Imaging among Diverse Soybeans (Glycine max L.)",
+        "journal": {
+            "title": "Plants",
+            "volume": "10",
+            "issue": "2535",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.658
+            }
+        }
+    },
+    {
+        "authors": "Jang BK, Ju Y, Jeong D, Jung SK, Kim CK, Chung YS, Kim SR",
+        "year": 2021,
+        "title": "L-lactic acid production using engineered Saccharomyces cerevisiae with improved organic acid tolerance",
+        "journal": {
+            "title": "Journal of Fungi",
+            "volume": "7",
+            "pages": "928",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 5.724
+            }
+        }
+    },
+    {
+        "authors": "Tomar V, Singh D, Dhillon GS, Chung YS, Poland J, Singh, RP…Kumar U",
+        "year": 2021,
+        "title": "Increased predictive accuracy of multi-environment genomic prediction model for yield and related traits in spring wheat (Triticum aestivum L.)",
+        "journal": {
+            "title": "Frontiers in plant science",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 6.627
+            }
+        }
+    },
+    {
+        "authors": "Kim YS, Heo S, Yoon SU, Ahn J, Choi I, Chang S...Chung YS",
+        "year": 2021,
+        "title": "Development of Mask-RCNN Model for Detecting Greenhouses Based on Satellite Image",
+        "journal": {
+            "title": "Korean Journal of Agricultural and Forest Meteorology",
+            "volume": "23",
+            "pages": "156-162"
+        }
+    },
+    {
+        "authors": "Jung JH, Han GD, Kim J, Chung YS",
+        "year": 2021,
+        "title": "Reproduction rate and stolon production rate after transplantation of grass germplasm",
+        "journal": {
+            "title": "Korean Journal of Agricultural Science",
+            "volume": "48",
+            "pages": "SCien465-471"
+        }
+    },
+    {
+        "authors": "Choi JM, Han GD, Heo S, Chung YS",
+        "year": 2021,
+        "title": "Effect of Radiation Treatment on Buckwheat Seed Harvest",
+        "journal": {
+            "title": "Journal of Agricultural, Life and Environmental Sciences",
+            "volume": "33",
+            "pages": "144-148"
+        }
+    },
+    {
+        "authors": "Han GD, Jang G, Kim J, Kim DW, Rodrogues R, Kim SH, Chung YS",
+        "year": 2021,
+        "title": "RGB images-based vegetative index for phenotyping kenaf (Hibiscus cannabinus L.)",
+        "journal": {
+            "title": "PloS One",
+            "volume": "16",
+            "articleId": "e0256978",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 3.752
+            }
+        }
+    },
+    {
+        "authors": "Kim J, Chung YS",
+        "year": 2021,
+        "title": "A short review of RGB sensor applications for accessible high-throughput phenotyping",
+        "journal": {
+            "title": "Journal of Crop Science and Biotechnology",
+            "pages": "1-5"
+        }
+    },
+    {
+        "authors": "Kim J, Yu JK, Rodrogues R, Kim Y, Park J, Jung JH, Chung YS",
+        "year": 2021,
+        "title": "Case study: cost-effective image analysis method to study drought stress of soybean in early vegetative stage",
+        "journal": {
+            "title": "Journal of Crop Science and Biotechnology",
+            "pages": "1-5"
+        }
+    },
+    {
+        "authors": "Han GD, Jung JH, Chung YS",
+        "year": 2021,
+        "title": "Correlation of Zoysia Grass (Zoysia. spp) Survival, Reproduction, and Floret Appearance Rates to Aid in Development of New Hybrid Zoysia Grass Cultivars",
+        "journal": {
+            "title": "Korean Journal of Crop Science",
+            "volume": "66",
+            "pages": "265-269"
+        }
+    },
+    {
+        "authors": "Jung JH, Han GD, Kim J, Chung YS (Corresponding author)",
+        "year": 2021,
+        "title": "Reproduction rate and stolon production rate after transplantation of grass germplasm",
+        "journal": {
+            "title": "Korean Journal of Agricultural Science",
+            "volume": "48",
+            "pages": "465-471"
+        }
+    },
+    {
+        "authors": "Sathasivam R, Kim MC, Chung YS, Park SU. (Corresponding author)",
+        "year": 2021,
+        "title": "Effect of cytokinins on growth and phenylpropanoid accumulation in Tartary buckwheat sprouts (Fagopyrum esculentum Moench)",
+        "journal": {
+            "title": "Journal of Aridland Agriculture",
+            "volume": "7",
+            "pages": "89-94"
+        }
+    },
+    {
+        "authors": "Kim KS, Kim SH, Kim J, Tripathi P, Lee JD, Chung YS, Kim Y. (Corresponding author)",
+        "year": 2021,
+        "title": "A large root phenome dataset wide-opened the potential for underground breeding in soybean",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "articleId": "1635",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 6.627
+            }
         }
     }
 ]

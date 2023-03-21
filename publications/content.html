@@ -8,7 +8,8 @@
             * Authors contributed equally to the article
         </div>
         <div>
-            <b>Impact Factors:</b> 2021 Journal Citation Reports (<a href="https://clarivate.com/" target="_blank">Clarivate Analytics</a>, June 2022)
+            <b>Impact Factors:</b> 2021 Journal Citation Reports (<a href="https://clarivate.com/"
+                target="_blank">Clarivate Analytics</a>, June 2022)
         </div>
         <div>
         </div>
@@ -27,9 +28,9 @@
     order = urlParams.get('order')
     format = urlParams.get('format')
 
-    $(function() {
+    $(function () {
 
-        
+
         // Set years
         if (startYear !== undefined)
             $('#start-year-title').text(startYear)
@@ -38,18 +39,18 @@
 
 
         // Get Data from json and render
-        $.getJSON('publications.json', function(data) {
+        $.getJSON('publications.json', function (data) {
             const years = [...new Set(data.map(e => e.year))]
 
-        const yearPublications = {}
+            const yearPublications = {}
 
-        years.forEach(year => yearPublications[year] = data.filter(e => e.year === year))
+            years.forEach(year => yearPublications[year] = data.filter(e => e.year === year))
 
 
-        for (const [key, value] of Object.entries(yearPublications)) {
-            // Add year title
-            $('#publication-list')
-                .append(`
+            for (const [key, value] of Object.entries(yearPublications).reverse()) {
+                // Add year title
+                $('#publication-list')
+                    .append(`
                     <div class="year">
                         ${key} <span class="article_count">(${value.length} articles)</span>
                         <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
@@ -57,9 +58,9 @@
                     </div>
                 `)
 
-            // Add articles title
-            $('#publication-list')
-            .append(`
+                // Add articles title
+                $('#publication-list')
+                    .append(`
             <div class="year-articles">
                 <ul id="year-articles-list-${key}">
                     
@@ -68,26 +69,45 @@
             </div>
                 `)
 
-            // Add artiles
-                    
-            for (const article of value) {
-                $(`#year-articles-list-${key}`)
-                .append(`
+                // Add artiles
+
+                for (const article of value) {
+                    $(`#year-articles-list-${key}`)
+                        .append(`
                 <li>
                     <div id="${article.id}" class="article">
                         <span class="authors">${article.authors}</span> 
                         <span class="year">(${article.year})</span> 
-                        <span class="title font-bold">${article.title}</span>. 
-                        <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>.
-                        </div>
+                        <span class="title"><b>${article.title}</b></span>. 
+                        <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
+                        ${(article.journal?.volume)
+                            ? `, ${article.journal.volume}`
+                            : '.'
+                        }
+                        ${(article.journal?.issue)
+                            ? `(${article.journal.issue})`
+                            : ''
+                        }
+                        ${(article.journal?.pages)
+                            ? `: ${article.journal.pages}`
+                            : ''
+                        }
+                        ${(article.journal?.articleId)
+                            ? `: ${article.journal.articleId}`
+                            : ''
+                        }
+                    </div>
                 </li>
+                [
+                    ${(article.journal?.indexing?.impactFactor)
+                        ? `<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>`
+                        : ''}
+                ]
+            </div>
                 `)
+                }
             }
-
-            
-        }
         })
 
-        
     })
 </script>
