@@ -15,9 +15,27 @@
         "title": " Diversity study of common buckwheat germplasm in the Republic of Korea using GBS",
         "journal": {
             "title": "Plant Biotechnology Reports (on-line first)",
-            "volume": "SCIE, IF 2.496",
-            "pageNumbers": " 274-284",
-            "doi": "https://doi.org/10.1007/s11816-022-00802-9"
+            "onlineFirst": true,
+            "volume": "SCIE, IF 2.496"
+        }
+    },
+    {
+        "authors": "Furan MA, Yıldız M, Karatas MD, Chung YS",
+        "year": 2022,
+        "title": " Phylogenetic inference and secondary structure predictions of Turkish genotypes of Coriandrum sativum (L.) based on ITS4 and ITS5 nrDNA sequences",
+        "journal": {
+            "title": "Plant Biotechnology Reports (on-line first)",
+            "volume": "SCIE, IF 2.496"
+        }
+    },
+    {
+        "authors": "Han GD, Yoon SU, Chung YS, Ahn J, Lee SJ, Kim YS, Min T",
+        "year": 2022,
+        "title": " Tracking Changes of Snow Area Using Satellite Images of Mt.Halla at an Altitude of 1,600 m",
+        "journal": {
+            "title": "Journal of Environmental Science International",
+            "volume": "31",
+            "pageNumbers": "815-824"
         }
     }
 ]
