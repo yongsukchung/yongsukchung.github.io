@@ -44,7 +44,11 @@
 
             const yearPublications = {}
 
-            years.forEach(year => yearPublications[year] = data.filter(e => e.year === year && year >= startYear && year <= endYear))
+            years.forEach(year => {
+                var yearData = data.filter(e => e.year === year && year >= startYear && year <= endYear)
+                if (yearData.length <= 0) return
+                yearPublications[year] = yearData
+            })
 
 
             for (const [key, value] of Object.entries(yearPublications).reverse()) {
