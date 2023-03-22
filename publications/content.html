@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <div>Publications (<span id="start-year-title"></span> ~ <span id="end-year-title"></span>)</div>
+    <div>Publications (<span id="start-year-title">2016</span> ~ <span id="end-year-title">2023</span>)</div>
 
     <div id="legend" class="text-muted my-2">
         <div id="legend-header" class="mb-1">Notes/Symbols Legend</div>
@@ -102,11 +102,10 @@
                         }
                     </div>
                 </li>
-                [
+                
                     ${(article.journal?.indexing?.impactFactor)
-                        ? `<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>`
+                        ? `[<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>]`
                         : ''}
-                ]
             </div>
                 `)
                 }
