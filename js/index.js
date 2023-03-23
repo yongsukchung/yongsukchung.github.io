@@ -1,30 +1,76 @@
 $(function () {
+    // Create main container
+    const mainContainer = document.createElement('div')
 
-    $('body').append(`
-        <div id="mainContainer">
-            <div id="brandingLogo"></div>
-            <div id="primaryNav"></div>
-            <div id="brandingOther">
-            </div>
-            <div class="row m-5">
-                <div id="secondaryNav" class="col-2 container"></div>
-                <div id="content" class="col-10"></div>
-            </div>
-            <div id="footer" class="d-flex p-2"></div>
-        </div>
-    `)
-    .append(`
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
-    `)
+    mainContainer.id = 'mainContainer'
 
+    // Add branding Logo
+    const brandingLogo = document.createElement('div')
+    brandingLogo.id = 'brandingLogo'
+    
+    mainContainer.appendChild(brandingLogo)
 
-    // Load theme css
-    let theme = window.localStorage.getItem('theme') || 'superhero';
-    $('head').append(`
-        <link href="../../css/${theme}-bootstrap.min.css" rel="stylesheet" id="theme-css" />
-    `)
+    // Add primary Nav
+    const primaryNav = document.createElement('div')
+    primaryNav.id = 'primaryNav'
+
+    mainContainer.appendChild(primaryNav)
+
+    // Add branding Other
+    const brandingOther = document.createElement('div')
+    brandingOther.id = 'brandingOther'
+
+    mainContainer.appendChild(brandingOther)
+
+    // Create row
+    const row = document.createElement('div')
+    row.className = 'row m-5'
+    
+    // Add secondary Nav
+    const secondaryNav = document.createElement('div')
+    secondaryNav.id = 'secondaryNav'
+    secondaryNav.className = 'col-2 container'
+
+    row.appendChild(secondaryNav)
+
+    // Add content
+    const content = document.createElement('div')
+    content.id = 'content'
+    content.className = 'col-10'
+    
+    row.appendChild(content)
+
+    // Add row
+    mainContainer.appendChild(row)
+    
+    // Add footer
+    const footer = document.createElement('div')
+    footer.id = 'footer'
+    footer.className = 'd-flex p-2'
+    
+    mainContainer.appendChild(footer)
+
+    // Add mainContainer
+    $('body').append(mainContainer)
+
+    // Add Bootstrap Script
+    const bootstrapScript = document.createElement('script')
+
+    bootstrapScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'
+    bootstrapScript.integrity = 'sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4'
+    bootstrapScript.crossOrigin = 'anonymous'
+
+    $('body').append(bootstrapScript)
+
+    // Add css theme
+    const theme = window.localStorage.getItem('theme') || 'superhero'
+    const themeCss = document.createElement('link')
+
+    themeCss.href = `../../css/${theme}-bootstrap.min.css`
+    themeCss.rel = 'stylesheet'
+    themeCss.id = 'theme-css'
+
+    $('head').append(themeCss)
 
     // Load footer
     $('#footer').load('../../common/footer.html')
@@ -42,9 +88,15 @@ $(function () {
     $("#secondaryNav").load(`../../${path[0]}/secondaryNav.html`)
 
     path = path.join('/')
+
+    // Add branding Image
+    const brandingImage = document.createElement('img')
+
+    brandingImage.src = '../../images/personnelbranding.jpg'
+    brandingImage.alt = 'branding-banner'
     // Loading branding
     $("#brandingOther")
-        .html('<img src="../../images/personnelbranding.jpg" alt="brading-banner"/>')
+        .html(brandingImage)
 
     // Loading content
     $('#content').load(`../../${path}/content.html`)

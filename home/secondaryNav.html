@@ -9,29 +9,14 @@
     $(function () {
         const data = [
             {
+                text: "College of Applied Life Sciences",
+                additionalDetails: "Jeju National University",
+                path: 'https://www.jejunu.ac.kr/eng'
+            },
+            {
                 text: "Plant Sciences Institute",
                 additionalDetails: "lowa Stae University",
                 path: 'https://www.psi.iastate.edu/'
-            },
-            {
-                text: "AG2PI ",
-                additionalDetails: "Agricultural Genome to Phenome Initiative",
-                path: 'https://www.ag2pi.org/'
-            },
-            {
-                text: "AIIRA ",
-                additionalDetails: "AI Institue for Resilient Agriculture",
-                path: 'https://aiira.iastate.edu/'
-            },
-            {
-                text: "G2F ",
-                additionalDetails: "The Genomes To Fields Initiative",
-                path: 'https://www.genomes2fields.org/'
-            },
-            {
-                text: "GTF ",
-                additionalDetails: "Genomic Technologies Facility",
-                path: 'https://www.plantgenomics.iastate.edu/'
             },
             {
                 text: "New & Media Resources ",
@@ -57,10 +42,10 @@
         const secondaryNav = $('#homeSecondaryNav')
         data.forEach((e) => {
             secondaryNav.append(
-                `<a href="${e.path}" class="list-group-item list-group-item-action">
+                `<a href="${e.path}" class="list-group-item list-group-item-action target="_blank">
                 ${e.text}
                 ${e.additionalDetails != undefined
-                    ? `<br />(${e.additionalDetails})`
+                    ? `<br />(<span class="fst-italic">${e.additionalDetails})</span>`
                     : ''}
                 
             

@@ -82,22 +82,30 @@
                     <div id="${article.id}" class="article">
                         <span class="authors">${article.authors}</span> 
                         <span class="year">(${article.year})</span> 
-                        <span class="title"><b>${article.title}</b></span>. 
+                        <span class="title fw-bold">${article.title}</span>. 
                         <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
                         ${(article.journal?.volume)
                             ? `, ${article.journal.volume}`
-                            : '.'
+                            : ''
                         }
                         ${(article.journal?.issue)
                             ? `(${article.journal.issue})`
                             : ''
                         }
+                        ${((!article.journal?.pages) && (!article.journal?.articleId)) && (article.journal?.volume)
+                            ? '.'
+                            : ''
+                        }
+                        ${((article.journal?.pages) || (article.journal?.articleId)) && (article.journal?.volume)
+                            ? ':'
+                            : ''
+                        }
                         ${(article.journal?.pages)
-                            ? `: ${article.journal.pages}`
+                            ? `${article.journal.pages}`
                             : ''
                         }
                         ${(article.journal?.articleId)
-                            ? `: ${article.journal.articleId}`
+                            ? `${article.journal.articleId}`
                             : ''
                         }
                     </div>
