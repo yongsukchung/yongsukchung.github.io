@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <div>Publications (<span id="start-year-title">2016</span> ~ <span id="end-year-title">2023</span>)</div>
+    <div>Publications (<span id="start-year-title"></span> ~ <span id="end-year-title"></span>)</div>
 
     <div id="legend" class="text-muted my-2">
         <div id="legend-header" class="mb-1">Notes/Symbols Legend</div>
@@ -20,16 +20,14 @@
     </div>
 </div>
 
-
 <script>
     urlParams = new URLSearchParams(window.location.search)
     startYear = urlParams.get('startyear') || 2016
     endYear = urlParams.get('endyear') || 2023
-    order = urlParams.get('order')
+    order = urlParams.get('order') || 'desc'
     format = urlParams.get('format')
-
+console.log(order)
     $(function () {
-
 
         // Set years
         if (startYear !== undefined)
@@ -50,13 +48,14 @@
                 yearPublications[year] = yearData
             })
 
-
-            for (const [key, value] of Object.entries(yearPublications).reverse()) {
+            let publications = Object.entries(yearPublications)
+            if(order === 'desc') publications = publications.reverse()
+            for (const [key, value] of publications) {
                 // Add year title
                 $('#publication-list')
                     .append(`
                     <div class="year">
-                        ${key} <span class="article_count">(${value.length} articles)</span>
+                        <h3 class="d-inline-block fst-italic fw-bold">${key}</h3> <span class="article_count">(${value.length} articles)</span>
                         <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
                     
                     </div>
@@ -69,7 +68,6 @@
                 <ul id="year-articles-list-${key}">
                     
                 </ul>
-                
             </div>
                 `)
 
@@ -81,7 +79,7 @@
                 <li>
                     <div id="${article.id}" class="article">
                         <span class="authors">${article.authors}</span> 
-                        <span class="year">(${article.year})</span> 
+                        <span class="year fst-italic">(${article.year})</span> 
                         <span class="title fw-bold">${article.title}</span>. 
                         <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
                         ${(article.journal?.volume)
@@ -114,6 +112,7 @@
                     ${(article.journal?.indexing?.impactFactor)
                         ? `[<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>]`
                         : ''}
+                    
             </div>
                 `)
                 }

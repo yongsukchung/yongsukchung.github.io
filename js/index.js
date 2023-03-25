@@ -82,6 +82,7 @@ $(function () {
     })
 
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
+    // Add home to the path if not already present.
     if (path.length === 0) path.push('home')
 
     // Load secondary navigation bar
@@ -102,8 +103,14 @@ $(function () {
     $('#content').load(`../../${path}/content.html`)
 
     // Prevent reload in when navigate to same page
+    /**
+    * event The event that triggered this . This is passed to the event handler
+    * 
+    * @param event
+    */
     $('#primaryNav').on('click', '.nav-link', function (event) {
         let href = $(this).attr('href').split('/').filter(Boolean)[0]
+        // prevents the default event if the href is not the same as the path
         if (href === path) event.preventDefault()
     })
 })

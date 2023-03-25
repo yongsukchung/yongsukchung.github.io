@@ -30,7 +30,7 @@
     <a href="/publications/?journal=pre-prints" class="list-group-item list-group-item-action">
         Pre-Prints
     </a>
-    <a href="/publications/covers" class="list-group-item list-group-item-action">
+    <a href="/publications/covers" class="list-group-item list-group-item-action disabled">
         Journal Covers
     </a>
     <div class="list-group-item list-group-item-dark bg-info flex-column align-items-start">
@@ -74,8 +74,8 @@
     <div class="list-group-item">
         <div class="">
             <select class="form-select" id="order" name="order">
-                <option value="asc">Ascending</option>
                 <option value="desc">Descending</option>
+                <option value="asc">Ascending</option>
             </select>
         </div>
     </div>
@@ -88,9 +88,9 @@
         <div class="">
             <select class="form-select" id="format" name="format">
                 <option value="default">Default</option>
-                <option value="apa">APA Style</option>
+                <!-- <option value="apa">APA Style</option>
                 <option value="mla">MLA Style</option>
-                <option value="chicago">Chicago Style</option>
+                <option value="chicago">Chicago Style</option> -->
             </select>
         </div>
     </div>
@@ -113,6 +113,8 @@
             const citationStyle = document.getElementById("format").value;
             const publicationOrdering = document.getElementById("order").value;
             const journal = (params.get("journal") == null) ? "default" : params.get("journal")
+
+            if (startYear > endYear) return alert("Start year must be smaller than End year")
 
             const url = `/publications/?journal=${journal}&startyear=${startYear}&endyear=${endYear}&format=${citationStyle}&order=${publicationOrdering}`;
 
