@@ -1,21 +1,31 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
-
         <a class="navbar-brand nav-link" href="/">
-            <img src="../images/jeju-national-university-logo.png" class="rounded-circle" alt="logo" width="30" height="auto">
+            <img src="../images/jeju-national-university-logo.png" class="rounded-circle" alt="logo" width="30"
+                height="auto">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+            aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mb-2 mb-0 mb-lg-0">
                 <li id="one"><a class="nav-link fw-bold" id="nav-link-home" href="/home">Home</a></li>
-                <li id="two"><a class="nav-link fw-bold disabled" id="nav-link-research" href="/research">Research</a></li>
-                <li id="ten"><a class="nav-link fw-bold" id="nav-link-publications" href="/publications">Publications</a></li>
-                <li id="three"><a class="nav-link fw-bold" id="nav-link-personnel" href="/personnel">Personnel</a></li>
-                <li id="four"><a class="nav-link fw-bold disabled" id="nav-link-collaborators" href="/collaborators">Collaborators</a>
+                <li id="two"><a class="nav-link fw-bold disabled" id="nav-link-research" href="/research">Research</a>
                 </li>
-                <li id="five"><a class="nav-link fw-bold disabled" id="nav-link-education" href="/education">Education</a></li>
-                <li id="six"><a class="nav-link fw-bold disabled" id="nav-link-resources" href="/resources">Resources</a></li>
-                <li id="seven"><a class="nav-link fw-bold disabled" id="nav-link-media" href="/media">Media &amp; Videos</a></li>
+                <li id="ten"><a class="nav-link fw-bold" id="nav-link-publications"
+                        href="/publications">Publications</a></li>
+                <li id="three"><a class="nav-link fw-bold" id="nav-link-personnel" href="/personnel">Personnel</a></li>
+                <li id="four"><a class="nav-link fw-bold disabled" id="nav-link-collaborators"
+                        href="/collaborators">Collaborators</a>
+                </li>
+                <li id="five"><a class="nav-link fw-bold disabled" id="nav-link-education"
+                        href="/education">Education</a></li>
+                <li id="six"><a class="nav-link fw-bold disabled" id="nav-link-resources"
+                        href="/resources">Resources</a></li>
+                <li id="seven"><a class="nav-link fw-bold disabled" id="nav-link-media" href="/media">Media &amp;
+                        Videos</a></li>
                 <li id="eight"><a class="nav-link fw-bold disabled" id="nav-link-photos" href="/photos">Photos</a></li>
                 <li id="nine"><a class="nav-link fw-bold" id="nav-link-contact" href="/contact">Contact</a></li>
             </ul>
@@ -29,15 +39,13 @@
 </nav>
 
 <script>
-    $(function() {
-        $('#theme-toggle').on('click', function(event) {
+    $(function () {
+        $('#theme-toggle').on('click', function (event) {
             let currentDarkTheme = window.localStorage.getItem('theme')
-            if (currentDarkTheme === null || currentDarkTheme === 'minty')
-            {
+            if (currentDarkTheme === null || currentDarkTheme === 'minty') {
                 window.localStorage.setItem('theme', 'lumen')
             }
-            else
-            {
+            else {
                 window.localStorage.setItem('theme', 'minty')
             }
         })
