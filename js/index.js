@@ -63,7 +63,7 @@ $(function () {
     $('body').append(bootstrapScript)
 
     // Add css theme
-    const theme = window.localStorage.getItem('theme') || 'superhero'
+    const theme = window.localStorage.getItem('theme') || 'dark-lumen'
     const themeCss = document.createElement('link')
 
     themeCss.href = `../../css/${theme}-bootstrap.min.css`

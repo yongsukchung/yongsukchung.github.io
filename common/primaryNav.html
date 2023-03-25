@@ -30,8 +30,8 @@
                 <li id="nine"><a class="nav-link fw-bold" id="nav-link-contact" href="/contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="" id="theme-toggle">Change Theme</a>
+                <li class="nav-item btn btn-light">
+                    <a class="nav-link text-dark" href="" id="theme-toggle">Change Theme</a>
                 </li>
             </ul>
         </div>
@@ -42,11 +42,11 @@
     $(function () {
         $('#theme-toggle').on('click', function (event) {
             let currentDarkTheme = window.localStorage.getItem('theme')
-            if (currentDarkTheme === null || currentDarkTheme === 'minty') {
+            if (currentDarkTheme === null || currentDarkTheme === 'dark-lumen') {
                 window.localStorage.setItem('theme', 'lumen')
             }
             else {
-                window.localStorage.setItem('theme', 'minty')
+                window.localStorage.setItem('theme', 'dark-lumen')
             }
         })
     })
