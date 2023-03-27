@@ -13,6 +13,30 @@
             {
                 title: "Conferences, Events and Travel",
                 folder: "conferencesEventsTravel"
+            },
+            {
+                title: "Lab &amp; Field",
+                folder: "labField"
+            },
+            {
+                title: "Visitors",
+                folder: "visitors"
+            },
+            {
+                title: "Fun &amp; Play",
+                folder: "funPlay"
+            },
+            {
+                title: "Classes",
+                folder: "classes"
+            },
+            {
+                title: "SAM Project",
+                folder: "samProject"
+            },
+            {
+                title: "Schnable Lab @ CAU",
+                folder: "labCAU"
             }
         ]
         const categoryDiv = $('#photo-category')
@@ -25,14 +49,12 @@
             categoryDiv.append(`
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="${categories[index].folder}" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail border border-start-0 border-5" src="${categories[index].folder}/${images[0].src}" alt="${images[0].title}">
+                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${categories[index].folder}/${images[0].src}" alt="${images[0].title}">
                         <p>${categories[index].title}</p>
                     </a>
                 </div>
             `)
         })
-
-
 
     })
 </script>
