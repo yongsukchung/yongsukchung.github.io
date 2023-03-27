@@ -7,7 +7,7 @@ $(function () {
     // Add branding Logo
     const brandingLogo = document.createElement('div')
     brandingLogo.id = 'brandingLogo'
-    
+
     mainContainer.appendChild(brandingLogo)
 
     // Add primary Nav
@@ -22,32 +22,44 @@ $(function () {
 
     mainContainer.appendChild(brandingOther)
 
-    // Create row
-    const row = document.createElement('div')
-    row.className = 'row m-5'
-    
-    // Add secondary Nav
-    const secondaryNav = document.createElement('div')
-    secondaryNav.id = 'secondaryNav'
-    secondaryNav.className = 'col-2 container'
-
-    row.appendChild(secondaryNav)
-
     // Add content
     const content = document.createElement('div')
     content.id = 'content'
-    content.className = 'col-10'
     
-    row.appendChild(content)
 
-    // Add row
-    mainContainer.appendChild(row)
-    
+    let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
+
+    if (path[0] === 'photos') {
+        content.className = 'row m-5'
+        mainContainer.appendChild(content)
+    }
+    else {
+        content.className = 'col-10'
+        // Create row
+        const row = document.createElement('div')
+        row.className = 'row m-5'
+
+        // Add secondary Nav
+        const secondaryNav = document.createElement('div')
+        secondaryNav.id = 'secondaryNav'
+        secondaryNav.className = 'col-2 container'
+
+        row.appendChild(secondaryNav)
+
+
+        row.appendChild(content)
+
+        // Add row
+        mainContainer.appendChild(row)
+    }
+
+
+
     // Add footer
     const footer = document.createElement('div')
     footer.id = 'footer'
     footer.className = 'd-flex p-2'
-    
+
     mainContainer.appendChild(footer)
 
     // Add mainContainer
@@ -81,7 +93,6 @@ $(function () {
         $(`#nav-link-${path[0]}`).addClass('active')
     })
 
-    let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
     // Add home to the path if not already present.
     if (path.length === 0) path.push('home')
 

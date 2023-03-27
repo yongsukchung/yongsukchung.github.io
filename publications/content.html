@@ -26,8 +26,8 @@
     endYear = urlParams.get('endyear') || 2023
     order = urlParams.get('order') || 'desc'
     format = urlParams.get('format')
-    
-    $(function () {
+
+    $(async function () {
 
         // Set years
         if (startYear !== undefined)
@@ -37,23 +37,23 @@
 
 
         // Get Data from json and render
-        $.getJSON('publications.json', function (data) {
-            const years = [...new Set(data.map(e => e.year))]
+        const data = await $.getJSON('publications.json')
+        const years = [...new Set(data.map(e => e.year))]
 
-            const yearPublications = {}
+        const yearPublications = {}
 
-            years.forEach(year => {
-                var yearData = data.filter(e => e.year === year && year >= startYear && year <= endYear)
-                if (yearData.length <= 0) return
-                yearPublications[year] = yearData
-            })
+        years.forEach(year => {
+            var yearData = data.filter(e => e.year === year && year >= startYear && year <= endYear)
+            if (yearData.length <= 0) return
+            yearPublications[year] = yearData
+        })
 
-            let publications = Object.entries(yearPublications)
-            if(order === 'desc') publications = publications.reverse()
-            for (const [key, value] of publications) {
-                // Add year title
-                $('#publication-list')
-                    .append(`
+        let publications = Object.entries(yearPublications)
+        if (order === 'desc') publications = publications.reverse()
+        for (const [key, value] of publications) {
+            // Add year title
+            $('#publication-list')
+                .append(`
                     <div class="year">
                         <h3 class="d-inline-block fst-italic fw-bold">${key}</h3> <span class="article_count">(${value.length} articles)</span>
                         <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
@@ -61,9 +61,9 @@
                     </div>
                 `)
 
-                // Add articles title
-                $('#publication-list')
-                    .append(`
+            // Add articles title
+            $('#publication-list')
+                .append(`
             <div class="year-articles">
                 <ul id="year-articles-list-${key}">
                     
@@ -71,11 +71,11 @@
             </div>
                 `)
 
-                // Add artiles
+            // Add artiles
 
-                for (const article of value) {
-                    $(`#year-articles-list-${key}`)
-                        .append(`
+            for (const article of value) {
+                $(`#year-articles-list-${key}`)
+                    .append(`
                 <li>
                     <div id="${article.id}" class="article">
                         <span class="authors">${article.authors}</span> 
@@ -110,14 +110,13 @@
                 </li>
                 
                     ${(article.journal?.indexing?.impactFactor)
-                        ? `[<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>]`
-                        : ''}
+                            ? `[<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>]`
+                            : ''}
                     
             </div>
                 `)
-                }
             }
-        })
+        }
 
     })
 </script>
