@@ -102,12 +102,6 @@ $(function () {
     // Loading content
     $('#content').load(`../../${path}/content.html`)
 
-    // Prevent reload in when navigate to same page
-    /**
-    * event The event that triggered this . This is passed to the event handler
-    * 
-    * @param event
-    */
     $('#primaryNav').on('click', '.nav-link', function (event) {
         let href = $(this).attr('href').split('/').filter(Boolean)[0]
         // prevents the default event if the href is not the same as the path

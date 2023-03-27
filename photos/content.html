@@ -1,1 +1,50 @@
-<h2>Photos</h2>
+<div class="row row-cols-1 row-cols-md-3" id="photo-category"></div>
+<script>
+    $(function() {
+        const categories = [
+            {
+                title: "Lab Groups",
+                folder: "labGroups"
+            },
+            {
+                title: "Staff, Students and Alumni",
+                folder: "staffStudentAlumnis"
+            }
+        ]
+        const categoryDiv = $('#photo-category')
+        for (let category of categories)
+        {
+            $.getJSON(`./${category.folder}/${category.folder}.json`, function(data) {
+            const images = data
+
+            categoryDiv.append(`
+            <a href="${category.folder}" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="${category.folder}/${images[0].src}" class="card-img-top" alt="${category.title}">
+                    <div class="card-body">
+                        <div class="card-title">${category.title}</div>
+                    </div>
+                </div>
+            </a>
+            `)
+            // const imageContainerElement = document.createElement('div')
+            // imageContainerElement.className = "container-fluid"
+
+            // const imageTitleElement = document.createElement('h1')
+            // imageTitleElement.textContent = category.title
+
+            // const imageElement = document.createElement('img')
+            // imageElement.src = images[0].src
+            // imageElement.alt = category
+            // imageElement.className = "img-thumbnail"
+            // imageElement.style = "max-width: 20%;"
+
+            // imageContainerElement.appendChild(imageElement)
+            // imageContainerElement.appendChild(imageTitleElement)
+            // categoryDiv.append(imageContainerElement)
+
+        })
+        }
+        
+    })
+</script>
