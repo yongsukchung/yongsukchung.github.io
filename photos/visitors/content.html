@@ -4,8 +4,7 @@
 
 <script>
     $(function() {
-        $.getJSON('data.json', function(data) {
-            const list = data
+        $.getJSON('data.json', function(list) {
             list.forEach(image => {
                 $('#image-list').append(`
                     <div class="col-lg-3 col-md-4 col-6">

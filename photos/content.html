@@ -44,8 +44,7 @@
 
         const dataArray = await Promise.all(promises)
 
-        dataArray.forEach((data, index) => {
-            const images = data
+        dataArray.forEach((images, index) => {
             categoryDiv.append(`
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="${categories[index].folder}" class="d-block mb-4 h-100">

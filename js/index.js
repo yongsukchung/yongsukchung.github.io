@@ -101,14 +101,8 @@ $(function () {
 
     path = path.join('/')
 
-    // Add branding Image
-    const brandingImage = document.createElement('img')
-
-    brandingImage.src = '../../images/personnelbranding.jpg'
-    brandingImage.alt = 'branding-banner'
     // Loading branding
-    $("#brandingOther")
-        .html(brandingImage)
+    $("#brandingOther").load('../../common/brandingOther.html')
 
     // Loading content
     $('#content').load(`../../${path}/content.html`)
