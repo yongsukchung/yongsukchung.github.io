@@ -21,14 +21,14 @@
 </div>
 
 <script>
-    urlParams = new URLSearchParams(window.location.search)
-    startYear = urlParams.get('startyear') || 2016
-    endYear = urlParams.get('endyear') || 2023
-    order = urlParams.get('order') || 'desc'
-    format = urlParams.get('format')
+    
 
     $(async function () {
-
+        const urlParams = new URLSearchParams(window.location.search)
+        const startYear = urlParams.get('startyear') || 2016
+        const endYear = urlParams.get('endyear') || 2023
+        const order = urlParams.get('order') || 'desc'
+        const format = urlParams.get('format')
         // Set years
         if (startYear !== undefined)
             $('#start-year-title').text(startYear)

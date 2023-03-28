@@ -1,0 +1,63 @@
+{
+    "university": {
+        "name": "Iowa State University",
+        "collaborators" : [
+            {
+                "name": "Dr. Hui-Hsien Chou",
+                "link": "https://www.complexcomputation.org/hhchou/",
+                "field": "Computer Science"
+            },
+            {
+                "name": "Dr. Carolyn Lawrence",
+                "link": "http://www.lawrencelab.org/",
+                "field": "Genetics, Development & Cell Biology"
+            },
+            {
+                "name": "Dr. Daniel S. Nettleton",
+                "link": "http://www.public.iastate.edu/~dnett/",
+                "field": "Statistics",
+                "projects": [
+                    {
+                        "name": "Genomic Analyses of Shoot Meristem Function in Maize",
+                        "link": "http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0820610"
+                    },
+                    {
+                        "name": "Functional Structural Diversity among Maize Haplotypes",
+                        "link": "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1027527"
+                    }
+                ]
+            }
+        ]
+    },
+    "external": {
+        "name": "External",
+        "collaborators" : [
+            {
+                "name": "Dr. Srinivas Aluru",
+                "link": "http://www.cc.gatech.edu/~saluru/",
+                "institution": {
+                    "name": "Georgia Institute of Technology",
+                    "link": "http://www.gatech.edu/"
+                },
+                "projects": [
+                    {
+                        "name": "BIGDATA: Mid-Scale: DA: Collaborative Research: Genomes Galore - Core Techniques, Libraries, and Domain Specific Languages for High-Throughput DNA Sequencing",
+                        "link": "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1247716"
+                    },
+                    {
+                        "name": "AF: Medium: Parallel Algorithms and Software for High-Throughput Sequence Assembly",
+                        "link": "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1162472"
+                    }
+                ]
+            },
+            {
+                "name": "Dr. Brad Barbazuk",
+                "link": "http://www.biology.ufl.edu/People/faculty/bbarbazuk.aspx",
+                "institution": {
+                    "name": "Genetics, Development & Cell Biology",
+                    "link": "http://www.ufl.edu/"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+<div class="row row-cols-1 row-cols-md-3" id="item-list"></div>
+<script>
+	$(async function() {
+		const list = await $.getJSON('data.json')
+		list.forEach((p) => {
+			$("#item-list").append(`
+            <div class="col-lg-3 col-md-4 col-6 m-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="${p.photoLink}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${p.title}</h5>
+                        <p class="card-text">${p.source}</p>
+                        <p class="card-text">${p.info}</p>
+                    </div
+                    <div class="card-body">
+                        <a class="btn" href="${p.megazineLink}" class="card-link">Dowload PDF</a>
+                    </div>
+                </div>
+            </div>
+			`)
+		})
+	})
+</script>

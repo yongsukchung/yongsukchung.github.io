@@ -1,0 +1,15 @@
+<ul class="" id="item-list"></ul>
+<script>
+	$(async function() {
+		const list = await $.getJSON('data.json')
+		list.forEach((p) => {
+			$("#item-list").append(`
+			<li class="">
+				<span class="text-muted">${p.date}</span>: ${p.title}
+                <br />
+                [<a href="${p.link}">Direct Link</a>]
+			</li>
+			`)
+		})
+	})
+</script>
