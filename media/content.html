@@ -1,17 +1,15 @@
 <div id="update">(Last Updated: May 8, 2020)</div>
 <h1>Videos</h1>
-<!-- <div id="permissions">
-    For permission to use videos, audio files, presentation slides, and/or images shown on this page, please contact Dr. 
-    <a href="/personnel/schnable_patrick.php">Patrick Schnable</a>
-    (<a href="mailto:schnable@iastate.edu" title="Email">schnable@iastate.edu</a>)
-</div>
-
-<h2>Dr. Patrick Schnable</h2>
-<div id="video">
-	<a class="fancy_gallery iframe" href="https://www.youtube.com/embed/rhGFhlSi1Vw" target="_blank"><img id="thumb" src="/images/videos/video_ICGA_Schnable_Part1.jpg"></a>
-	<p><span id="date">05/23/2017:</span> ICGA - Pat Schnable - Part 1</p>
-	<div id="links">
-		<a class="fancy_gallery iframe" href="https://www.youtube.com/embed/rhGFhlSi1Vw" target="_blank">Play Video (Youtube)</a><br>
-		<a href="/docs/media/videos/20170523_ICGA_Pat_Schnable_Part1.mp4">Download Video (37.6 MB)</a>
-	</div>
-</div> -->
+<div id="video-list"></div>
+<script>
+	$(async function() {
+		const videos = await $.getJSON('data.json')
+		videos.forEach((v) => {
+			$("#video-list").append(`
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe class="embed-responsive-item" src="${v.link}" llow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			`)
+		})
+	})
+</script>
