@@ -90,7 +90,7 @@
 
         })
         const generateYearRanges = years => years.reduce((acc, year, i) => (i === 0 && acc.push([year, years.find(x => x % 5 === 1)]) || year % 5 === 0 && acc.push([year, years[Math.min(i + 4, years.length - 1)]]), acc), []);
-        generateYearRanges(years).forEach(([startYear, endYear]) => {
+        generateYearRanges(years).forEach(([endYear, startYear]) => {
 
             $("#year-filter-list").append(`
                 <a href="/publications/?startyear=${startYear}&endyear=${endYear}" class="list-group-item list-group-item-action">
