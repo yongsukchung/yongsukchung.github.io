@@ -9,25 +9,10 @@
             <h5 class="mb-1">Archive</h5>
         </div>
     </div>
-    <a href="/publications" class="list-group-item list-group-item-action">
-        2016-2023
-    </a>
-    <a href="/publications/?startyear=2011&endyear=2015" class="list-group-item list-group-item-action">
-        2011-2015
-    </a>
-    <a href="/publications/?startyear=2006&endyear=2010" class="list-group-item list-group-item-action">
-        2006-2010
-    </a>
-    <a href="/publications/?startyear=1996&endyear=2005" class="list-group-item list-group-item-action">
-        1996-2005
-    </a>
-    <a href="/publications/?startyear=1991&endyear=1995" class="list-group-item list-group-item-action">
-        1991-1995
-    </a>
-    <a href="/publications/?startyear=1986&endyear=1990" class="list-group-item list-group-item-action">
-        1986-1990
-    </a>
-    <a href="/publications/?journal=pre-prints" class="list-group-item list-group-item-action">
+    <div id="year-filter-list">
+    </div>
+
+    <a href="/publications/?journal=pre-prints" class="list-group-item list-group-item-action disabled">
         Pre-Prints
     </a>
     <a href="/publications/covers" class="list-group-item list-group-item-action disabled">
@@ -43,11 +28,6 @@
             <label for="start-year" class="form-label  col-6">Start year</label>
             <div class="col-6">
                 <select class="form-select col-6" id="start-year" name="start-year">
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
                 </select>
             </div>
         </div>
@@ -57,11 +37,6 @@
             <label for="end-year" class="form-label col-6">End year</label>
             <div class="col-6">
                 <select class="form-select col-6" id="end-year" name="end-year">
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
                 </select>
             </div>
         </div>
@@ -95,7 +70,8 @@
         </div>
     </div>
     <li class="list-group-item">
-        <a href="https://connect.ebsco.com/s/article/Where-can-I-find-formatted-examples-of-different-Citation-styles?language=en_US" target="_blank">What are the differences between citation styles?</a>
+        <a href="https://connect.ebsco.com/s/article/Where-can-I-find-formatted-examples-of-different-Citation-styles?language=en_US"
+            target="_blank">What are the differences between citation styles?</a>
     </li>
     <div class="list-group-item d-grid">
         <input class="btn btn-lg btn-primary" id="apply-filters-button" type="submit" value="Apply Filter" />
@@ -104,14 +80,43 @@
 
 <script>
     $(function () {
+        const range = (min, max) => [...Array(max - min + 1).keys()].map(i => i + min)
+        const years = range(1986, new Date().getFullYear()).reverse()
+        years.forEach(y => {
+            const option = `
+                <option value="${y}">${y}</option>
+            `
+            $("#start-year").append(option)
+            $("#end-year").append(option)
+
+        })
+        const generateYearRanges = (years) => years.reduce((acc, year, i) => {
+            if (i % 5 === 0) {
+                let rangeStart = year;
+                let rangeEnd = years[Math.min(i + 4, years.length - 1)];
+                if (rangeEnd === years[0]) {
+                    rangeStart = Math.max(rangeStart, years[0] - years[0] % 5);
+                }
+                acc.push([rangeStart, rangeEnd]);
+            }
+            return acc;
+        }, []);
+        generateYearRanges(years).forEach(([startYear, endYear]) => {
+
+            $("#year-filter-list").append(`
+                <a href="/publications/?startyear=${startYear}&endyear=${endYear}" class="list-group-item list-group-item-action">
+                    ${startYear}-${endYear}
+                </a>
+            `)
+        })
         $("#apply-filters-button").on("click", () => {
 
             const params = new URLSearchParams(window.location.search)
 
-            const startYear = document.getElementById("start-year").value;
-            const endYear = document.getElementById("end-year").value;
-            const citationStyle = document.getElementById("format").value;
-            const publicationOrdering = document.getElementById("order").value;
+            const startYear = $("#start-year").val();
+            const endYear = $("#end-year").val();
+            const citationStyle = $("#format").val();
+            const publicationOrdering = $("#order").val();
             const journal = (params.get("journal") == null) ? "default" : params.get("journal")
 
             if (startYear > endYear) return alert("Start year must be smaller than End year")
