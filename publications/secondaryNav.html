@@ -11,7 +11,7 @@
     </div>
     <div id="year-filter-list">
     </div>
-
+    
     <a href="/publications/?journal=pre-prints" class="list-group-item list-group-item-action disabled">
         Pre-Prints
     </a>
@@ -70,8 +70,7 @@
         </div>
     </div>
     <li class="list-group-item">
-        <a href="https://connect.ebsco.com/s/article/Where-can-I-find-formatted-examples-of-different-Citation-styles?language=en_US"
-            target="_blank">What are the differences between citation styles?</a>
+        <a href="https://connect.ebsco.com/s/article/Where-can-I-find-formatted-examples-of-different-Citation-styles?language=en_US" target="_blank">What are the differences between citation styles?</a>
     </li>
     <div class="list-group-item d-grid">
         <input class="btn btn-lg btn-primary" id="apply-filters-button" type="submit" value="Apply Filter" />
@@ -90,17 +89,7 @@
             $("#end-year").append(option)
 
         })
-        const generateYearRanges = (years) => years.reduce((acc, year, i) => {
-            if (i % 5 === 0) {
-                let rangeStart = year;
-                let rangeEnd = years[Math.min(i + 4, years.length - 1)];
-                if (rangeEnd === years[0]) {
-                    rangeStart = Math.max(rangeStart, years[0] - years[0] % 5);
-                }
-                acc.push([rangeStart, rangeEnd]);
-            }
-            return acc;
-        }, []);
+        const generateYearRanges = years => years.reduce((acc, year, i) => (i === 0 && acc.push([year, years.find(x => x % 5 === 1)]) || year % 5 === 0 && acc.push([year, years[Math.min(i + 4, years.length - 1)]]), acc), []);
         generateYearRanges(years).forEach(([startYear, endYear]) => {
 
             $("#year-filter-list").append(`
