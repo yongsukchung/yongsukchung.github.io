@@ -2,13 +2,13 @@
 </div>
 
 <script>
-        $(async function() {
+        $(async function () {
                 const persList = $("#persList")
                 const data = await $.getJSON("data.json")
                 const university = data.university
 
                 persList.append(`
-                        <div class="card" id="university">
+                        <div class="card m-3" id="university">
                                 <h2 class="card-header">${university.name}</h2>
                                 <div class="card-body" id="university-body"></div>
                         </div>
@@ -31,12 +31,12 @@
                                         </a></dd>
                                 `)
                         })
-                        
+
                 })
 
                 const external = data.external
                 persList.append(`
-                        <div class="card" id="external">
+                        <div class="card m-3" id="external">
                                 <h2 class="card-header">${external.name}</h2>
                                 <div class="card-body" id="external-body"></div>
                         </div>
@@ -63,8 +63,8 @@
                                         </a></dd>
                                 `)
                         })
-                        
+
                 })
-                
+
         })
 </script>
