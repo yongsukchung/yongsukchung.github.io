@@ -42,11 +42,11 @@
     $(function () {
         $('#theme-toggle').on('click', function (event) {
             let currentDarkTheme = window.localStorage.getItem('theme')
-            if (currentDarkTheme === null || currentDarkTheme === 'dark-lumen') {
-                window.localStorage.setItem('theme', 'lumen')
+            if (currentDarkTheme === null || currentDarkTheme === 'dark-biology') {
+                window.localStorage.setItem('theme', 'biology')
             }
             else {
-                window.localStorage.setItem('theme', 'dark-lumen')
+                window.localStorage.setItem('theme', 'dark-biology')
             }
         })
     })
