@@ -1,0 +1,31 @@
+<div class="container">
+        <h1 class="display-4">Students</h1>
+        <div class="row" id="data-container">
+                <!-- Data will be dynamically inserted here -->
+        </div>
+</div>
+<script>
+        $(async function () {
+                const students = await $.getJSON('data.json');
+                var container = $('#data-container');
+                students.forEach(function (person) {
+                        var card = $('<div class="col-md-4 mb-4">');
+                        var cardBody = $('<div class="card">');
+                        var image = $('<img src="' + person.image + '" class="card-img-top">');
+                        var cardBodyInner = $('<div class="card-body">');
+                        var name = $('<h5 class="card-title">').text(person.name);
+                        var position = $('<p class="card-text">').text(person.position);
+                        var topic = $('<p class="card-text">').text(person.topic);
+                        var email = $('<p class="card-text">').text(person.email);
+                        var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
+
+                        cardBodyInner.append(name, position, topic, email, infoLink);
+                        if (person.image !== undefined)
+                                cardBody.append(image, cardBodyInner);
+                        else
+                                cardBody.append(cardBodyInner);
+                        card.append(cardBody);
+                        container.append(card);
+                });
+        });
+</script>
