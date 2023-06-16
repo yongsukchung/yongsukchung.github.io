@@ -4,6 +4,14 @@
                 <!-- Data will be dynamically inserted here -->
         </div>
 </div>
+<style>
+        .card-img-top {
+                width: auto;
+    height: auto;
+    max-height: 200px; /* Adjust the max-height as needed */
+    object-fit: contain;
+        }
+      </style>
 <script>
         $(async function () {
                 const students = await $.getJSON('data.json');
