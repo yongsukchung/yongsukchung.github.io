@@ -1,17 +1,16 @@
 <div class="container">
         <h1 class="display-4">Students</h1>
         <div class="row" id="data-container">
-                <!-- Data will be dynamically inserted here -->
         </div>
 </div>
 <style>
         .card-img-top {
                 width: auto;
-    height: auto;
-    max-height: 200px; /* Adjust the max-height as needed */
-    object-fit: contain;
+                height: auto;
+                max-height: 200px;
+                object-fit: contain;
         }
-      </style>
+</style>
 <script>
         $(async function () {
                 const students = await $.getJSON('data.json');
@@ -27,7 +26,9 @@
                         var email = $('<p class="card-text">').text(person.email);
                         var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
 
-                        cardBodyInner.append(name, position, topic, email, infoLink);
+                        cardBodyInner.append(name, position, topic, email);
+                        if (person.info !== undefined)
+                                cardBodyInner.append(infoLink);
                         if (person.image !== undefined)
                                 cardBody.append(image, cardBodyInner);
                         else
