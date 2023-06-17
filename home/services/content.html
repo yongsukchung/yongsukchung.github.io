@@ -1,0 +1,44 @@
+<div class="container">
+    <h1 class="display-4">Invited Speaker and Chair</h1>
+    <div class="row" id="data-container"></div>
+</div>
+
+<style>
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        margin-bottom: 5px;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(async function () {
+        const data = await $.getJSON('data.json');
+
+        var container = $('#data-container');
+        data.forEach(function (item) {
+            var card = $('<div class="col-md-4 mb-4">');
+            var cardBody = $('<div class="card">');
+            var title = $('<h5 class="card-title">').text(item.title);
+            var organization = $('<p class="card-text">').text('Organization: ' + item.organization);
+            var duration = $('<p class="card-text">').text('Duration: ' + item.duration);
+
+            cardBody.append(title,organization, duration);
+            card.append(cardBody);
+            container.append(card);
+        });
+    });
+</script>

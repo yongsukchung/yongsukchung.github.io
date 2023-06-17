@@ -13,14 +13,18 @@
                 additionalDetails: "Jeju National University",
                 path: 'https://www.jejunu.ac.kr/eng'
             },
+            // {
+            //     text: "Plant Sciences Institute",
+            //     additionalDetails: "lowa Stae University",
+            //     path: 'https://www.psi.iastate.edu/'
+            // },
             {
-                text: "Plant Sciences Institute",
-                additionalDetails: "lowa Stae University",
-                path: 'https://www.psi.iastate.edu/'
+                text: "New & Media Resources",
+                path: '/media'
             },
             {
-                text: "New & Media Resources ",
-                path: '/media'
+                text: "Services ",
+                path: '/home/services'
             },
             /*
             {
@@ -44,7 +48,7 @@
         const secondaryNav = $('#homeSecondaryNav')
         data.forEach((e) => {
             secondaryNav.append(
-                `<a href="${e.path}" class="list-group-item list-group-item-action" target="_blank">
+                `<a href="${e.path}" class="list-group-item list-group-item-action">
                 ${e.text}
                 ${e.additionalDetails != undefined
                     ? `<br />(<span class="fst-italic">${e.additionalDetails})</span>`
