@@ -1,10 +1,81 @@
-<div>Image</div>
-<ul>
-    <li>
-        <a href="/media">Media, Videos, Audio, Webinars, and Presentation Resources Page</a>
-    </li>
-    <li>
-        <a href="/photos">Photos</a>
-    </li>
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>University Plant Research Center</h1>
+    </div>
+</div>
 
+
+<ul class="nav nav-tabs" id="category-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="research-tab" data-bs-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="true">Research</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="publications-tab" data-bs-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false">Publications</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="personnel-tab" data-bs-toggle="tab" href="#personnel" role="tab" aria-controls="personnel" aria-selected="false">Personnel</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="collaborators-tab" data-bs-toggle="tab" href="#collaborators" role="tab" aria-controls="collaborators" aria-selected="false">Collaborators</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="resources-tab" data-bs-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false">Resources</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="media-tab" data-bs-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media & Videos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="photos-tab" data-bs-toggle="tab" href="#photos" role="tab" aria-controls="photos" aria-selected="false">Photos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
 </ul>
+
+<div class="tab-content" id="category-tabs-content">
+    <div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">
+        <div id="research">Research Content</div>
+    </div>
+    <div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="publications-tab">
+        <div id="publications">Publications Content</div>
+        <!-- Publications category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="personnel" role="tabpanel" aria-labelledby="personnel-tab">
+        <div id="personnel">Personnel Content</div>
+        <!-- Personnel category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="collaborators" role="tabpanel" aria-labelledby="collaborators-tab">
+        <div id="collaborators">Collaborators Content</div>
+        <!-- Collaborators category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+        <div id="education">Education Content</div>
+        <!-- Education category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="resources-tab">
+        <div id="resources">Resources Content</div>
+        <!-- Resources category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+        <div id="media">Media & Videos Content</div>
+        <!-- Media & Videos category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="photos" role="tabpanel" aria-labelledby="photos-tab">
+        <div id="photos">Photos Content</div>
+        <!-- Photos category content goes here -->
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div id="contact">Contact Content</div>
+        <!-- Contact category content goes here -->
+    </div>
+</div>
+<script>
+    $(function() {
+    // Load research content dynamically from content.html
+    $("#research").load("tabs/research.html");
+});
+</script>
+
