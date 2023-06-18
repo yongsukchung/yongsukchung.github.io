@@ -1,17 +1,18 @@
-
-
-  <div id="research-project-list" class="row mt-3"></div>
+<div class="row">
+    <div id="research-project-list" class="row mt-3"></div>
+    <a href="/research" class="btn btn-success mt-5">Go to Research</a>
+</div>
 
 <script>
-  $(function () {
-      $.getJSON('/research/projects.json', function (data) {
-          const projects = data;
+    $(function () {
+        $.getJSON('/research/projects.json', function (data) {
+            const projects = data;
 
-          
-          projects.forEach(e => {
-            const truncatedDescription = truncateDescription(e.description, 10);
-              $('#research-project-list').append(`
-                  <div class="col-md-4">
+
+            projects.filter((e, i) => i < 3).forEach(e => {
+                const truncatedDescription = truncateDescription(e.description, 10);
+                $('#research-project-list').append(`
+                  <div class="col-md-4 mt-4">
                       <div class="card project-card">
                           <div class="card-header">${e.name}</div>
                           <div class="card-body">
@@ -26,16 +27,16 @@
                       </div>
                   </div>
               `);
-          });
-      });
-  });
-  function truncateDescription(description, limit) {
-            const words = description.split(' ');
-            if (words.length > limit) {
-                const truncated = words.slice(0, limit).join(' ');
-                return `${truncated}...`;
-            }
-            return description;
+            });
+        });
+    });
+    function truncateDescription(description, limit) {
+        const words = description.split(' ');
+        if (words.length > limit) {
+            const truncated = words.slice(0, limit).join(' ');
+            return `${truncated}...`;
         }
+        return description;
+    }
 
 </script>
