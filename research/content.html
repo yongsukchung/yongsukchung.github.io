@@ -1,5 +1,127 @@
 <div class="container-fluid">
 
+    <div>Publications (<span id="start-year-title"></span> ~ <span id="end-year-title"></span>)</div>
+
+    <div id="legend" class="text-muted fw-bold my-2">
+        <!-- <div id="legend-header" class="mb-1">Notes/Symbols Legend</div>
+        <div class="mb-1">
+            * Authors contributed equally to the article
+        </div>
+        <div>
+            <b>Impact Factors:</b> 2021 Journal Citation Reports (<a href="https://clarivate.com/"
+                target="_blank">Clarivate Analytics</a>, June 2022)
+        </div>
+        <div>
+        </div> -->
+    </div>
+
+    <div id="publication-list">
+
+    </div>
+</div>
+
+<script>
+    
+
+    $(async function () {
+        const urlParams = new URLSearchParams(window.location.search)
+        const startYear = urlParams.get('startyear') || 1900
+        const endYear = urlParams.get('endyear') || 2100
+        const order = urlParams.get('order') || 'desc'
+        const format = urlParams.get('format')
+        // Set years
+        if (startYear !== undefined)
+            $('#start-year-title').text(startYear)
+        if (endYear !== undefined)
+            $('#end-year-title').text(endYear)
+
+
+        // Get Data from json and render
+        const data = await $.getJSON('../publications/data.json')
+        const years = [...new Set(data.map(e => e.year))]
+
+        const yearPublications = {}
+
+        years.forEach(year => {
+            var yearData = data.filter(e => e.year === year && year >= startYear && year <= endYear)
+            if (yearData.length <= 0) return
+            yearPublications[year] = yearData
+        })
+
+        let publications = Object.entries(yearPublications)
+        if (order === 'desc') publications = publications.reverse()
+        for (const [key, value] of publications) {
+            // Add year title
+            $('#publication-list')
+                .append(`
+                    <div class="year">
+                        <h3 class="d-inline-block fst-italic fw-bold">${key}</h3>
+                        <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
+                    
+                    </div>
+                `)
+
+            // Add articles title
+            $('#publication-list')
+                .append(`
+            <div class="year-articles">
+                <ul id="year-articles-list-${key}">
+                    
+                </ul>
+            </div>
+                `)
+
+            // Add artiles
+
+            for (const article of value) {
+                $(`#year-articles-list-${key}`)
+                    .append(`
+                <li>
+                    <div id="${article.id}" class="article">
+                        <span class="authors">${article.authors}</span> 
+                        <span class="year fst-italic">(${article.year})</span> 
+                        <span class="title fw-bold">${article.title}</span>. 
+                        <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
+                        ${(article.journal?.volume)
+                            ? `, ${article.journal.volume}`
+                            : ''
+                        }
+                        ${(article.journal?.issue)
+                            ? `(${article.journal.issue})`
+                            : ''
+                        }
+                        ${((!article.journal?.pages) && (!article.journal?.articleId)) && (article.journal?.volume)
+                            ? '.'
+                            : ''
+                        }
+                        ${((article.journal?.pages) || (article.journal?.articleId)) && (article.journal?.volume)
+                            ? ':'
+                            : ''
+                        }
+                        ${(article.journal?.pages)
+                            ? `${article.journal.pages}`
+                            : ''
+                        }
+                        ${(article.journal?.articleId)
+                            ? `${article.journal.articleId}`
+                            : ''
+                        }
+                    </div>
+                </li>
+                
+                    ${(article.journal?.indexing?.impactFactor)
+                            ? `[<span class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</span>]`
+                            : ''}
+                    
+            </div>
+                `)
+            }
+        }
+
+    })
+</script>
+<!-- <div class="container-fluid">
+
     <div>Funded Projects (Sorted by project start date descending order)</div>
     <div id="research-project-list">
 
@@ -32,4 +154,4 @@
             })
         })
     })
-</script>
+</script> -->
