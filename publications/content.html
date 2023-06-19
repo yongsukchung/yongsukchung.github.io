@@ -37,7 +37,7 @@
 
 
         // Get Data from json and render
-        const data = await $.getJSON('publications.json')
+        const data = await $.getJSON('data.json')
         const years = [...new Set(data.map(e => e.year))]
 
         const yearPublications = {}
