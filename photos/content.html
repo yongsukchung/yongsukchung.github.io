@@ -3,40 +3,66 @@
     $(async function () {
         const categories = [
             {
-                title: "Lab Groups",
-                folder: "labGroups"
+                title: "Lab Sweet Memory",
+                folder: "labSweetMemory"
             },
             {
-                title: "Staff, Students and Alumni",
-                folder: "staffStudentsAlumni"
+                title: "2023 Summer Visit International Universtiy HCMVNU",
+                folder: "visitHCMVNUSummer2023"
             },
             {
-                title: "Conferences, Events and Travel",
-                folder: "conferencesEventsTravel"
-            },
+                title: "2023 Summer Visit Visayas State University",
+                folder: "visitVisayasStateUniversitySummer2023"
+            }
+            ,
             {
-                title: "Lab &amp; Field",
-                folder: "labField"
-            },
+                title: "2023 Spring Welcome The President of Visayas State University Philippines",
+                folder: "welcomeThePresidentOfVisayasStateUniversityPhilippinesSpring2023"
+            }
+            ,
             {
-                title: "Visitors",
-                folder: "visitors"
-            },
+                title: "2023 Spring Visit Germany",
+                folder: "visitGermanySpring2023"
+            }
+            ,
             {
-                title: "Fun &amp; Play",
-                folder: "funPlay"
-            },
+                title: "2023 Spring Meet Professors and Researchers in Vietnam",
+                folder: "meetProfessorsAndResearchersInVietnamSpring2023"
+            }
+            ,
             {
-                title: "Classes",
-                folder: "classes"
-            },
+                title: "2022 Welcome The President of University of Science HCMVNU",
+                folder: "welcomeThePresidentOfUniversityOfScienceHCMVNU2022"
+            }
+            ,
             {
-                title: "SAM Project",
-                folder: "samProject"
-            },
+                title: "2022 Visit Saudi Arabia",
+                folder: "visitSaudiArabia2022"
+            }
+            ,
             {
-                title: "Schnable Lab @ CAU",
-                folder: "labCAU"
+                title: "2022 Summer Relax",
+                folder: "summerRelax2022"
+            }
+            ,
+            {
+                title: "2022 Fall Coffee with new Postdoc and PhD student",
+                folder: "fallCoffeeWithNewPostdocAndPhDStudent2022"
+            }
+            ,
+            {
+                title: "2021 Working on the field",
+                folder: "workingOnTheField2021"
+            }
+            ,
+            {
+                title: "2021 With PhD student",
+                folder: "withPhDStudent2021"
+            }
+            ,
+            {
+                title: "2020 Researcher visit Phenomics Lab",
+                folder: "researcherVisitPhenomicsLab2020"
             }
         ]
         const categoryDiv = $('#photo-category')
@@ -48,7 +74,7 @@
             categoryDiv.append(`
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="${categories[index].folder}" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${categories[index].folder}/${images[0].src}" alt="${images[0].title}">
+                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${images[0].src}" alt="${images[0].title}">
                         <p>${categories[index].title}</p>
                     </a>
                 </div>

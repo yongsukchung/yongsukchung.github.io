@@ -101,8 +101,8 @@ $(function () {
 
     path = path.join('/')
 
-    // Loading branding
-    $("#brandingOther").load('../../common/brandingOther.html')
+    // // Loading branding
+    // $("#brandingOther").load('../../common/brandingOther.html')
 
     // Loading content
     $('#content').load(`../../${path}/content.html`)
