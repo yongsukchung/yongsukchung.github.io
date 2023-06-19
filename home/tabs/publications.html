@@ -7,7 +7,7 @@
 
 <script>
     $(function () {
-        $.getJSON('/publications/publications.json', function (data) {
+        $.getJSON('/publications/data.json', function (data) {
             const publications = data;
             publications.filter((e, i) => i < 3).forEach(article => {
                 $('#publication-list').append(`
