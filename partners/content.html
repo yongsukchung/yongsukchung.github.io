@@ -14,17 +14,17 @@
                         </div>
                 `)
 
-                university.collaborators.forEach((c, i) => {
+                university.partners.forEach((c, i) => {
                         $("#university-body").append(`
-                                <dl id="university-collaborator-${i}">
+                                <dl id="university-partner-${i}">
                                         <dt><a href="${c.link}" target="_blank">${c.name}</a></dt>
                                         <dd class="field">${c.field}</dd>
                                 </dl>
                         `)
-                        const currentCollaboratorInfo = $(`#university-collaborator-${i}`)
+                        const currentpartnerInfo = $(`#university-partner-${i}`)
                         if (c.projects === undefined) return
                         c.projects.forEach((p) => {
-                                currentCollaboratorInfo.append(`
+                                currentpartnerInfo.append(`
                                         <dd class="project">- <a
                                                 href="${p.link}"
                                                 target="_blank">${p.name}
@@ -42,9 +42,9 @@
                         </div>
                 `)
 
-                external.collaborators.forEach((c, i) => {
+                external.partners.forEach((c, i) => {
                         $("#external-body").append(`
-                                <dl id="external-collaborator-${i}">
+                                <dl id="external-partner-${i}">
                                         <dt><a href="${c.link}" target="_blank">${c.name}</a></dt>
                                         <dd class="institution">
                                                 <a href="${c.institution.link}">
@@ -53,10 +53,10 @@
                                         </dd>
                                 </dl>
                         `)
-                        const currentCollaboratorInfo = $(`#external-collaborator-${i}`)
+                        const currentpartnerInfo = $(`#external-partner-${i}`)
                         if (c.projects === undefined) return
                         c.projects.forEach((p) => {
-                                currentCollaboratorInfo.append(`
+                                currentpartnerInfo.append(`
                                         <dd class="project">- <a
                                                 href="${p.link}"
                                                 target="_blank">${p.name}

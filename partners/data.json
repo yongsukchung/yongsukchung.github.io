@@ -1,7 +1,7 @@
 {
     "university": {
         "name": "Iowa State University",
-        "collaborators" : [
+        "partners" : [
             {
                 "name": "Dr. Hui-Hsien Chou",
                 "link": "https://www.complexcomputation.org/hhchou/",
@@ -31,7 +31,7 @@
     },
     "external": {
         "name": "External",
-        "collaborators" : [
+        "partners" : [
             {
                 "name": "Dr. Srinivas Aluru",
                 "link": "http://www.cc.gatech.edu/~saluru/",

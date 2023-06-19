@@ -1,6 +1,6 @@
 ### Fake data
 - Research (Equipment)
-- Collaborators
+- Partners
 - Education
 - Resources
 - Media and Videos

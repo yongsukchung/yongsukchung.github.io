@@ -1,16 +1,14 @@
-<!-- <div id="update">(Last Updated: May 8, 2020)</div> -->
-<h1>Videos</h1>
-<div class="row row-cols-1 row-cols-md-3" id="video-list"></div>
+<ul class="" id="item-list"></ul>
 <script>
 	$(async function() {
-		const videos = await $.getJSON('data.json')
-		videos.forEach((v) => {
-			$("#video-list").append(`
-			<div class="col col-lg-3 col-md-4 col-6 m-5">
-				<div class="embed-responsive embed-responsive-4by3">
-					<iframe class="embed-responsive-item" src="${v.link}"></iframe>
-				</div>
-			</div>
+		const list = await $.getJSON('press/data.json')
+		list.forEach((p) => {
+			$("#item-list").append(`
+			<li class="">
+				<span class="text-muted">${p.date}</span>: ${p.title}
+                <br />
+                [<a href="${p.link}">Direct Link</a>]
+			</li>
 			`)
 		})
 	})

@@ -71,12 +71,12 @@
 ]
 ```
 ---
-### 4. Collaborators
+### 4. Partners
 ```json
 {
     "university": {
         "name": "University's name",
-        "collaborators" : [
+        "partners" : [
             {
                 "name": "Name 1",
                 "link": "Link 1",
@@ -101,7 +101,7 @@
     },
     "external": {
         "name": "External",
-        "collaborators" : [
+        "partners" : [
             {
                 "name": "Name",
                 "link": "Link",
