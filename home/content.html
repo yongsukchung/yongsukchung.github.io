@@ -25,7 +25,7 @@
         <a class="nav-link" id="resources-tab" data-bs-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false">Resources</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="media-tab" data-bs-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media & Videos</a>
+        <a class="nav-link" id="media-tab" data-bs-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" id="photos-tab" data-bs-toggle="tab" href="#photos" role="tab" aria-controls="photos" aria-selected="false">Photos</a>
@@ -60,7 +60,7 @@
         <!-- Resources category content goes here -->
     </div>
     <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
-        <div id="media">Media & Videos Content</div>
+        <div id="media">Media Content</div>
         <!-- Media & Videos category content goes here -->
     </div>
     <div class="tab-pane fade" id="photos" role="tabpanel" aria-labelledby="photos-tab">
@@ -75,15 +75,15 @@
 <script>
     $(function() {
     // Load research content dynamically from content.html
-    $("#research").load("tabs/research.html");
-    $("#publications").load("tabs/publications.html");
-    $("#personnel").load("tabs/personnel.html");
-    $("#partners").load("tabs/partners.html");
-    $("#education").load("tabs/education.html");
-    $("#resources").load("tabs/resources.html");
-    $("#media").load("tabs/media.html");
-    $("#photos").load("tabs/photos.html");
-    $("#contact").load("tabs/contact.html");
+    $("#research").load("/home/tabs/research.html");
+    $("#publications").load("/home/tabs/publications.html");
+    $("#personnel").load("/home/tabs/personnel.html");
+    $("#partners").load("/home/tabs/partners.html");
+    $("#education").load("/home/tabs/education.html");
+    $("#resources").load("/home/tabs/resources.html");
+    $("#media").load("/home/tabs/media.html");
+    $("#photos").load("/home/tabs/photos.html");
+    $("#contact").load("/home/tabs/contact.html");
 
 });
 </script>
