@@ -74,14 +74,16 @@
             // Add artiles
 
             for (const article of value) {
+                console.log(article.authors, article.corresponding_author)
                 $(`#year-articles-list-${key}`)
                     .append(`
                 <li>
                     <div id="${article.id}" class="article">
-                        <span class="authors">${article.authors}</span> 
-                        <span class="year fst-italic">(${article.year})</span> 
-                        <span class="title fw-bold">${article.title}</span>. 
-                        <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
+                        <span class="authors">${article.authors.trim().split(/,\s| and\s/).map(author => article.additionalRole.author === author ? `<strong>${author}</strong>` : author).join(', ')}.</span> 
+                        ${(article.additionalRole.role) ? `<span class="year fw-bold">(${article.additionalRole.role}).</span>` : ''}
+                        <span class="year fst-italic">&nbsp${article.year}.</span> 
+                        <span class="title">${article.title}</span>. 
+                        <span class="journal font-bold" full-name="${article.journal.title}"><u>${article.journal.title}</u></span>
                         ${(article.journal?.volume)
                             ? `, ${article.journal.volume}`
                             : ''

@@ -1,8 +1,11 @@
 <div class="row">
-    <div id="publication-list" class="row mt-5">
-
+    <div class="col-md-12 text-center mt-3">
+        <h3>Newest publications</h3>
     </div>
-    <a href="/publications" class="btn btn-success mt-5">Go to Publications</a>
+    <ul id="publication-list" class="row m-3">
+
+    </ul>
+    <a href="/publications" class="btn btn-success mt-3">More Publications</a>
 </div>
 
 <script>
@@ -11,15 +14,13 @@
             const publications = data;
             publications.filter((e, i) => i < 3).forEach(article => {
                 $('#publication-list').append(`
-                <div class="col-md-12 mb-3">
+                <li class="col-md-12 mb-3">
                     <div id="${article.id}" class="article">
                         
                         <span class="authors">${article.authors}</span>
                         <span class="year fst-italic">(${article.year})</span>
                         <span class="title fw-bold">${article.title}</span>. 
-                        <span class="journal font-bold" full-name="${article.journal.title}">
-                            <a href="${article.journal.link}" target="_blank">${article.journal.title}</a>
-                        </span>
+                        <span class="journal font-bold" full-name="${article.journal.title}"><i>${article.journal.title}</i></span>
                         ${(article.journal?.volume)
                             ? `, ${article.journal.volume}`
                             : ''
@@ -49,7 +50,7 @@
                         ? `<div class="impact-factor">Impact Factor: ${article.journal.indexing.impactFactor}</div>`
                         : ''
                     }
-                </div>
+                </li>
             `);
             });
         });

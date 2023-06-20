@@ -81,7 +81,7 @@
                         <span class="authors">${article.authors}</span> 
                         <span class="year fst-italic">(${article.year})</span> 
                         <span class="title fw-bold">${article.title}</span>. 
-                        <span class="journal font-bold" full-name="${article.journal.title}"><a href="${'article.journal.link'}" target="_blank">${article.journal.title}</a></span>
+                        <span class="journal font-bold" full-name="${article.journal.title}"><i>${article.journal.title}</i></span>
                         ${(article.journal?.volume)
                             ? `, ${article.journal.volume}`
                             : ''
