@@ -85,7 +85,7 @@
                         <span class="title">${article.title}</span>. 
                         <span class="journal font-bold" full-name="${article.journal.title}"><u>${article.journal.title}</u></span>
                         ${(article.journal?.volume)
-                            ? `, ${article.journal.volume}`
+                            ? `${article.journal.volume}`
                             : ''
                         }
                         ${(article.journal?.issue)
