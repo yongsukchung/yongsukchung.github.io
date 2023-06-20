@@ -46,6 +46,22 @@
         $(async function () {
                 const students = await $.getJSON('data.json');
                 var container = $('#data-container');
+                const positions = [...new Set(data.map(e => e.position))]
+
+                const positionStudents = {}
+
+                positions.forEach(position => {
+                        var positionData = data.filter(e => e.position === position)
+                        if (positionData.length <= 0) return
+                        positionStudents[position] = positionData
+                })
+
+                let allStudents = Object.entries(positionStudents)
+
+                for (const [position, studentList] of allStudents) {
+                        
+                }
+
                 students.forEach(function (person) {
                         var card = $('<div class="col-md-4 mb-4">');
                         var cardBody = $('<div class="card">');

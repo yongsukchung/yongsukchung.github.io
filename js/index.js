@@ -82,7 +82,11 @@ $(function () {
     themeCss.rel = 'stylesheet'
     themeCss.id = 'theme-css'
 
+
+    const icon = `<link rel="icon" href="/images/plant.png">`
+
     $('head').append(themeCss)
+    $('head').append(icon)
 
     // Load footer
     $('#footer').load('../../common/footer.html')
