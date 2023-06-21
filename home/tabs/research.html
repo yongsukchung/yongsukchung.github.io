@@ -1,42 +1,46 @@
 <div class="row">
-    <div id="research-project-list" class="row mt-3"></div>
-    <a href="/research" class="btn btn-success mt-5">Go to Research</a>
+
+    <div class="col-md-12 text-center mt-3">
+        <h3>Newest Invited Speaker and Chair</h3>
+    </div>
+    <div class="row mt-3" id="data-container"></div>
+    <a href="/research" class="btn btn-success mt-3">Go to Research</a>
 </div>
 
-<script>
-    $(function () {
-        $.getJSON('/research/projects.json', function (data) {
-            const projects = data;
 
-
-            projects.filter((e, i) => i < 3).forEach(e => {
-                const truncatedDescription = truncateDescription(e.description, 10);
-                $('#research-project-list').append(`
-                  <div class="col-md-4 mt-4">
-                      <div class="card project-card">
-                          <div class="card-header">${e.name}</div>
-                          <div class="card-body">
-                              <div class="card-title"><b>Funding Agency:</b> ${e.fundingAgency}</div>
-                              <div class="card-title"><b>Principle Investigator(s):</b> ${e.principleInvestigator}</div>
-                              <div class="card-title"><b>Co-Principle Investigator(s):</b> ${e.coPrincipleInvestigator}</div>
-                              <div class="card-text"><b>Project Start Date:</b> ${e.startDate}</div>
-                              <div class="card-text"><b>Project End Date:</b> ${e.endDate}</div>
-                              <div class="card-text project-description">${truncatedDescription}</div>
-                              <a href="${e.detailsLink}" class="btn btn-primary" target="_blank">View Funding Details</a>
-                          </div>
-                      </div>
-                  </div>
-              `);
-            });
-        });
-    });
-    function truncateDescription(description, limit) {
-        const words = description.split(' ');
-        if (words.length > limit) {
-            const truncated = words.slice(0, limit).join(' ');
-            return `${truncated}...`;
-        }
-        return description;
+<style>
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        margin-bottom: 5px;
+    }
+</style>
+
+<script>
+    $(async function () {
+        const data = await $.getJSON('../research/invited/data.json');
+        var container = $('#data-container');
+        data.sort((a, b) => b.year - a.year).filter((item, index) => index < 6).forEach(function (item) {
+            var card = $('<div class="col-md-4 mb-4">');
+            var cardBody = $('<div class="card">');
+            var title = $('<h5 class="card-title">').text(item.title);
+            var year = $('<p class="card-text">').text('Year: ' + item.year);
+
+            cardBody.append(title, year);
+            card.append(cardBody);
+            container.append(card);
+        });
+    });
 </script>
