@@ -89,9 +89,10 @@
                                 var cardBodyInner = $('<div class="card-body">');
                                 var name = $('<h5 class="card-title">').text(person.name);
                                 var position = $('<p class="card-text">').text(person.position);
+                                var nationality = $('<p class="card-text">').text(person.nationality);
                                 var topic = $('<p class="card-text">').text(person.topic);
                                 var email = $('<p class="card-text">').text(person.email);
-                                cardBodyInner.append(name, position, topic, email);
+                                cardBodyInner.append(name, position, nationality, topic, email);
                                 if (person.info !== undefined) {
                                         var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
                                         cardBodyInner.append(infoLink);
