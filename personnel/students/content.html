@@ -46,42 +46,94 @@
         $(async function () {
                 const students = await $.getJSON('data.json');
                 var container = $('#data-container');
-                const positions = [...new Set(data.map(e => e.position))]
+                const positions = [...new Set(students.map(e => e.position))]
 
                 const positionStudents = {}
 
                 positions.forEach(position => {
-                        var positionData = data.filter(e => e.position === position)
+                        var positionData = students.filter(e => e.position === position)
                         if (positionData.length <= 0) return
+
                         positionStudents[position] = positionData
                 })
 
                 let allStudents = Object.entries(positionStudents)
 
-                for (const [position, studentList] of allStudents) {
-                        
+                for (const [positionKey, studentList] of allStudents) {
+
+                        const formatedPositionKey = convertString(positionKey)
+                        $('#data-container')
+                                .append(`
+                        <div class="year">
+                                <h3 class="d-inline-block fst-italic fw-bold">${positionKey}</h3>
+                                <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
+                        </div>
+                        `)
+
+                        $('#data-container')
+                                .append(`
+                        <div class="student">
+                                <div class="row" id="student-list-${formatedPositionKey}">
+                                
+                                </div>
+                        </div>
+                                `)
+                        studentList.forEach(function (person) {
+                                console.log(person)
+
+                                var card = $('<div class="col-md-4 mb-4">');
+                                var cardBody = $('<div class="card">');
+                                var cardBodyInner = $('<div class="card-body">');
+                                var name = $('<h5 class="card-title">').text(person.name);
+                                var position = $('<p class="card-text">').text(person.position);
+                                var topic = $('<p class="card-text">').text(person.topic);
+                                var email = $('<p class="card-text">').text(person.email);
+                                cardBodyInner.append(name, position, topic, email);
+                                if (person.info !== undefined) {
+                                        var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
+                                        cardBodyInner.append(infoLink);
+                                }
+                                if (person.image !== undefined) {
+                                        var image = $('<img src="' + person.image + '" class="card-img-top">');
+                                        cardBody.append(image, cardBodyInner);
+                                }
+                                else
+                                        cardBody.append(cardBodyInner);
+                                card.append(cardBody);
+                                $(`#student-list-${formatedPositionKey}`).append(card);
+                        });
                 }
 
-                students.forEach(function (person) {
-                        var card = $('<div class="col-md-4 mb-4">');
-                        var cardBody = $('<div class="card">');
-                        var image = $('<img src="' + person.image + '" class="card-img-top">');
-                        var cardBodyInner = $('<div class="card-body">');
-                        var name = $('<h5 class="card-title">').text(person.name);
-                        var position = $('<p class="card-text">').text(person.position);
-                        var topic = $('<p class="card-text">').text(person.topic);
-                        var email = $('<p class="card-text">').text(person.email);
-                        var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
+                // students.forEach(function (person) {
+                //         var card = $('<div class="col-md-4 mb-4">');
+                //         var cardBody = $('<div class="card">');
+                //         var image = $('<img src="' + person.image + '" class="card-img-top">');
+                //         var cardBodyInner = $('<div class="card-body">');
+                //         var name = $('<h5 class="card-title">').text(person.name);
+                //         var position = $('<p class="card-text">').text(person.position);
+                //         var topic = $('<p class="card-text">').text(person.topic);
+                //         var email = $('<p class="card-text">').text(person.email);
+                //         var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
 
-                        cardBodyInner.append(name, position, topic, email);
-                        if (person.info !== undefined)
-                                cardBodyInner.append(infoLink);
-                        if (person.image !== undefined)
-                                cardBody.append(image, cardBodyInner);
-                        else
-                                cardBody.append(cardBodyInner);
-                        card.append(cardBody);
-                        container.append(card);
-                });
+                //         cardBodyInner.append(name, position, topic, email);
+                //         if (person.info !== undefined)
+                //                 cardBodyInner.append(infoLink);
+                //         if (person.image !== undefined)
+                //                 cardBody.append(image, cardBodyInner);
+                //         else
+                //                 cardBody.append(cardBodyInner);
+                //         card.append(cardBody);
+                //         container.append(card);
+                // });
         });
+
+        function convertString(string) {
+                // Convert the string to lowercase
+                var lowercaseString = string.toLowerCase();
+
+                // Replace spaces with dashes
+                var convertedString = lowercaseString.replace(/[\/\s.]/g, "-");
+
+                return convertedString;
+        }
 </script>
