@@ -25,22 +25,24 @@
   },
   {
     "name": "EMBM Karunathilake",
-    "position": "PhD. student",
-    "topic": "plant phenomics",
+    "position": "PhD.",
+    "topic": "Plant Phenomics",
     "year": "From 2022 up to date",
-    "current_position": "PhD student"
+    "current_position": "Ph.D student"
   },
   {
     "name": "Anh Tuan, Le",
     "position": "PhD. student",
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2021 to 2024",
-    "current_position": "Ph.D student."
+    "current_position": "Ph.D student.",
+    "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
     "name": "Dr. Thai Thanh Tuan",
-    "position": "Postdoctoral Researcher",
-    "topic": "Plant phenomics, Bugs tracking, 3D reconstruction, Virtual try on, Biometrics.",
-    "year": "2022 to now"
+    "position": "Postdoctoral researcher",
+    "topic": "Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics.",
+    "year": "2022 to now",
+    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg"
   }
 ]
