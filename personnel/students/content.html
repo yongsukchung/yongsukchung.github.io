@@ -63,6 +63,7 @@
 
                         const formatedPositionKey = convertString(positionKey)
                         $('#data-container')
+                                .append("<hr>")
                                 .append(`
                         <div class="year">
                                 <h3 class="d-inline-block fst-italic fw-bold">${positionKey}</h3>
@@ -78,6 +79,8 @@
                                 </div>
                         </div>
                                 `)
+
+
                         studentList.forEach(function (person) {
                                 console.log(person)
 
@@ -102,6 +105,7 @@
                                 card.append(cardBody);
                                 $(`#student-list-${formatedPositionKey}`).append(card);
                         });
+
                 }
 
                 // students.forEach(function (person) {
