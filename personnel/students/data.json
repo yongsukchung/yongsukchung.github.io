@@ -3,7 +3,7 @@
     "name": "Dr. Sheikh Mansoor Shafi",
     "position": "Postdoctoral Researcher",
     "nationality": "Indian",
-    "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/abiotic Stress",
+    "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
     "email": "mansoorshafi@jejunu.ac.kr mansoorshafi21@gmail.com",
     "info": "https://scholar.google.com/citations?user=ZpDR_OQAAAAJ&hl=en",
     "image": "../../images/personnel/students/DrSheikhMansoorShafi.png"    
@@ -12,7 +12,7 @@
     "name": "구기본 Ku Ki Bon",
     "position": "Graduated Student/Researcher",
     "nationality": "Korean",
-    "topic": "plant phenomics using CV and ML/DL.",
+    "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
     "year": "From 2021 up to date",
     "current_position": "Computer Programmer and Embedded System Engineer",
     "image": "../../images/personnel/students/KuKiBon.png"
@@ -29,7 +29,7 @@
   {
     "name": "EMBM Karunathilake",
     "position": "PhD. Student",
-    "nationality": "Sri Lanka",
+    "nationality": "Sri Lankan",
     "topic": "Plant Phenomics",
     "year": "From 2022 up to date",
     "current_position": "Ph.D Student"
@@ -37,7 +37,7 @@
   {
     "name": "Anh Tuan, Le",
     "position": "PhD. Student",
-    "nationality": "Vietnam",
+    "nationality": "Vietnamese",
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2021 to 2024",
     "current_position": "Ph.D student.",
@@ -46,7 +46,7 @@
   {
     "name": "Dr. Thai Thanh Tuan",
     "position": "Postdoctoral Researcher",
-    "nationality": "Vietnam",
+    "nationality": "Vietnamese",
     "topic": "Computer Vision, Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics",
     "email": "thaithanhtuan@jejunu.ac.kr thaithanhtuan1987@gmail.com",
     "year": "2022 to now",
@@ -55,9 +55,17 @@
   {
     "name": "Vong Chanthib",
     "position": "Undergraduate Student",
-    "nationality": "Cambodia",
+    "nationality": "Cambodian",
     "topic": "Plant Science",
     "year": "2022",
     "image": "../../images/personnel/students/Chanthib.jpg"
+  },
+  {
+    "name": "Dao Van Sang",
+    "position": "Undergraduate Student",
+    "nationality": "Vietnamese",
+    "topic": "Information Technology",
+    "year": "2022",
+    "image": "../../images/personnel/students/Dao Van Sang.jpg"
   }
 ]
