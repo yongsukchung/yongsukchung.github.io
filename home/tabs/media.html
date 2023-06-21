@@ -1,3 +1,20 @@
 <div class="row">
+  <ul class="" id="item-list"></ul>
+
   <a href="/media" class="btn btn-success mt-5">Go to Media</a>
 </div>
+
+<script>
+  $(async function () {
+    const list = await $.getJSON('../media/press/data.json')
+    list.forEach((p) => {
+      $("#item-list").append(`
+			<li class="">
+				<span class="text-muted">${p.date}</span>: ${p.title}
+                <br />
+                [<a href="${p.link}">Direct Link</a>]
+			</li>
+			`)
+    })
+  })
+</script>
