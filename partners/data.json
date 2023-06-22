@@ -1,10 +1,25 @@
 [
   {
     "title": "Sivas University of Science and Technology, Tukey",
-    "pdf": "../../pdfs/Document_20230622_0001.pdf"
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0001.pdf"
+      }
+    ],
+    "year": 2022
   },
   {
-    "title": "Sivas University of Science and Technology, Tukey",
-    "pdf": "../../pdfs/Document_20230622_0001.pdf"
+    "title": "Georg August University of Göttingen",
+    "pdfs": [
+      {
+        "title": "Page 1",
+        "link": "../../pdfs/Document_20230622_0002.pdf"
+      },
+      {
+        "title": "Page 2",
+        "link": "../../pdfs/Document_20230622_0003.pdf"
+      }
+    ],
+    "year": 2019
   }
 ]

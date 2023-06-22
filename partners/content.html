@@ -32,7 +32,7 @@
       var cardBody = $('<div class="card">');
       var cardBodyInner = $('<div class="card-body text-center">');
       var title = $('<h5 class="card-title">').text(item.title);
-      var pdf = $(`<a class="card-link btn btn-info" href="/partners/info?index=${index}">`).text('[More info]');
+      var pdf = $(`<a class="card-link btn btn-info" href="/partners/info/?index=${index}">`).text('[More info]');
 
       cardBodyInner.append(title, pdf);
       cardBody.append(cardBodyInner)
