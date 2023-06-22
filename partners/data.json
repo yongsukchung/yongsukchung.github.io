@@ -21,5 +21,57 @@
       }
     ],
     "year": 2019
+  },
+  {
+    "title": "Visayas State University",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0004.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Van Yüzüncü Yıl University, Turkey",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0005.pdf"
+      }
+    ],
+    "year": 2022
+  },
+  {
+    "title": "Vietnam National University Ho Chi Minh City - University of Science, Vietnam",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0006.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Applied Biotechnology for Crop Development Research Unit at International University, VNU-HCM",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0007.pdf"
+      }
+    ],
+    "year": 2023
+  },
+  {
+    "title": "Thai Nguyen University of Agriculture and Forestry",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0008.pdf"
+      }
+    ],
+    "year": 2023
+  },
+  {
+    "title": "Research Center for Hi-Tech Application in Agriculture at University of Science, Vietnam National University - Ho Chi Minh City",
+    "pdfs": [
+      {
+        "link": "../../pdfs/Document_20230622_0009.pdf"
+      }
+    ],
+    "year": 2023
   }
 ]
