@@ -9,15 +9,6 @@
     "image": "../../images/personnel/students/DrSheikhMansoorShafi.png"    
   },
   {
-    "name": "구기본 Ku Ki Bon",
-    "position": "Graduated Student/Researcher",
-    "nationality": "Korean",
-    "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
-    "year": "From 2021 up to date",
-    "current_position": "Computer Programmer and Embedded System Engineer",
-    "image": "../../images/personnel/students/KuKiBon.png"
-  },
-  {
     "name": "Ji Eun, Park",
     "position": "PhD. Student",
     "nationality": "Korean",
@@ -25,6 +16,15 @@
     "year": "From 2019 to 2023",
     "current_position": "Ph.D Student.",
     "image": "../../images/personnel/students/JiEunPark.png"
+  },
+  {
+    "name": "구기본 Ku Ki Bon",
+    "position": "Graduated Student/Researcher",
+    "nationality": "Korean",
+    "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
+    "year": "From 2021 up to date",
+    "current_position": "Computer Programmer and Embedded System Engineer",
+    "image": "../../images/personnel/students/KuKiBon.png"
   },
   {
     "name": "EMBM Karunathilake",
@@ -67,5 +67,13 @@
     "topic": "Information Technology",
     "year": "2022",
     "image": "../../images/personnel/students/Dao Van Sang.jpg"
+  },
+  {
+    "name": "Jihyeon Jung",
+    "position": "Past Graduate Master Student",
+    "nationality": "Korean",
+    "topic": "Evaluating greenness using RGB images and multispectral images in turf",
+    "year": "2021",
+    "image": "../../images/personnel/students/JihyeonJung.jpg"
   }
 ]
