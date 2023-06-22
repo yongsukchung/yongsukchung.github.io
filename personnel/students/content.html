@@ -92,7 +92,9 @@
                                 var nationality = $('<p class="card-text">').text(person.nationality);
                                 var topic = $('<p class="card-text">').text(person.topic);
                                 var email = $('<p class="card-text">').text(person.email);
-                                cardBodyInner.append(name, position, nationality, topic, email);
+                                var year = $('<p class="card-text">').text(person.year);
+                                var current_position = $('<p class="card-text">').text(person.current_position);
+                                cardBodyInner.append(name, position, nationality, topic, email, year, current_position);
                                 if (person.info !== undefined) {
                                         var infoLink = $('<a href="' + person.info + '" class="card-link">').text('More info');
                                         cardBodyInner.append(infoLink);
