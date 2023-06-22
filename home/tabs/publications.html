@@ -12,7 +12,7 @@
     $(function () {
         $.getJSON('/publications/data.json', function (data) {
             const publications = data;
-            publications.filter((e, i) => i < 3).forEach(article => {
+            publications.filter((e, i) => i < 10).forEach(article => {
                 $('#publication-list').append(`
                 <li class="col-md-12 mb-3">
                     <div id="${article.id}" class="article">
