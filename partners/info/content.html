@@ -1,0 +1,27 @@
+<div class="row text-center">
+  <h1 id="pdf-title"></h1>
+  <div id="pdf-embed"></div>
+</div>
+
+<script>
+
+
+  $(async function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const index = urlParams.index || 0;
+
+    const data = await $.getJSON('../data.json');
+    const item = data[index];
+
+    const title = $('#pdf-title');
+
+    title.text(item.title)
+
+    const embed = $(`<embed src="${item.pdf}" width="100%" height="700px" />`)
+    
+    const pdfEmbedContainer = $('#pdf-embed')
+
+    pdfEmbedContainer.append(embed)
+
+  })
+</script>

@@ -74,6 +74,13 @@ $(function () {
 
     $('body').append(bootstrapScript)
 
+    // Add custom style
+    const styleCss = document.createElement('link')
+
+    styleCss.href = `../../css/style.css`
+    styleCss.rel = 'stylesheet'
+    styleCss.id = 'style-css'
+
     // Add css theme
     const theme = window.localStorage.getItem('theme') || 'dark-lumen'
     const themeCss = document.createElement('link')
@@ -85,6 +92,7 @@ $(function () {
 
     const icon = `<link rel="icon" href="/images/plant.png">`
 
+    $('head').append(styleCss)
     $('head').append(themeCss)
     $('head').append(icon)
 

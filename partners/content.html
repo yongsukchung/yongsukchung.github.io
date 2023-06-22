@@ -1,70 +1,43 @@
-<div id="persList">
+<div class="container">
+  <h1 class="display-4">Partners</h1>
+  <div class="row" id="data-container"></div>
 </div>
 
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    margin-bottom: 5px;
+  }
+</style>
+
 <script>
-        $(async function () {
-                const persList = $("#persList")
-                const data = await $.getJSON("data.json")
-                const university = data.university
+  $(async function () {
+    const data = await $.getJSON('data.json');
+    var container = $('#data-container');
+    data.forEach(function (item, index) {
+      var card = $('<div class="col-md-4 mb-4">');
+      var cardBody = $('<div class="card">');
+      var cardBodyInner = $('<div class="card-body text-center">');
+      var title = $('<h5 class="card-title">').text(item.title);
+      var pdf = $(`<a class="card-link btn btn-info" href="/partners/info?index=${index}">`).text('[More info]');
 
-                persList.append(`
-                        <div class="card m-3" id="university">
-                                <h2 class="card-header">${university.name}</h2>
-                                <div class="card-body" id="university-body"></div>
-                        </div>
-                `)
-
-                university.partners.forEach((c, i) => {
-                        $("#university-body").append(`
-                                <dl id="university-partner-${i}">
-                                        <dt><a href="${c.link}" target="_blank">${c.name}</a></dt>
-                                        <dd class="field">${c.field}</dd>
-                                </dl>
-                        `)
-                        const currentpartnerInfo = $(`#university-partner-${i}`)
-                        if (c.projects === undefined) return
-                        c.projects.forEach((p) => {
-                                currentpartnerInfo.append(`
-                                        <dd class="project">- <a
-                                                href="${p.link}"
-                                                target="_blank">${p.name}
-                                        </a></dd>
-                                `)
-                        })
-
-                })
-
-                const external = data.external
-                persList.append(`
-                        <div class="card m-3" id="external">
-                                <h2 class="card-header">${external.name}</h2>
-                                <div class="card-body" id="external-body"></div>
-                        </div>
-                `)
-
-                external.partners.forEach((c, i) => {
-                        $("#external-body").append(`
-                                <dl id="external-partner-${i}">
-                                        <dt><a href="${c.link}" target="_blank">${c.name}</a></dt>
-                                        <dd class="institution">
-                                                <a href="${c.institution.link}">
-                                                        ${c.institution.name}
-                                                </a>
-                                        </dd>
-                                </dl>
-                        `)
-                        const currentpartnerInfo = $(`#external-partner-${i}`)
-                        if (c.projects === undefined) return
-                        c.projects.forEach((p) => {
-                                currentpartnerInfo.append(`
-                                        <dd class="project">- <a
-                                                href="${p.link}"
-                                                target="_blank">${p.name}
-                                        </a></dd>
-                                `)
-                        })
-
-                })
-
-        })
+      cardBodyInner.append(title, pdf);
+      cardBody.append(cardBodyInner)
+      card.append(cardBody);
+      container.append(card);
+    });
+  });
 </script>
