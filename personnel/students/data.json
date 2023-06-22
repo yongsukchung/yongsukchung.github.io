@@ -9,6 +9,15 @@
     "image": "../../images/personnel/students/DrSheikhMansoorShafi.png"    
   },
   {
+    "name": "Dr. Thai Thanh Tuan",
+    "position": "Postdoctoral Researcher",
+    "nationality": "Vietnamese",
+    "topic": "Computer Vision, Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics",
+    "email": "thaithanhtuan@jejunu.ac.kr thaithanhtuan1987@gmail.com",
+    "year": "2022 to now",
+    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg"
+  },
+  {
     "name": "Ji Eun, Park",
     "position": "PhD. Student",
     "nationality": "Korean",
@@ -44,23 +53,6 @@
     "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
-    "name": "Dr. Thai Thanh Tuan",
-    "position": "Postdoctoral Researcher",
-    "nationality": "Vietnamese",
-    "topic": "Computer Vision, Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics",
-    "email": "thaithanhtuan@jejunu.ac.kr thaithanhtuan1987@gmail.com",
-    "year": "2022 to now",
-    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg"
-  },
-  {
-    "name": "Vong Chanthib",
-    "position": "Undergraduate Student",
-    "nationality": "Cambodian",
-    "topic": "Plant Science",
-    "year": "2022",
-    "image": "../../images/personnel/students/Chanthib.jpg"
-  },
-  {
     "name": "Dao Van Sang",
     "position": "Undergraduate Student",
     "nationality": "Vietnamese",
@@ -75,5 +67,13 @@
     "topic": "Evaluating greenness using RGB images and multispectral images in turf",
     "year": "2021",
     "image": "../../images/personnel/students/JihyeonJung.jpg"
+  },
+  {
+    "name": "Vong Chanthib",
+    "position": "Past Undergraduate Student",
+    "nationality": "Cambodian",
+    "topic": "Plant Science",
+    "year": "2022",
+    "image": "../../images/personnel/students/Chanthib.jpg"
   }
 ]
