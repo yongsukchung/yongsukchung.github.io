@@ -17,13 +17,25 @@
 
     title.text(item.title)
 
-    const pdf = item.pdf
-
     const pdfEmbedContainer = $('#pdf-embed')
-    const embed = $(`<embed src="${pdf}" width="100%" height="700px" />`)
+    if (item.pdf !== undefined) {
+      const pdf = item.pdf
+      const embed = $(`<embed src="${pdf}" width="100%" height="700px" />`)
+    
+        
+        pdfEmbedContainer.append(embed)
+    }
+    if (item.pdfs !== undefined) {
+      const pdfs = item.pdfs;
+      pdfs.forEach(pdf => {
+      const embed = $(`<embed src="${pdf.link}" width="100%" height="700px" />`)
   
-      
+      if (pdfs.length > 0) {
+        pdfEmbedContainer.append(pdf.title)
+      }
       pdfEmbedContainer.append(embed)
+    });
+    }
 
 
   })

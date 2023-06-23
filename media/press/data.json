@@ -32,16 +32,20 @@
         "date": "March. 2023",
         "pdf": "../../pdfs/Document_20230622_0014.pdf",
         "link": "http://shri.jejunu.ac.kr/bbs/board1/14536#:~:text=Jeju%20National%20University%E2%80%99s%20Subtropical%20Horticulture%20Research%20Institute%20%28JNU-SHRI%29,field%20characterization%20of%20root%20crops%20using%20drone%20technology"
-    }
-    ,
+    },
     {
         "title": "Phytomics announces K-Smart Farm Saudi Green Bio Cooperation with Big Data + AI",
         "date": "December. 2022",
-        "pdf": "../../pdfs/Document_20230622_0013.pdf",
+        "pdfs": [
+            {
+                "link": "../../pdfs/Document_20230622_0013.pdf"
+            },
+            {
+                "link": "../../pdfs/Document_20230622_0017.pdf"
+            }
+        ],
         "link": "https://news.mt.co.kr/mtview.php?no=2022120210075043666"
-    }
-
-    ,
+    },
     {
         "title": "Center for Integrated Breeding Research (CiBreed) - Georg-August-Universität Göttingen",
         "date": "January. 2023",

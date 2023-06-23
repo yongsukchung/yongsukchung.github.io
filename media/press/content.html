@@ -3,11 +3,12 @@
 	$(async function() {
 		const list = await $.getJSON('data.json')
 		list.forEach((p, index) => {
+			const pdfLink = 
 			$("#item-list").append(`
 			<li class="">
 				<span class="text-muted">${p.date}</span>: ${p.title}
                 <br />
-                [<a href="${p.link}">Direct Link</a>] ${(p.pdf !== undefined) ? `[<a href="/media/info/?index=${index}">PDF</a>]` : ""}
+                [<a href="${p.link}">Direct Link</a>] ${(p.pdf !== undefined || p.pdfs !== undefined) ? `[<a href="/media/info/?index=${index}">PDF</a>]` : ""}
 			</li>
 			`)
 		})
