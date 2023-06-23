@@ -6,6 +6,7 @@
         "link": "../../pdfs/Document_20230622_0001.pdf"
       }
     ],
+    "image": "../../images/partners/Sivas-university.png",
     "year": 2022
   },
   {
@@ -20,6 +21,7 @@
         "link": "../../pdfs/Document_20230622_0003.pdf"
       }
     ],
+    "image": "../../images/partners/Georg-august.png",
     "year": 2019
   },
   {
@@ -28,7 +30,8 @@
       {
         "link": "../../pdfs/Document_20230622_0004.pdf"
       }
-    ]
+    ],
+    "image": "../../images/partners/Visayas-state-university.png"
   },
   {
     "title": "Van Yüzüncü Yıl University, Turkey",
@@ -37,6 +40,7 @@
         "link": "../../pdfs/Document_20230622_0005.pdf"
       }
     ],
+    "image": "../../images/partners/Van-university.png",
     "year": 2022
   },
   {
@@ -45,7 +49,8 @@
       {
         "link": "../../pdfs/Document_20230622_0006.pdf"
       }
-    ]
+    ],
+    "image": "../../images/partners/University-of-science.png"
   },
   {
     "title": "Applied Biotechnology for Crop Development Research Unit at International University, VNU-HCM",
@@ -54,6 +59,7 @@
         "link": "../../pdfs/Document_20230622_0007.pdf"
       }
     ],
+    "image": "../../images/partners/HCMIU.png",
     "year": 2023
   },
   {
@@ -63,6 +69,7 @@
         "link": "../../pdfs/Document_20230622_0008.pdf"
       }
     ],
+    "image": "../../images/partners/Thai-Nguyen-university-of-agriculture.png",
     "year": 2023
   },
   {
@@ -72,6 +79,7 @@
         "link": "../../pdfs/Document_20230622_0009.pdf"
       }
     ],
+    "image": "../../images/partners/HCMIU.png",
     "year": 2023
   }
 ]

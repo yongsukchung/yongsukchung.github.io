@@ -6,9 +6,9 @@
 			const list = $('#item-list');
 
 			var card = $('<div class="col-md-4 mb-4">');
-			var image = $(`<img class="card-img-top" src="..." alt="Card image cap">`)
-			var cardBody = $('<div class="card">');
-			var cardBodyInner = $('<div class="card-body text-center">');
+			var image = $(`<img class="card-img-top bg-primary" src="..." alt="Card image cap">`)
+			var cardBody = $('<div class="card  bg-secondary">');
+			var cardBodyInner = $('<div class="card-body text-center text-primary">');
 			var title = $('<h5 class="card-title">').text(p.title);
 			var pdf = $(`<a class="card-link btn btn-info" href="/media/info/?index=${index}">`).text('More info');
 				var link = $(`<a class="card-link btn btn-info" href="${p.link}">Direct Link</a>`)
