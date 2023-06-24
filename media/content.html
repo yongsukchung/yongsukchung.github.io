@@ -16,8 +16,8 @@
 			var title = $('<h5 class="card-title">').text(p.title);
 				console.log(p.text)
 			var text = $('<p class="card-text">').text(p.text);
-			var pdf = $(`<a class="card-link btn btn-info" href="/media/info/?index=${index}">`).text('More info');
-			var link = $(`<a class="card-link btn btn-info" href="${p.link}" target="_blank">Direct Link</a>`)
+			var pdf = $(`<a class="card-link btn btn-info mt-3" href="/media/info/?index=${index}">`).text('More info');
+			var link = $(`<a class="card-link btn btn-info mt-3" href="${p.link}" target="_blank">Direct Link</a>`)
 
 			col1.append(image)
 			col2.append(title, text, link, pdf);
