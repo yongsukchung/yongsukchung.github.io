@@ -6,21 +6,25 @@
 			const list = $('#item-list');
 
 			var row = $('<div class="row">')
-			var col1 = $('<div class="col-md-4">')
+			var col1 = $('<div class="col-md-4 text-center">')
 			var col2 = $('<div class="col-md-8">')
 
-			var card = $('<div class="col-md-4 mb-4">');
+			var card = $('<div class="col-md-4 mb-4 d-flex align-items-stretch">');
 			var image = $(`<img class="card-img-top" src="${p.image !== undefined ? p.image : "../../images/press.png"}" alt="Card image cap">`)
-			var cardBody = $('<div class="card  bg-secondary">');
+			var cardBody = $('<div class="card bg-secondary">');
 			var cardBodyInner = $('<div class="card-body text-center text-primary">');
-			var title = $('<h5 class="card-title">').text(p.title);
-				console.log(p.text)
-			var text = $('<p class="card-text">').text(p.text);
+			var title = $('<h5 class="card-title ">').text(p.title);
+
+				var text = $('<p class="card-text">').text(p.text);
 			var pdf = $(`<a class="card-link btn btn-info mt-3" href="/media/info/?index=${index}">`).text('More info');
 			var link = $(`<a class="card-link btn btn-info mt-3" href="${p.link}" target="_blank">Direct Link</a>`)
+			var linkImageCover = $(`<a class="card-link" href="${p.link}" target="_blank">`)
+			var linkTitleCover = $(`<a class="card-link text-decoration-none link-success" href="${p.link}" target="_blank">`)
 
-			col1.append(image)
-			col2.append(title, text, link, pdf);
+				linkImageCover.append(image)
+				linkTitleCover.append(title)
+			col1.append(linkImageCover, pdf)
+			col2.append(linkTitleCover, text);
 			row.append(col1, col2)
 
 			cardBodyInner.append(row);
