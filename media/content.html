@@ -1,15 +1,33 @@
-<ul class="" id="item-list"></ul>
+<ul class="row" id="item-list"></ul>
 <script>
-	$(async function() {
-		const list = await $.getJSON('press/data.json')
-		list.forEach((p) => {
-			$("#item-list").append(`
-			<li class="">
-				<span class="text-muted">${p.date}</span>: ${p.title}
-                <br />
-                [<a href="${p.link}">Direct Link</a>]
-			</li>
-			`)
+	$(async function () {
+		const list = await $.getJSON('../../media/press/data.json')
+		list.forEach((p, index) => {
+			const list = $('#item-list');
+
+			var row = $('<div class="row">')
+			var col1 = $('<div class="col-md-4">')
+			var col2 = $('<div class="col-md-8">')
+
+			var card = $('<div class="col-md-4 mb-4">');
+			var image = $(`<img class="card-img-top" src="${p.image !== undefined ? p.image : "../../images/press.png"}" alt="Card image cap">`)
+			var cardBody = $('<div class="card  bg-secondary">');
+			var cardBodyInner = $('<div class="card-body text-center text-primary">');
+			var title = $('<h5 class="card-title">').text(p.title);
+				console.log(p.text)
+			var text = $('<p class="card-text">').text(p.text);
+			var pdf = $(`<a class="card-link btn btn-info" href="/media/info/?index=${index}">`).text('More info');
+			var link = $(`<a class="card-link btn btn-info" href="${p.link}" target="_blank">Direct Link</a>`)
+
+			col1.append(image)
+			col2.append(title, text, link, pdf);
+			row.append(col1, col2)
+
+			cardBodyInner.append(row);
+			cardBody.append(cardBodyInner)
+			card.append(cardBody);
+			list.append(card);
+
 		})
 	})
 </script>
