@@ -89,6 +89,15 @@
     "image": "../../images/personnel/students/JihyeonJung.jpg"
   },
   {
+    "name": "Yunseok Kim",
+    "position": "Past Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Physical Computing, ML/DL, 3D printing, GIS",
+    "year": "From 2019 to 2022",
+    "image": "../../images/personnel/students/Yunseok Kim.jpg",
+    "info": "https://github.com/yunplant"
+  },
+  {
     "name": "Vong Chanthib",
     "position": "Past Undergraduate Student",
     "nationality": "Cambodian",
