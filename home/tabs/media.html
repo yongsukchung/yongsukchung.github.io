@@ -1,20 +1,77 @@
 <div class="row">
-  <ul class="" id="item-list"></ul>
+  <div class="col-md-12 text-center mt-3">
+    <h3>Newest presses</h3>
+  </div>
+  <ul class="row mt-3" id="item-list"></ul>
 
   <a href="/media" class="btn btn-success mt-5">Go to Media</a>
 </div>
 
 <script>
   $(async function () {
-    const list = await $.getJSON('../media/press/data.json')
-    list.sort((a, b) => b.year - a.year).forEach((p) => {
-      $("#item-list").append(`
-			<li class="">
-				<span class="text-muted">${p.date}</span>: ${p.title}
-                <br />
-                [<a href="${p.link}">Direct Link</a>]
-			</li>
-			`)
+    const list = await $.getJSON('../../media/press/data.json')
+    list.forEach((item, index) => item.index = index)
+    list.sort((a, b) => b.year - a.year).forEach((p, index) => {
+      const list = $('#item-list');
+
+      var row = $('<div class="row">')
+      var col1 = $('<div class="col-md-4 text-center">')
+      var col2 = $('<div class="col-md-8">')
+
+      var card = $('<div class="col-md-4 mb-4 d-flex align-items-stretch">');
+      var image = $(`<img class="card-img-top" src="${p.image !== undefined ? p.image : "../../images/press.png"}" alt="Card image cap">`)
+      var cardBody = $('<div class="card bg-secondary">');
+      var cardBodyInner = $('<div class="card-body text-center text-primary">');
+      var title = $('<h5 class="card-title ">').text(`${p.title} (${p.date})`);
+
+      var text = $('<p class="card-text">').text(truncateText(p.text, 50));
+      // var link = $(`<a class="card-link btn btn-info mt-3" href="${p.link}" target="_blank">Direct Link</a>`)
+
+
+      if (p.link !== undefined) {
+
+        var linkImageCover = $(`<a class="card-link" href="${p.link}" target="_blank">`)
+        var linkTitleCover = $(`<a class="card-link text-decoration-none link-success" href="${p.link}" target="_blank">`)
+
+        linkImageCover.append(image)
+        col1.append(linkImageCover)
+        linkTitleCover.append(title)
+        col2.append(linkTitleCover, text);
+      }
+      else {
+        col1.append(image)
+        col2.append(title, text);
+      }
+      if (p.pdf !== undefined || p.pdfs !== undefined) {
+        var pdf = $(`<a class="card-link btn btn-info mt-3" href="/media/info/?index=${p.index}">`).text('More info');
+        col1.append(pdf)
+      }
+      row.append(col1, col2)
+
+      cardBodyInner.append(row);
+      cardBody.append(cardBodyInner)
+      card.append(cardBody);
+      list.append(card);
+
     })
   })
+
+  function truncateText(text, maxWords) {
+    // Split the text into an array of words
+    const words = text.split(' ');
+
+    // If the number of words is less than or equal to the maximum, return the original text
+    if (words.length <= maxWords) {
+      return text;
+    }
+
+    // Truncate the array of words to the specified maximum
+    const truncatedWords = words.slice(0, maxWords);
+
+    // Join the truncated words back into a string
+    const truncatedText = truncatedWords.join(' ');
+
+    // Add an ellipsis (...) to the end of the truncated text
+    return truncatedText + '...';
+  }
 </script>
