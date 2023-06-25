@@ -2,7 +2,7 @@
 <script>
 	$(async function () {
 		const list = await $.getJSON('../../media/press/data.json')
-		list.forEach((p, index) => {
+		list.sort((a, b) => b.year - a.year).forEach((p, index) => {
 			const list = $('#item-list');
 
 			var row = $('<div class="row">')
@@ -13,7 +13,7 @@
 			var image = $(`<img class="card-img-top" src="${p.image !== undefined ? p.image : "../../images/press.png"}" alt="Card image cap">`)
 			var cardBody = $('<div class="card bg-secondary">');
 			var cardBodyInner = $('<div class="card-body text-center text-primary">');
-			var title = $('<h5 class="card-title ">').text(p.title);
+			var title = $('<h5 class="card-title ">').text(`${p.title} (${p.date})`);
 
 				var text = $('<p class="card-text">').text(p.text);
 			var pdf = $(`<a class="card-link btn btn-info mt-3" href="/media/info/?index=${index}">`).text('More info');

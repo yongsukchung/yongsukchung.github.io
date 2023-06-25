@@ -1,3 +1,58 @@
 <div class="row">
+  <div class="container">
+    <div class="col-md-12 text-center mt-3">
+      <h3>Partners</h3>
+  </div>
+    <div class="card-columns row mt-3" id="partners-container"></div>
+  </div>
   <a href="/partners" class="btn btn-success mt-5">Go to Partners</a>
 </div>
+
+
+
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    margin-bottom: 5px;
+  }
+</style>
+
+<script>
+  $(async function () {
+    const data = await $.getJSON('../../partners/data.json');
+    var container = $('#partners-container');
+    data.forEach(function (item, index) {
+      var card = $('<div class="col-md-4 mb-4">');
+      var cardBody = $('<div class="card bg-secondary">');
+      var row = $('<div class="row">')
+      var col1 = $('<div class="col-md-4">')
+      var col2 = $('<div class="col-md-8">')
+      var image = $(`<img class="card-img-top" src="${item.image}" alt="${item.title}">`)
+      var cardBodyInner = $('<div class="card-body text-center text-primary">');
+      var title = $('<h5 class="card-title">').text(item.title);
+      var pdf = $(`<a class="card-link btn btn-info" href="/partners/info/?index=${index}">`).text('More info');
+
+
+      col1.append(image)
+      col2.append(title, pdf);
+      row.append(col1, col2)
+      cardBodyInner.append(row)
+      cardBody.append(cardBodyInner)
+      card.append(cardBody);
+      container.append(card);
+    });
+  });
+</script>
