@@ -78,14 +78,11 @@
 
     const dataArray = await Promise.all(promises)
 
-      console.log(dataArray)
-
-      dataArray.forEach((array, index) => array.forEach(item => item.folder = categories[index].folder))
+    dataArray.forEach((array, index) => array.forEach(item => item.folder = categories[index].folder))
 
     const images = dataArray.flat()
 
     images.sort((a, b) => 0.5 - Math.random()).filter((item, index) => index < 8).forEach((image, index) => {
-      console.log(image)
       categoryDiv.append(`
               <div class="col-lg-3 col-md-4 col-6">
                   <a href="../../photos/${image.folder}" class="d-block mb-4 h-100">
