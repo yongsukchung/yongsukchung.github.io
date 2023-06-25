@@ -7,7 +7,7 @@
 <script>
   $(async function () {
     const list = await $.getJSON('../media/press/data.json')
-    list.forEach((p) => {
+    list.sort((a, b) => b.year - a.year).forEach((p) => {
       $("#item-list").append(`
 			<li class="">
 				<span class="text-muted">${p.date}</span>: ${p.title}
