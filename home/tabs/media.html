@@ -24,7 +24,7 @@
       var cardBodyInner = $('<div class="card-body text-center text-primary">');
       var title = $('<h5 class="card-title ">').text(`${p.title} (${p.date})`);
 
-      var text = $('<p class="card-text">').text(truncateText(p.text, 50));
+      var text = $('<p class="card-text">').text(p.text !== undefined ? truncateText(p.text, 50) : p.text);
       // var link = $(`<a class="card-link btn btn-info mt-3" href="${p.link}" target="_blank">Direct Link</a>`)
 
 
