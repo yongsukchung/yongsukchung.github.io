@@ -63,6 +63,14 @@
     "image": "../../images/personnel/students/Dao Van Sang.jpg"
   },
   {
+    "name": "부미선 Boomisun",
+    "position": "Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "해양산업경찰학과(Department of Maritime Industry Police)",
+    "year": "From 2023 to now",
+    "image": "../../images/personnel/students/BooMiSun.jpg"
+  },
+  {
     "name": "Dr. Han, Gyung Deok",
     "position": "Past Postdoctoral Researcher",
     "nationality": "Korean",
@@ -79,6 +87,15 @@
     "topic": "Evaluating greenness using RGB images and multispectral images in turf",
     "year": "From 2020 to 2022",
     "image": "../../images/personnel/students/JihyeonJung.jpg"
+  },
+  {
+    "name": "Yunseok Kim",
+    "position": "Past Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Physical Computing, ML/DL, 3D printing, GIS",
+    "year": "From 2019 to 2022",
+    "image": "../../images/personnel/students/Yunseok Kim.jpg",
+    "info": "https://github.com/yunplant"
   },
   {
     "name": "Vong Chanthib",
