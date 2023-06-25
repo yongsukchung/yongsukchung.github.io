@@ -16,7 +16,7 @@
 			var cardBodyInner = $('<div class="card-body text-center text-primary">');
 			var title = $('<h5 class="card-title ">').text(`${p.title} (${p.date})`);
 
-			var text = $('<p class="card-text">').text(p.text);
+			var text = $('<p class="card-text">').text(truncateText(p.text, 50));
 			var link = $(`<a class="card-link btn btn-info mt-3" href="${p.link}" target="_blank">Direct Link</a>`)
 			var linkImageCover = $(`<a class="card-link" href="${p.link}" target="_blank">`)
 			var linkTitleCover = $(`<a class="card-link text-decoration-none link-success" href="${p.link}" target="_blank">`)
@@ -38,4 +38,23 @@
 
 		})
 	})
+
+	function truncateText(text, maxWords) {
+  // Split the text into an array of words
+  const words = text.split(' ');
+
+  // If the number of words is less than or equal to the maximum, return the original text
+  if (words.length <= maxWords) {
+    return text;
+  }
+
+  // Truncate the array of words to the specified maximum
+  const truncatedWords = words.slice(0, maxWords);
+
+  // Join the truncated words back into a string
+  const truncatedText = truncatedWords.join(' ');
+
+  // Add an ellipsis (...) to the end of the truncated text
+  return truncatedText + '...';
+}
 </script>
