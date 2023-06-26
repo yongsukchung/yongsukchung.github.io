@@ -2,7 +2,7 @@
   {
     "name": "Dr. Sheikh Mansoor Shafi",
     "position": "Postdoctoral Researcher",
-    "nationality": "Indian",
+    "nationality": "Kashmir, Indian",
     "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
     "email": "mansoorshafi@jejunu.ac.kr mansoorshafi21@gmail.com",
     "info": "https://scholar.google.com/citations?user=ZpDR_OQAAAAJ&hl=en",
@@ -52,6 +52,7 @@
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2021 to 2024",
     "current_position": "Ph.D student.",
+    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
     "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
@@ -71,14 +72,15 @@
     "image": "../../images/personnel/students/BooMiSun.jpg"
   },
   {
-    "name": "Dr. Han, Gyung Deok",
+    "name": "Dr. Gyung Deok, Han",
     "position": "Past Postdoctoral Researcher",
     "nationality": "Korean",
     "topic": "Phenomics; Post-harvest Control; Smart Farming; Plant Pathology; Agricultural Education; Practical Arts Education",
     "email": "hangds@cje.ac.kr",
     "year": "From 2020 to 2022",
     "image": "../../images/personnel/students/Han Gyung Deok.jpg",
-    "current_position": "Major in Agricultural Education, Department of Practical Arts Education, Cheongju National University of Education"
+    "info": "https://www.researchgate.net/profile/Gyung-Deok-Han",
+    "current_position": "Phenomics; Post-harvest Control; Smart Farming; Plant Pathology; Agricultural Education; Practical Arts Education"
   },
   {
     "name": "Jihyeon Jung",
@@ -87,6 +89,14 @@
     "topic": "Evaluating greenness using RGB images and multispectral images in turf",
     "year": "From 2020 to 2022",
     "image": "../../images/personnel/students/JihyeonJung.jpg"
+  },
+  {
+    "name": "Jeong Min Choi",
+    "position": "Past Graduate Master Student",
+    "nationality": "Korean",
+    "topic": "Plant phenomics, crop modeling for the smart farm, radiation impact on plant reproduction",
+    "year": "From 2020 to 2022",
+    "image": "../../images/personnel/students/Jeong Min Choi.jpg"
   },
   {
     "name": "Yunseok Kim",
