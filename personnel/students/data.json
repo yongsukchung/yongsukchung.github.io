@@ -28,6 +28,16 @@
     "image": "../../images/personnel/students/JiEunPark.png"
   },
   {
+    "name": "Anh Tuan, Le",
+    "position": "PhD. Student",
+    "nationality": "Vietnamese",
+    "topic": "Plant phenomics under LED light conditions.",
+    "year": "From 2021 to 2024",
+    "current_position": "Ph.D student.",
+    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
+    "image": "../../images/personnel/students/LeAnhTuan.JPG"
+  },
+  {
     "name": "Seong Mun Lee",
     "position": "PhD. Student",
     "nationality": "Korean",
@@ -35,6 +45,15 @@
     "year": "From 2022 to now",
     "current_position": "Agricultural researcher in Agricultural Research & extension services Jeju special self-governing province.",
     "image": "../../images/personnel/students/Seong Mun Lee.jpg"
+  },
+  {
+    "name": "EMBM Karunathilake",
+    "position": "PhD. Student",
+    "nationality": "Sri Lankan",
+    "topic": "Plant Phenomics",
+    "year": "From 2022 to now",
+    "current_position": "Ph.D Student",
+    "image": "../../images/personnel/students/Bhagya.jpg"
   },
   {
     "name": "Oh Minah",
@@ -53,25 +72,6 @@
     "year": "From 2021 up to now",
     "current_position": "Computer Programmer and Embedded System Engineer",
     "image": "../../images/personnel/students/KuKiBon.png"
-  },
-  {
-    "name": "EMBM Karunathilake",
-    "position": "PhD. Student",
-    "nationality": "Sri Lankan",
-    "topic": "Plant Phenomics",
-    "year": "From 2022 to now",
-    "current_position": "Ph.D Student",
-    "image": "../../images/personnel/students/Bhagya.jpg"
-  },
-  {
-    "name": "Anh Tuan, Le",
-    "position": "PhD. Student",
-    "nationality": "Vietnamese",
-    "topic": "Plant phenomics under LED light conditions.",
-    "year": "From 2021 to 2024",
-    "current_position": "Ph.D student.",
-    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
-    "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
     "name": "Dao Van Sang",
