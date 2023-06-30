@@ -16,7 +16,8 @@
     "topic": "Computer Vision, Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics",
     "email": "thaithanhtuan@jejunu.ac.kr thaithanhtuan1987@gmail.com",
     "year": "From 2022 to now",
-    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg"
+    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg",
+    "info": "https://thaithanhtuan.github.io/"
   },
   {
     "name": "Ji Eun, Park",
@@ -25,7 +26,18 @@
     "topic": "Plant phenomics using an image based method.",
     "year": "From 2019 to 2023",
     "current_position": "Ph.D Student.",
-    "image": "../../images/personnel/students/JiEunPark.png"
+    "image": "../../images/personnel/students/JiEunPark.png",
+    "info": "https://www.researchgate.net/profile/Jieun-Park-28"
+  },
+  {
+    "name": "Anh Tuan, Le",
+    "position": "PhD. Student",
+    "nationality": "Vietnamese",
+    "topic": "Plant phenomics under LED light conditions.",
+    "year": "From 2021 to 2024",
+    "current_position": "Ph.D student.",
+    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
+    "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
     "name": "Seong Mun Lee",
@@ -35,6 +47,16 @@
     "year": "From 2022 to now",
     "current_position": "Agricultural researcher in Agricultural Research & extension services Jeju special self-governing province.",
     "image": "../../images/personnel/students/Seong Mun Lee.jpg"
+  },
+  {
+    "name": "EMBM Karunathilake",
+    "position": "PhD. Student",
+    "nationality": "Sri Lankan",
+    "topic": "Plant Phenomics",
+    "year": "From 2022 to now",
+    "current_position": "Ph.D Student",
+    "image": "../../images/personnel/students/Bhagya.jpg",
+    "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
   },
   {
     "name": "Oh Minah",
@@ -53,25 +75,6 @@
     "year": "From 2021 up to now",
     "current_position": "Computer Programmer and Embedded System Engineer",
     "image": "../../images/personnel/students/KuKiBon.png"
-  },
-  {
-    "name": "EMBM Karunathilake",
-    "position": "PhD. Student",
-    "nationality": "Sri Lankan",
-    "topic": "Plant Phenomics",
-    "year": "From 2022 to now",
-    "current_position": "Ph.D Student",
-    "image": "../../images/personnel/students/Bhagya.jpg"
-  },
-  {
-    "name": "Anh Tuan, Le",
-    "position": "PhD. Student",
-    "nationality": "Vietnamese",
-    "topic": "Plant phenomics under LED light conditions.",
-    "year": "From 2021 to 2024",
-    "current_position": "Ph.D student.",
-    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
-    "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
     "name": "Dao Van Sang",
@@ -107,6 +110,14 @@
     "topic": "Evaluating greenness using RGB images and multispectral images in turf",
     "year": "From 2020 to 2022",
     "image": "../../images/personnel/students/JihyeonJung.jpg"
+  },
+  {
+    "name": "Jae Young",
+    "position": "Past Graduate Master Student",
+    "nationality": "Korean",
+    "topic": "Plant phenomics",
+    "year": "From 2020 to 2022",
+    "image": "../../images/personnel/students/Jae Young.jpg"
   },
   {
     "name": "Jeong Min Choi",
