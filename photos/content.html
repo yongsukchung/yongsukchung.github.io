@@ -1,6 +1,26 @@
 <div class="row row-cols-1 row-cols-md-3" id="photo-category"></div>
+<script src="../../js/utils.js" ></script>
 <script>
     $(async function () {
+        const folders = await getFile('19FIrMohVlKv6DKjBBnnuWAFuz5FJIcPy')
+        const folderCategories = folders.items.map(item => {
+            return {
+                title: item.title,
+                id: item.id
+            }
+        })
+        folderCategories.forEach(async (category, index) => {
+            const categoryFolder = await getFile(category.id)
+            const images = categoryFolder.items
+            categoryDiv.append(`
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="${categories[index].folder}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="https://drive.google.com/uc?id=${images[0].id}" alt="${images[0].title}">
+                        <p>${categories[index].title}</p>
+                    </a>
+                </div>
+            `)
+        })
         const categories = [
             {
                 title: "Lab Sweet Memory",
@@ -70,16 +90,16 @@
 
         const dataArray = await Promise.all(promises)
 
-        dataArray.forEach((images, index) => {
-            categoryDiv.append(`
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="${categories[index].folder}" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${images[0].src}" alt="${images[0].title}">
-                        <p>${categories[index].title}</p>
-                    </a>
-                </div>
-            `)
-        })
+        // dataArray.forEach((images, index) => {
+        //     categoryDiv.append(`
+        //         <div class="col-lg-3 col-md-4 col-6">
+        //             <a href="${categories[index].folder}" class="d-block mb-4 h-100">
+        //                 <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${images[0].src}" alt="${images[0].title}">
+        //                 <p>${categories[index].title}</p>
+        //             </a>
+        //         </div>
+        //     `)
+        // })
 
     })
 </script>
