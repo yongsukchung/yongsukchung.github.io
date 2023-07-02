@@ -29,7 +29,8 @@ $(function () {
 
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
 
-    if (path[0] === 'photos') {
+    const excludePaths = ['photos', 'research', 'home', undefined]
+    if (excludePaths.includes(path[0])) {
         content.className = 'row m-5'
         mainContainer.appendChild(content)
     }
