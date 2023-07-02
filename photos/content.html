@@ -4,7 +4,8 @@
     $(async function () {
         const categoryDiv = $('#photo-category')
 
-        const folders = await getFile('19FIrMohVlKv6DKjBBnnuWAFuz5FJIcPy')
+        const data = await $.getJSON('../../photos/data.json')
+        const folders = await getFile(data.folderId)
         const folderCategories = folders.items.map(item => {
             return {
                 title: item.title,
