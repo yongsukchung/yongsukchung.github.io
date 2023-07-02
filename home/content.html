@@ -8,12 +8,12 @@
 <ul class="nav nav-tabs" id="category-tabs" role="tablist">
      <!-- <li class="nav-item">
         <a class="nav-link active text-primary" id="research-tab" data-bs-toggle="tab" href="#research-pane" role="tab" aria-controls="research" aria-selected="true">Research</a>
+    </li> 
+    <li class="nav-item">
+        <a class="nav-link text-primary" id="publications-tab" data-bs-toggle="tab" href="#publications-pane" role="tab" aria-controls="publications" aria-selected="false">Publications</a>
     </li> -->
     <li class="nav-item">
-        <a class="nav-link active text-primary" id="publications-tab" data-bs-toggle="tab" href="#publications-pane" role="tab" aria-controls="publications" aria-selected="false">Publications</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-primary" id="personnel-tab" data-bs-toggle="tab" href="#personnel-pane" role="tab" aria-controls="personnel" aria-selected="false">Personnel</a>
+        <a class="nav-link active text-primary" id="personnel-tab" data-bs-toggle="tab" href="#personnel-pane" role="tab" aria-controls="personnel" aria-selected="false">Personnel</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-primary" id="partners-tab" data-bs-toggle="tab" href="#partners-pane" role="tab" aria-controls="partners" aria-selected="false">Partners</a>
@@ -32,12 +32,12 @@
 <div class="tab-content" id="category-tabs-content">
      <!-- <div class="tab-pane fade show active" id="research-pane" role="tabpanel" aria-labelledby="research-tab">
         <div id="research">Research Content</div>
-    </div> -->
-    <div class="tab-pane fade show active" id="publications-pane" role="tabpanel" aria-labelledby="publications-tab">
+    </div> 
+    <div class="tab-pane fade " id="publications-pane" role="tabpanel" aria-labelledby="publications-tab">
         <div id="publications">Publications Content</div>
         <!-- Publications category content goes here -->
-    </div>
-    <div class="tab-pane fade" id="personnel-pane" role="tabpanel" aria-labelledby="personnel-tab">
+    </div> -->
+    <div class="tab-pane fade show active" id="personnel-pane" role="tabpanel" aria-labelledby="personnel-tab">
         <div id="personnel">Personnel Content</div>
         <!-- Personnel category content goes here -->
     </div>
@@ -62,7 +62,7 @@
     $(function() {
     // Load research content dynamically from content.html
     // $("#research").load("/home/tabs/research.html");
-    $("#publications").load("/home/tabs/publications.html");
+    // $("#publications").load("/home/tabs/publications.html");
     $("#personnel").load("/home/tabs/personnel.html");
     $("#partners").load("/home/tabs/partners.html");
     $("#education").load("/home/tabs/education.html");
