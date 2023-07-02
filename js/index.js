@@ -29,7 +29,7 @@ $(function () {
 
     let path = window.location.pathname.replace("index.html", "").split('/').filter(Boolean)
 
-    const excludeSecondaryNavPaths = ['photos', 'research', 'home', undefined]
+    const excludeSecondaryNavPaths = ['photos', 'research', 'home', 'partners', 'media', undefined]
     if (excludeSecondaryNavPaths.includes(path[0])) {
         content.className = 'row m-5'
         mainContainer.appendChild(content)
