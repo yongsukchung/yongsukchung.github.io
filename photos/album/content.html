@@ -1,0 +1,44 @@
+<div class="row text-center text-lg-start" id="image-list">
+
+</div>
+<script src="../../js/utils.js"></script>
+
+<script>
+    $(async function () {
+        const urlParams = new URLSearchParams(window.location.search)
+        const id = urlParams.get('folderId')
+        const folder = await getFile(id)
+        folder.items.forEach(image => {
+            $('#image-list').append(`
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="${image.embedLink}" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail" src="${image.thumbnailLink}" alt="${image.title}">
+                            <p>${formatImageName(image.title)}</p>
+                        </a>
+                    </div>
+                `)
+        });
+        // $.getJSON('data.json', function(list) {
+        //     list.forEach(image => {
+        //         $('#image-list').append(`
+        //             <div class="col-lg-3 col-md-4 col-6">
+        //                 <a href="${image.src}" class="d-block mb-4 h-100">
+        //                     <img class="img-fluid img-thumbnail" src="${image.src}" alt="${image.title}">
+        //                     <p>${image.title}</p>
+        //                 </a>
+        //             </div>
+        //         `)
+        //     });
+        // })
+    })
+    function formatImageName(imageName) {
+        // Remove parentheses and image extensions
+        var cleanedName = imageName.replace(/[\(\)]/g, '').replace(/\.[^/.]+$/, '');
+
+        // Split camel case or Pascal case to human-readable
+        var formattedName = cleanedName.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+        return formattedName;
+    }
+
+</script>
