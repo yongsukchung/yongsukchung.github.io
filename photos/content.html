@@ -5,7 +5,6 @@
         const categoryDiv = $('#photo-category')
 
         const folders = await getFile('19FIrMohVlKv6DKjBBnnuWAFuz5FJIcPy')
-        console.log(folders)
         const folderCategories = folders.items.map(item => {
             return {
                 title: item.title,
@@ -31,11 +30,9 @@
             }
             return 0;
         }).reverse().forEach((categoryFolder, index) => {
-            // const category = folderCategories[index]
             const category = categoryFolder.category
             const images = categoryFolder.items
-            // var pdf = $(`<a class="card-link btn btn-info mt-3" href="/media/info/?index=${p.index}">`).text('More info');
-
+            
             categoryDiv.append(`
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="/photos/album/?folderId=${category.id}">
@@ -45,87 +42,5 @@
                 </div>
             `)
         });
-
-
-        // const categories = [
-        //     {
-        //         title: "Lab Sweet Memory",
-        //         folder: "labSweetMemory"
-        //     },
-        //     {
-        //         title: "2023 Summer Visit International Universtiy HCMVNU",
-        //         folder: "visitHCMVNUSummer2023"
-        //     },
-        //     {
-        //         title: "2023 Summer Visit Visayas State University",
-        //         folder: "visitVisayasStateUniversitySummer2023"
-        //     }
-        //     ,
-        //     {
-        //         title: "2023 Spring Welcome The President of Visayas State University Philippines",
-        //         folder: "welcomeThePresidentOfVisayasStateUniversityPhilippinesSpring2023"
-        //     }
-        //     ,
-        //     {
-        //         title: "2023 Spring Visit Germany",
-        //         folder: "visitGermanySpring2023"
-        //     }
-        //     ,
-        //     {
-        //         title: "2023 Spring Meet Professors and Researchers in Vietnam",
-        //         folder: "meetProfessorsAndResearchersInVietnamSpring2023"
-        //     }
-        //     ,
-        //     {
-        //         title: "2022 Welcome The President of University of Science HCMVNU",
-        //         folder: "welcomeThePresidentOfUniversityOfScienceHCMVNU2022"
-        //     }
-        //     ,
-        //     {
-        //         title: "2022 Visit Saudi Arabia",
-        //         folder: "visitSaudiArabia2022"
-        //     }
-        //     ,
-        //     {
-        //         title: "2022 Summer Relax",
-        //         folder: "summerRelax2022"
-        //     }
-        //     ,
-        //     {
-        //         title: "2022 Fall Coffee with new Postdoc and PhD student",
-        //         folder: "fallCoffeeWithNewPostdocAndPhDStudent2022"
-        //     }
-        //     ,
-        //     {
-        //         title: "2021 Working on the field",
-        //         folder: "workingOnTheField2021"
-        //     }
-        //     ,
-        //     {
-        //         title: "2021 With PhD student",
-        //         folder: "withPhDStudent2021"
-        //     }
-        //     ,
-        //     {
-        //         title: "2020 Researcher visit Phenomics Lab",
-        //         folder: "researcherVisitPhenomicsLab2020"
-        //     }
-        // ]
-
-        // const promises = categories.map(category => $.getJSON(`./${category.folder}/data.json`))
-
-        // const dataArray = await Promise.all(promises)
-
-        // dataArray.forEach((images, index) => {
-        //     categoryDiv.append(`
-        //         <div class="col-lg-3 col-md-4 col-6">
-        //             <a href="${categories[index].folder}" class="d-block mb-4 h-100">
-        //                 <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${images[0].src}" alt="${images[0].title}">
-        //                 <p>${categories[index].title}</p>
-        //             </a>
-        //         </div>
-        //     `)
-        // })
-
     })
 </script>

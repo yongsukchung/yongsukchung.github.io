@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12 text-center mt-3">
-    <h3>Random photos</h3>
+    <h3>Albums</h3>
   </div>
   <div class="row row-cols-1 row-cols-md-3" id="photo-category"></div>
 
@@ -12,7 +12,6 @@
     const categoryDiv = $('#photo-category')
 
     const folders = await getFile('19FIrMohVlKv6DKjBBnnuWAFuz5FJIcPy')
-    console.log(folders)
     const folderCategories = folders.items.map(item => {
       return {
         title: item.title,
