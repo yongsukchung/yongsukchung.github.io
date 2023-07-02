@@ -1,27 +1,12 @@
 <div class="container-fluid">
-
-    <!-- <div>Publications (<span id="start-year-title"></span> ~ <span id="end-year-title"></span>)</div> -->
-
     <div id="legend" class="text-muted fw-bold my-2">
-        <!-- <div id="legend-header" class="mb-1">Notes/Symbols Legend</div>
-        <div class="mb-1">
-            * Authors contributed equally to the article
-        </div>
-        <div>
-            <b>Impact Factors:</b> 2021 Journal Citation Reports (<a href="https://clarivate.com/"
-                target="_blank">Clarivate Analytics</a>, June 2022)
-        </div>
-        <div>
-        </div> -->
     </div>
-
     <div id="publication-list">
-
     </div>
 </div>
 
 <script>
-    
+
 
     $(async function () {
         const urlParams = new URLSearchParams(window.location.search)
@@ -37,7 +22,7 @@
 
 
         // Get Data from json and render
-        const data = await $.getJSON('data.json')
+        const data = await $.getJSON('../publications/data.json')
         const years = [...new Set(data.map(e => e.year))]
 
         const yearPublications = {}
@@ -74,7 +59,6 @@
             // Add artiles
 
             for (const article of value) {
-                console.log(article.authors, article.corresponding_author)
                 $(`#year-articles-list-${key}`)
                     .append(`
                 <li>
