@@ -36,7 +36,7 @@
         return 1;
       }
       return 0;
-    }).reverse().forEach((categoryFolder, index) => {
+    }).reverse().filter((item, index) => index < 10).forEach((categoryFolder, index) => {
       const category = categoryFolder.category
       const images = categoryFolder.items
 
