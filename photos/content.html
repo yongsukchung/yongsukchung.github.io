@@ -3,6 +3,7 @@
 <script>
     $(async function () {
         const folders = await getFile('19FIrMohVlKv6DKjBBnnuWAFuz5FJIcPy')
+        console.log(folders)
         const folderCategories = folders.items.map(item => {
             return {
                 title: item.title,
@@ -12,11 +13,12 @@
         folderCategories.forEach(async (category, index) => {
             const categoryFolder = await getFile(category.id)
             const images = categoryFolder.items
+            console.log(categoryFolder)
             categoryDiv.append(`
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="${categories[index].folder}" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="https://drive.google.com/uc?id=${images[0].id}" alt="${images[0].title}">
-                        <p>${categories[index].title}</p>
+                        <img class="img-fluid img-thumbnail border border-start-0 border-5" style="max-height: 20rem;width:auto;" src="${images[0].thumbnailLink}" alt="${category.title} thumbnail">
+                        <p>${category.title}</p>
                     </a>
                 </div>
             `)
