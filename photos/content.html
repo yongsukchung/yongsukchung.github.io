@@ -20,7 +20,17 @@
             categoryFolder.category = folderCategories[index]
         })
 
-        categoryFolders.forEach((categoryFolder, index) => {
+        categoryFolders.sort(function (first, second) {
+            const firstTitle = first.category.title.toLowerCase()
+            const secondTitle = second.category.title.toLowerCase()
+            if (firstTitle < secondTitle) {
+                return -1;
+            }
+            if (firstTitle > secondTitle) {
+                return 1;
+            }
+            return 0;
+        }).reverse().forEach((categoryFolder, index) => {
             // const category = folderCategories[index]
             const category = categoryFolder.category
             const images = categoryFolder.items
@@ -36,7 +46,7 @@
             `)
         });
 
-        
+
         // const categories = [
         //     {
         //         title: "Lab Sweet Memory",
