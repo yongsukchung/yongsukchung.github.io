@@ -62,14 +62,25 @@
                 for (const [positionKey, studentList] of allStudents) {
 
                         const formatedPositionKey = convertString(positionKey)
-                        $('#data-container')
-                                .append("<hr>")
-                                .append(`
-                        <div class="year">
-                                <h3 class="d-inline-block fst-italic fw-bold">${positionKey}s</h3>
-                                <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
-                        </div>
-                        `)
+                        if(studentList.length > 1){
+                                $('#data-container')
+                                        .append("<hr>")
+                                        .append(`
+                                <div class="year">
+                                        <h3 class="d-inline-block fst-italic fw-bold">${positionKey}s</h3>
+                                        <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
+                                </div>
+                                `)
+                        }else{
+                                $('#data-container')
+                                        .append("<hr>")
+                                        .append(`
+                                <div class="year">
+                                        <h3 class="d-inline-block fst-italic fw-bold">${positionKey}</h3>
+                                        <a class="bookmark smooth-scroll" href="#top">Top ⇪</a>
+                                </div>
+                                `)
+                        }
 
                         $('#data-container')
                                 .append(`
