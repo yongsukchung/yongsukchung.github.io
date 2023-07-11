@@ -20,17 +20,8 @@
     "info": "https://thaithanhtuan.github.io/"
   },
   {
-    "name": "Ji Eun Park",
-    "position": "PhD. Student",
-    "nationality": "Korean",
-    "topic": "Plant phenomics using an image based method.",
-    "year": "From 2019 to present",    
-    "image": "../../images/personnel/students/JiEunPark.png",
-    "info": "https://www.researchgate.net/profile/Jieun-Park-28"
-  },
-  {
     "name": "Anh Tuan Le",
-    "position": "PhD. Student",
+    "position": "Ph.D Student",
     "nationality": "Vietnamese",
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2021 to present",
@@ -39,7 +30,7 @@
   },
   {
     "name": "Seong Mun Lee",
-    "position": "PhD. Student",
+    "position": "Ph.D Student",
     "nationality": "Korean",
     "topic": "Plant phenomics.",
     "year": "From 2022 to present",
@@ -48,7 +39,7 @@
   },
   {
     "name": "EMBM Karunathilake",
-    "position": "PhD. Student",
+    "position": "Ph.D Student",
     "nationality": "Sri Lankan",
     "topic": "Plant Phenomics",
     "year": "From 2022 to present",
@@ -99,6 +90,15 @@
     "image": "../../images/personnel/students/Han Gyung Deok.jpg",
     "info": "https://www.researchgate.net/profile/Gyung-Deok-Han",
     "current_position": "Assistant Prof., Major in Agricultural Education, Department of Practical Arts Education, Cheongju National University of Education"
+  },
+  {
+    "name": "Ji Eun Park",
+    "position": "Past Ph.D Student",
+    "nationality": "Korean",
+    "topic": "Plant phenomics using an image based method.",
+    "year": "From 2019 to 2023",    
+    "image": "../../images/personnel/students/JiEunPark.png",
+    "info": "https://www.researchgate.net/profile/Jieun-Park-28"
   },
   {
     "name": "Jihyeon Jung",
