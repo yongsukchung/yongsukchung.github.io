@@ -81,5 +81,15 @@
     ],
     "image": "../../images/partners/University-of-science.png",
     "year": 2023
+  },
+  {
+    "title": "Faculty of Information Technology, Ho Chi Minh City University of Technology (HUTECH)",
+    "pdfs": [
+      {
+        "link": "../../pdfs/2023년 8월 베트남.pdf"
+      }
+    ],
+    "image": "../../images/partners/logo-dai-hoc-hutech-dongphucvina.vn.png",
+    "year": 2023
   }
 ]
