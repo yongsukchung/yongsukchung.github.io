@@ -10,7 +10,7 @@
     "year": 2022
   },
   {
-    "title": "Georg August University of Göttingen",
+    "title": "Georg August University of Göttingen, Germany",
     "pdfs": [
       {
         "title": "Page 1",
@@ -25,7 +25,7 @@
     "year": 2019
   },
   {
-    "title": "Visayas State University",
+    "title": "Visayas State University, Philippines",
     "pdfs": [
       {
         "link": "../../pdfs/Document_20230622_0004.pdf"
@@ -53,7 +53,7 @@
     "image": "../../images/partners/University-of-science.png"
   },
   {
-    "title": "Applied Biotechnology for Crop Development Research Unit at International University, VNU-HCM",
+    "title": "Applied Biotechnology for Crop Development Research Unit at International University, VNU-HCM, Vietnam",
     "pdfs": [
       {
         "link": "../../pdfs/Document_20230622_0007.pdf"
@@ -63,7 +63,7 @@
     "year": 2023
   },
   {
-    "title": "Thai Nguyen University of Agriculture and Forestry",
+    "title": "Thai Nguyen University of Agriculture and Forestry, Vietnam",
     "pdfs": [
       {
         "link": "../../pdfs/Document_20230622_0008.pdf"
@@ -73,7 +73,7 @@
     "year": 2023
   },
   {
-    "title": "Research Center for Hi-Tech Application in Agriculture at University of Science, Vietnam National University - Ho Chi Minh City",
+    "title": "Research Center for Hi-Tech Application in Agriculture at University of Science, Vietnam National University - Ho Chi Minh City, Vietnam",
     "pdfs": [
       {
         "link": "../../pdfs/Document_20230622_0009.pdf"
@@ -83,13 +83,23 @@
     "year": 2023
   },
   {
-    "title": "Faculty of Information Technology, Ho Chi Minh City University of Technology (HUTECH)",
+    "title": "Faculty of Information Technology, Ho Chi Minh City University of Technology (HUTECH), Vietnam",
     "pdfs": [
       {
         "link": "../../pdfs/2023년 8월 베트남.pdf"
       }
     ],
     "image": "../../images/partners/logo-dai-hoc-hutech-dongphucvina.vn.png",
+    "year": 2023
+  },
+  {
+    "title": "Faculty of Agriculture Kasetsart University, Thailand",
+    "pdfs": [
+      {
+        "link": "../../pdfs/태국.pdf"
+      }
+    ],
+    "image": "../../images/partners/KasetsartUniversity.png",
     "year": 2023
   }
 ]
