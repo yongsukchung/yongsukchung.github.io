@@ -1,5 +1,188 @@
 [
     {
+        "authors": "Khan MH, Dar NA, Alie BA, Mir GH, Fayaz U, Khan A, Bashir B, Ahmad A, Mansoor S, Chung YS, Heo S",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Plant Growth Hormones and Micro-Tuberization in Breaking the Seed Dormancy of Bunium persicum (Boiss.) Fedts",
+        "journal": {
+            "title": "Plants",
+            "volume": "12",
+            "pages": "3163",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.500"
+            }
+        }
+    },
+    {
+        "authors": "Mansoor S, Mir J, Shama M, Mir MA, Masoodi KZ, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Polyphenolic Diversity and Antioxidant Potential of Important Apple (Malus domestica Borkh) Cultivars",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "2.400"
+            }
+        }
+    },
+    {
+        "authors": "Oh M, Han GD, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Comprehensive phenomic survey to increase the quantity of buckwheat (Fagopyrum esculentum)",
+        "journal": {
+            "title": "Journal of Subtropical Agriculture and Biotechnology"
+            }
+        }
+    },
+    {
+        "authors": "Mansoor S, Sakina A, Mir MA, Mir JI, Wani AA, un Nabi S, Alyemeni MN, Chung YS, Masoodi KZ",
+        "year": 2023,
+        "title": "Elucidating the role of reactive oxygen species metabolism and phenylpropanoid pathway during an incompatible interaction between apple-Venturia inaequalis host-pathosystem",
+        "journal": {
+            "title": "South African Journal of Botany",
+            "volume": "160",
+            "pages": "428-436",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "3.100"
+            }
+        }
+    },
+    {
+        "authors": "Choi NJ, Koo K, Mansoor S, YS Chung, Tuan TT",
+        "year": 2023,
+        "title": "A Novel 3D Insect Detection and Monitoring System in Plants Based on Deep Learning",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "14",
+            "pages": "1236154",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "5.600"
+            }
+        }
+    },
+    {
+        "authors": "Amit Ghimire A, Kim SH, Cho A, Jang N, Islam MS, Mansoor S, Chung YS, Kim Y",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Automatic Evaluation of Soybean Seed Traits Using RGB Image Data and a Python Algorithm",
+        "journal": {
+            "title": "Plants",
+            "volume": "12",
+            "pages": "3078",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.500"
+            }
+        }
+    },
+    {
+        "authors": "Ku K, Mansoor S, Han GD, Chung YS, Tuan TT",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Identification of New Cold Tolerant Zoysia Grass Species With Higher NDVI and GCP Using High-Resolution RGB and Multi-Spectral Imaging",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "13",
+            "pages": "13209",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.600"
+            }
+        }
+    },
+    {
+        "authors": "Aabbas Z, Yasmin H, Mumtaz S, Ilyas N, Rashid U, Alsahli AZ, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Alleviation of Banded Leaf and Sheath Blight Disease Incidence in Maize by Bacterial Volatile Organic Compounds and Molecular Docking of Targeted Inhibitors in Rhizoctonia Solani",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "14",
+            "pages": "1218615",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "5.600"
+            }
+        }
+    },
+    {
+        "authors": "Mansoor S, Ali A, Kour N, Bornhorst J, AlHarbi K, Rinklebe J, Abd El Moneim D, Ahmad P, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Heavy Metal Induced Oxidative Stress Mitigation and ROS Scavenging in Plants",
+        "journal": {
+            "title": "Plants",
+            "volume": "12",
+            "pages": "3003",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.500"
+            }
+        }
+    },
+    {
+        "authors": "Karunathilake EMB, Le AT, Heo S, Chung YS, Mansoor S",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "The Path to Smart Farming: Innovations and Opportunities in Precision Agriculture",
+        "journal": {
+            "title": "Agriculture",
+            "volume": "13",
+            "pages": "1593",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "3.600"
+            }
+        }
+    },
+    {
+        "authors": "Dominguez DL, Cacagnaro JB, Le AT, Chung YS, Cavagnaro PF",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Genetic diversity for drought tolerance in the native forage grass Trichloris crinita and possible morpho-physiological mechanisms involved",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "14",
+            "pages": "1235923",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "5.600"
+            }
+        }
+    },
+    {
         "authors": "Kim JY, Lee CW, Park JE, Kim N, Kim SL, Baek JH, Chung YS, and Kim KH",
         "additionalRole": {
             "author": "Chung YS",
