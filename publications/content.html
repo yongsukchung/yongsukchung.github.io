@@ -63,8 +63,8 @@
                     .append(`
                 <li>
                     <div id="${article.id}" class="article">
-                        <span class="authors">${article.authors.trim().split(/,\s| and\s/).map(author => article.additionalRole.author === author ? `<strong>${author}</strong>` : author).join(', ')}.</span> 
-                        ${(article.additionalRole.role) ? `<span class="year fw-bold">(${article.additionalRole.role}).</span>` : ''}
+                        <span class="authors">${article.authors.trim().split(/,\s| and\s/).map(author => article.additionalRole && article.additionalRole.author === author ? `<strong>${author}</strong>` : author).join(', ')}.</span> 
+                        ${(article.additionalRole && article.additionalRole.role) ? `<span class="year fw-bold">(${article.additionalRole.role}).</span>` : ''}
                         <span class="year fst-italic">&nbsp${article.year}.</span> 
                         <span class="title">${article.title}</span>. 
                         <span class="journal font-bold" full-name="${article.journal.title}"><u>${article.journal.title}</u></span>
