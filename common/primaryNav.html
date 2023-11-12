@@ -37,11 +37,11 @@
     $(function () {
         $('#theme-toggle').on('click', function (event) {
             let currentDarkTheme = window.localStorage.getItem('theme')
-            if (currentDarkTheme === null || currentDarkTheme === 'dark-biology') {
-                window.localStorage.setItem('theme', 'biology')
+            if (currentDarkTheme === null || currentDarkTheme === 'biology') {
+                window.localStorage.setItem('theme', 'dark-biology')
             }
             else {
-                window.localStorage.setItem('theme', 'dark-biology')
+                window.localStorage.setItem('theme', 'biology')
             }
         })
     })
