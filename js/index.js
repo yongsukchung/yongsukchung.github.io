@@ -83,7 +83,7 @@ $(function () {
     styleCss.id = 'style-css'
 
     // Add css theme
-    const theme = window.localStorage.getItem('theme') || 'dark-lumen'
+    const theme = window.localStorage.getItem('theme') || 'biology'
     const themeCss = document.createElement('link')
 
     themeCss.href = `../../css/${theme}-bootstrap.min.css`
