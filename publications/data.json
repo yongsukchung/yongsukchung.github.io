@@ -1,4 +1,20 @@
 [
+     {
+        "authors": "Sheikh M, Farooq IQ, Ambreen H, PRAVIN KA, Manzoor IK, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Integrating artificial intelligence and high-throughput phenotyping for crop improvement",
+        "journal": {
+            "title": "Journal of Integrative Agriculture",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.800"
+            }
+        }
+    },
     {
         "authors": "Khan MH, Dar NA, Alie BA, Mir GH, Fayaz U, Khan A, Bashir B, Ahmad A, Mansoor S, Chung YS, Heo S",
         "additionalRole": {
