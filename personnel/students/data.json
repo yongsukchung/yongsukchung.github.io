@@ -20,15 +20,6 @@
     "info": "https://thaithanhtuan.github.io/"
   },
   {
-    "name": "Anh Tuan Le",
-    "position": "Ph.D Student",
-    "nationality": "Vietnamese",
-    "topic": "Plant phenomics under LED light conditions.",
-    "year": "From 2021 to present",
-    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
-    "image": "../../images/personnel/students/LeAnhTuan.JPG"
-  },
-  {
     "name": "Seong Mun Lee",
     "position": "Ph.D Student",
     "nationality": "Korean",
@@ -99,6 +90,15 @@
     "year": "From 2019 to 2023",    
     "image": "../../images/personnel/students/JiEunPark.png",
     "info": "https://www.researchgate.net/profile/Jieun-Park-28"
+  },
+  {
+    "name": "Anh Tuan Le",
+    "position": "Previous Ph.D Student",
+    "nationality": "Vietnamese",
+    "topic": "Plant phenomics under LED light conditions.",
+    "year": "From 2021 to 2024",
+    "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
+    "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
   {
     "name": "Jihyeon Jung",
