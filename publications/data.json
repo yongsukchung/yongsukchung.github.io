@@ -1,5 +1,37 @@
 [
      {
+        "authors": "Kwon SH, Ku KB, Le AT, Han GD, Park Y, Kim J, Tuan TT, Chung YS, Mansoor S",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Enhancing citrus fruit yield investigations through flight height optimization with UAV imaging",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "14",
+            "pages": "322",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.600"
+            }
+        }
+    },
+     {
+        "authors": "Mansoor S, Mir MA, Karunathilake EM, Rasool A, Ştefanescu DM, Chung YS, Sun HJ",
+        "year": 2023,
+        "title": "Strigolactones as promising biomolecule for oxidative stress management: A comprehensive review",
+        "journal": {
+            "title": "Plant Physiology and Biochemistry",
+            "volume": "16",
+            "pages": "108282",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "6.500"
+            }
+        }
+    },
+     {
         "authors": "Sheikh M, Farooq IQ, Ambreen H, PRAVIN KA, Manzoor IK, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
@@ -30,6 +62,22 @@
             "indexing": {
                 "database": "SCIE",
                 "impact_factor": "4.500"
+            }
+        }
+    },
+     {
+        "authors": "Yasmin H, Shah ZA, Mumtaz S, Ilyas N, Rashid U, Alsahli AA, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2023,
+        "title": "Alleviation of banded leaf and sheath blight disease incidence in maize by bacterial volatile organic compounds and molecular docking of targeted inhibitors in Rhizoctonia solani",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "5.600"
             }
         }
     },
