@@ -1,5 +1,123 @@
 [
      {
+        "authors": "Sheikh Mansoor, Pooja Tripathi, Amit Ghimire, Saira Hamid,  Diaa Abd El‑moniem, Yong Suk Chung, Yoonha Kim",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Comparative transcriptomic analysis of the nodulation-competent zone and inference of transcription regulatory network in silicon applied Glycine max [L.]-Merr. Root",
+        "journal": {
+            "title": "Plant Cell Reports",
+            "volume": "In Press",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "6.200"
+            }
+        }
+    },
+     {
+        "authors": "Rasool A, Bhat KM, Mir MA, Sundouri AS, ALshamrani SM, Aloufi AS, El Moneim DA, Mansoor S, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024 Feb,
+        "title": "Marker-assisted selection for scab resistance and columnar growth habit in inter-varietal population of apple (Malus× domestica)",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "18(1)",
+            "pages": "57-73",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "2.400"
+            }
+        }
+    },
+     {
+        "authors": "Bungala LT, Park SU, Nguyen BV, Lim J, Kim K, Kim JK, Park CH, Le AT, Chung YS, Yeo HJ",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024 May 22,
+        "title": "Effect of LED Lights on Secondary Metabolites and Antioxidant Activities in Red Pakchoi Baby Leaves",
+        "journal": {
+            "title": "ACS Omega",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "4.100"
+            }
+        }
+    },
+     {
+        "authors": "Ku KB, Le AT, Thai TT, Mansoor S, Kittipadakul P, Duangjit J, Kang HM, Oh SS, Phan NH, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "New dimension in leaf stomatal behavior analysis: a robust method with machine learning approach",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "18",
+            "pages": "361-373",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "2.400"
+            }
+        }
+    },
+     {
+        "authors": "Ali F, Arif MA, Ali A, Nadeem MA, Aksoy E, Bakhsh A, Khan SU, Kurt C, Tekdal D, Ilyas MK, Chung YS, Hameed A",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Genome-wide association studies identifies genetic loci related to fatty acid and branched-chain amino acid metabolism and histone modifications under varying nitrogen treatments in safflower (Carthamus tinctorius)",
+        "journal": {
+            "title": "Functional Plant Biology",
+            "volume": "51",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "3.000"
+            }
+        }
+    },
+     {
+        "authors": "Kwon H, Sathasivam R, Yoon J, Park C, Park NI, Chung YS, Park SU",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Expression Analysis of Phenylpropanoid Pathway Genes and Phenylpropanoid Accumulation in Different Organs of Chelidonium majus L",
+        "journal": {
+            "title": "Natural Product Communications",
+            "volume": "19",
+            "pages": "1934578X241239835",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "1.800"
+            }
+        }
+    },
+     {
+        "authors": "Khan T, Rashid R, Shah L, Afroza B, Khan S, Bhat M, Alwutayd KM, Mahajan R, Chung YS, Mansoor S, Sun HJ",
+        "year": 2024,
+        "title": "Genetic and phenotypic diversity in Solanum lycopersicum genotypes: insights from morpho-molecular and biochemical analyses",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "12",
+            "pages": "1-5",
+            "indexing": {
+                "database": "SCIE",
+                "impact_factor": "2.400"
+            }
+        }
+    },
+     {
         "authors": "Mansoor S, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
