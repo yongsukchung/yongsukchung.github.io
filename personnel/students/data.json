@@ -36,24 +36,7 @@
     "year": "From 2022 to present",
     "image": "../../images/personnel/students/Bhagya.jpg",
     "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
-  },
-  {
-    "name": "Minah Oh",
-    "position": "Master Student",
-    "nationality": "Korean",
-    "topic": "Buckwheat Breeding",
-    "year": "From 2022 to present",
-    "current_position": "Agricultural researcher in Agricultural Research & extension services Jeju special self-governing province.",
-    "image": "../../images/personnel/students/Oh Minah.jpg"
   },  
-  {
-    "name": "Misun Boo",
-    "position": "Undergraduate Student",
-    "nationality": "Korean",
-    "topic": "Department of Maritime Industry Police",
-    "year": "From 2023 to present",
-    "image": "../../images/personnel/students/BooMiSun.jpg"
-  },
   {
     "name": "Gyung Deok Han",
     "position": "Previous Postdoctoral Researcher",
@@ -83,6 +66,15 @@
     "info": "https://www.researchgate.net/profile/Anh-Tuan-Le-7",
     "image": "../../images/personnel/students/LeAnhTuan.JPG"
   },
+  {
+    "name": "Minah Oh",
+    "position": "Previous Graduate Master Student",
+    "nationality": "Korean",
+    "topic": "Buckwheat Breeding",
+    "year": "From 2022 to present",
+    "current_position": "Agricultural researcher in Agricultural Research & extension services Jeju special self-governing province.",
+    "image": "../../images/personnel/students/Oh Minah.jpg"
+  },    
   {
     "name": "Jihyeon Jung",
     "position": "Previous Graduate Master Student",
@@ -116,6 +108,14 @@
     "year": "From 2021 to 2024",
     "current_position": "Computer Programmer and Embedded System Engineer",
     "image": "../../images/personnel/students/KuKiBon.png"
+  },
+  {
+    "name": "Misun Boo",
+    "position": "Previous Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Department of Maritime Industry Police",
+    "year": "From 2023 to present",
+    "image": "../../images/personnel/students/BooMiSun.jpg"
   },
   {
     "name": "Dao Van Sang",
