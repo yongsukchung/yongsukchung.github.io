@@ -1,5 +1,117 @@
 [
      {
+        "authors": "Park JE, Kim BH, Kim W, Ahn J, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "High-throughput image data analysis shows the genetic diversity in Tartary buckwheat (Fagopyrum tataricum Gaertn.)",
+        "journal": {
+            "title": "Plant Biotechnology Reports",
+            "volume": "11",
+            "pages": "1-9"
+        }
+    },
+     {
+        "authors": "Mansoor S, Hamid S, Tuan TT, Park JE, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Advance computational tools for multiomics data learning",
+        "journal": {
+            "title": "Biotechnology Advances",
+            "volume": "77",
+            "pages": "108447"
+        }
+    },
+     {
+        "authors": "Oh MA, Kim JY, Kang HM, Oh SSM, Mansoor S, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Seed traits inheritance in Fagopyrum esculentum Moench. based on image analysis method",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "15",
+            "pages": "1445348"
+        }
+    },
+     {
+        "authors": "Kim BW, Mansoor S, Han GD, Kim W, YS Chung",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "High Throughput Image Analysis between Seed Traits Opens New BreedingAvenues in Tartary Buckwheat Germplasm",
+        "journal": {
+            "title": "Phyton-International Journal of Experimental Botany",
+            "volume": "93",
+            "pages": "2339-2347"
+        }
+    },
+      {
+        "authors": "Yu JK,  Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Image-Based Digitalization of Germplasm Stock: Overcoming its limitations",
+        "journal": {
+            "title": "Korean Journal of Breeding Science",
+            "volume": "56",
+            "pages": "293-300"
+        }
+    },
+     {
+        "authors": "Han GD, Mansoor S, Kim J, Park J, Heo S, Yu JK, Kim SH, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "A study of the morphological and geographical diversity of Korean indigenous buckwheat landraces for breeding",
+        "journal": {
+            "title": "Journal of King Saud University-Science",
+            "volume": "14",
+            "pages": "103387"
+        }
+    },
+     {
+        "authors": "Sheikh M, Iqra F, Wani OA, Parvaiz A, Russel JR, Boo KH, YS Chung",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Melatonin as a Modulator of MAPK Cascade and ROS-RNS Feedforward  Loop During Plant Pathogen Interaction",
+        "journal": {
+            "title": "Physiological and Molecular Plant Pathology",
+            "volume": "133",
+            "pages": "102367"
+        }
+    },
+     {
+        "authors": "Yu JK, Ahn J, Han GD, Kang HM, Jo H, YS Chung",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Utilization of Satellite Technologies for Agriculture",
+        "journal": {
+            "title": "Journal of Environmental Science International",
+            "volume": "33",
+            "pages": "547-552"
+        }
+    },
+     {
         "authors": "Sheikh Mansoor, Pooja Tripathi, Amit Ghimire, Saira Hamid,  Diaa Abd El‑moniem, Yong Suk Chung, Yoonha Kim",
         "additionalRole": {
             "author": "Chung YS",
