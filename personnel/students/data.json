@@ -20,26 +20,6 @@
     "info": "https://thaithanhtuan.github.io/"
   },
   {
-    "name": "Dr. Priscilla Nadalin",
-    "position": "Previous Postdoctoral Researcher",
-    "nationality": "Italian",
-    "topic": "Crop science, Agrobacterium-mediated transformation, Pharmaceutical chemistry and technology",
-    "email": "nadalinpriscilla@gmail.com",
-    "year": "From 09/2024 to 12/2024",
-    "image": "../../images/personnel/students/Priscilla Nadalin.jpg",
-    "info": "https://www.researchgate.net/profile/Priscilla-Nadalin"
-  },
-  {
-    "name": "Dr. Shenawar Ali  Khan",
-    "position": "Previous Postdoctoral Researcher",
-    "nationality": "Pakistan",
-    "topic": "Flexible/bio-Electronics,  Wearable and Biosensing, Smart Agriculture",
-    "email": "shenawaralikhan@gmail.com ",
-    "year": "From 09/2024 to 12/2024",
-    "image": "../../images/personnel/students/Shenawar Ali  Khan.jpg",
-    "info": "https://scholar.google.com/citations?hl=en&user=MMZdpjwAAAAJ&view_op=list_works&sortby=pubdate"
-  },
-  {
     "name": "Seong Mun Lee",
     "position": "Ph.D Student",
     "nationality": "Korean",
@@ -72,6 +52,26 @@
     "topic": "Plant Science",
     "year": "From 2024 to present",
     "image": "../../images/personnel/students/Hun-Seok Heo.png"
+  },
+  {
+    "name": "Dr. Priscilla Nadalin",
+    "position": "Previous Postdoctoral Researcher",
+    "nationality": "Italian",
+    "topic": "Crop science, Agrobacterium-mediated transformation, Pharmaceutical chemistry and technology",
+    "email": "nadalinpriscilla@gmail.com",
+    "year": "From 09/2024 to 12/2024",
+    "image": "../../images/personnel/students/Priscilla Nadalin.jpg",
+    "info": "https://www.researchgate.net/profile/Priscilla-Nadalin"
+  },
+  {
+    "name": "Dr. Shenawar Ali  Khan",
+    "position": "Previous Postdoctoral Researcher",
+    "nationality": "Pakistan",
+    "topic": "Flexible/bio-Electronics,  Wearable and Biosensing, Smart Agriculture",
+    "email": "shenawaralikhan@gmail.com ",
+    "year": "From 09/2024 to 12/2024",
+    "image": "../../images/personnel/students/Shenawar Ali  Khan.jpg",
+    "info": "https://scholar.google.com/citations?hl=en&user=MMZdpjwAAAAJ&view_op=list_works&sortby=pubdate"
   },  
   {
     "name": "Gyung Deok Han",
