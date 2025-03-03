@@ -1,5 +1,51 @@
 [
      {
+        "authors": "Thai TT, Ku K, Le AT, Oh SS, Phan NH, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Comparative Analysis of Stomata Pore Instance Segmentation: Mask R-CNN vs. YOLOv8 on PhenomicsStomata Dataset",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "15",
+            "pages": "1414849",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.1
+            }
+        }
+    },
+     {
+        "authors": "Jang G, Choi NJ, Wen J, Karunathilake EM, Chung YS, Kim HJ",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "Dual Nature of Paddy Field Lodging: A Unmanned Aerial Vehicle-Based Perspective",
+        "journal": {
+            "title": "Korean Journal of Crop Science",
+            "volume": "69",
+            "pages": "209-15"
+        }
+    },
+     {
+        "authors": "Jang J, Choi NJ, Wen J, Kim HJ, and Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2024,
+        "title": "The Trap of Presumption: A Case Study of Agricultural Research for Early Detection of Brown Planthopper Damage in Rice Fields",
+        "journal": {
+            "title": "Korean Journal of Breeding Science",
+            "volume": "56",
+            "pages": "439-448"
+        }
+    },
+     {
         "authors": "Park JE, Kim BH, Kim W, Ahn J, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
