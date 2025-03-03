@@ -1,5 +1,93 @@
 [
      {
+        "authors": "Van HT, Van Vu G, Tuan TT, Vo B, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "LGENetB4CA: A novel deep learning approach for chili germplasm Differentiation and leaf disease classification",
+        "journal": {
+            "title": "Computers and Electronics in Agriculture",
+            "volume": "233",
+            "pages": "110149",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 7.7
+            }
+        }
+    },
+     {
+        "authors": "Ghimire A, Chung YS, Jeong S, Kim Y",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Python algorithm package for automated Estimation of major legume root traits using two dimensional images",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "15",
+            "pages": "7341-7355",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 3.8
+            }
+        }
+    },
+     {
+        "authors": "Mansoor S, Karunathilake EM, Tuan TT, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Genomics, Phenomics, and Machine Learning in Transforming Plant Research: Advancements and Challenges",
+        "journal": {
+            "title": "Horticultural Plant Journal",
+            "volume": "13",
+            "pages": "486-503",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 5.7
+            }
+        }
+    },
+     {
+        "authors": "Mansoor S, Manzoor S, Gull R, Gani G, Wani OA, Farooq S, Popescu SM, Arya VM, Park WP, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Biochar Mediated Remediation of Emerging Inorganic Pollutants and their Toxicological Effects on Plant and Soil Health",
+        "journal": {
+            "title": "Journal of Soil Science and Plant Nutrition",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 3.4
+            }
+        }
+    },
+     {
+        "authors": "ThienVH, Khuat PT, Van T, Tuan TT, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "A deep learning method for differentiating safflower germplasm using optimal leaf structure features",
+        "journal": {
+            "title": "Ecological Informatics",
+            "volume": "5",
+            "pages": "102998",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 5.9
+            }
+        }
+    },
+     {
         "authors": "Thai TT, Ku K, Le AT, Oh SS, Phan NH, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
