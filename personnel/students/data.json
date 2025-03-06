@@ -1,6 +1,16 @@
 [
   {
     "name": "Dr. Sheikh Mansoor Shafi",
+    "position": "Visiting Professor",
+    "nationality": "Turkey",
+    "topic": "Crop Genetics and Genimcs",
+    "email": "balochfaheem13@gmail.com ",
+    "info": "https://apbs.mersin.edu.tr/profiles/275573",
+    "image": "../../images/personnel/students/ProfFaheem.jpg",
+    "year": "From 2024 to present"
+  },
+  {
+    "name": "Dr. Sheikh Mansoor Shafi",
     "position": "Postdoctoral Researcher",
     "nationality": "Kashmir, Indian",
     "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
