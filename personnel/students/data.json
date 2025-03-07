@@ -47,22 +47,7 @@
     "image": "../../images/personnel/students/Bhagya.jpg",
     "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
   },
-  {
-    "name": "Yun-Eon Song",
-    "position": "Previous Undergraduate Student",
-    "nationality": "Korean",
-    "topic": "Plant Science",
-    "year": "From 2024 to present",
-    "image": "../../images/personnel/students/Yun-Eon Song.jpg"
-  },
-  {
-    "name": "Hun-Seok Heo",
-    "position": "Previous Undergraduate Student",
-    "nationality": "Korean",
-    "topic": "Plant Science",
-    "year": "From 2024 to present",
-    "image": "../../images/personnel/students/Hun-Seok Heo.png"
-  },
+  
   {
     "name": "Dr. Priscilla Nadalin",
     "position": "Previous Postdoctoral Researcher",
@@ -152,6 +137,22 @@
     "year": "From 2021 to 2024",
     "current_position": "Computer Programmer and Embedded System Engineer",
     "image": "../../images/personnel/students/KuKiBon.png"
+  },
+  {
+    "name": "Yun-Eon Song",
+    "position": "Previous Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Plant Science",
+    "year": "From 2024 to present",
+    "image": "../../images/personnel/students/Yun-Eon Song.jpg"
+  },
+  {
+    "name": "Hun-Seok Heo",
+    "position": "Previous Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Plant Science",
+    "year": "From 2024 to present",
+    "image": "../../images/personnel/students/Hun-Seok Heo.png"
   },
   {
     "name": "Misun Boo",
