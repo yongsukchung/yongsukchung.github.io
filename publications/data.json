@@ -1,5 +1,87 @@
 [
      {
+        "authors": "Bahjat NM, Yıldız M, Nadeem MA, Morales A, Wohlfeiler J, Baloch FS, Tunçtürk M, Koçak M, Chung YS, Grzebelus D, Sadik G",
+        "year": 2025,
+        "title": "Population structure, genetic diversity, and GWAS analyses with GBS-derived SNPs and silicodart markers unveil genetic potential for breeding and candidate genes for agronomic and root quality traits in an international sugar beet germplasm collection",
+        "journal": {
+            "title": "BMC Plant Biology",
+            "volume": "25",
+            "pages": "1-30",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.3
+            }
+        }
+    },
+     {
+        "authors": "Mansoor S, Iqbal S, Popescu SM, Kim SL, Chung YS, Baek JH",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Integration of smart sensors and IOT in precision agriculture: trends, challenges and future prospectives",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "16",
+            "pages": "1587869",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.1
+            }
+        }
+    },
+     {
+        "authors": "Šućur R, Ali A, Mortazavi P, Mladenov V, Jocković B, Gou JY, Nadeem MA, Baloch FS, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Molecular screening of stripe rust and powdery mildew resistance genes in European bread wheat using the validated gene-specific SSR markers",
+        "journal": {
+            "title": "Physiological and Molecular Plant Pathology",
+            "volume": "18",
+            "pages": "102743",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 2.8
+            }
+        }
+    },
+     {
+        "authors": "Karunathilake EM, Thai TT, Mansoor S, Le AT, Baloch FS, Chung YS, Kim DW",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "The use of RGB vegetation indices to predict the buckwheat yield at the flowering stage",
+        "journal": {
+            "title": "Journal of Crop Science and Biotechnology",
+            "volume": "28",
+            "pages": "1-1"           
+        }
+    },
+     {
+        "authors": "Choi NJ, Ku K, Mansoor S, Le AT, Thai TT, Karunathilake EM, Kim J, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Time‐Lapse Imaging Identifies Key Indicators of Brown Planthopper Damage Progression in Rice Varieties",
+        "journal": {
+            "title": "Entomological Research",
+            "volume": "55",
+            "pages": "e70035",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 1.2
+            }
+        }
+    },
+     {
         "authors": "Van HT, Van Vu G, Tuan TT, Vo B, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
