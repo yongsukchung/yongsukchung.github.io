@@ -1,5 +1,33 @@
 [
      {
+        "authors": "Jeong Y, Kim SL, Thai TT, Le AT, Lee C, Bae HJ, Choi I, Mansoor S, Chung YS, Kim KH",
+        "year": 2025,
+        "title": "Comparative Analysis of Adaptive and General Labeling Methods for Soybean Leaf Detection",
+        "journal": {
+            "title": "Frontiers in Plant Science",
+            "volume": "6",
+            "pages": "1582303",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.1
+            }
+        }
+    },
+     {
+        "authors": "Hong JK, Baek J, Kim JY, Kim SL, Lyu JI, Kang SH, Song J, Kim N, An E, Lee HS, Kim KH, Chung YS, Mansoor S",
+        "year": 2025,
+        "title": "High Throughput Phenotyping Using Automated Imaging System Reveals the Relationship between Seed Yield and Agronomic Traits in Korean Rice Cultivars",
+        "journal": {
+            "title": "Journal of Plant Physiology",
+            "volume": "6",
+            "pages": "154544",
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 4.0
+            }
+        }
+    },
+     {
         "authors": "Bahjat NM, Yıldız M, Nadeem MA, Morales A, Wohlfeiler J, Baloch FS, Tunçtürk M, Koçak M, Chung YS, Grzebelus D, Sadik G",
         "year": 2025,
         "title": "Population structure, genetic diversity, and GWAS analyses with GBS-derived SNPs and silicodart markers unveil genetic potential for breeding and candidate genes for agronomic and root quality traits in an international sugar beet germplasm collection",
@@ -78,6 +106,22 @@
             "indexing": {
                 "SCIE": true,
                 "impactFactor": 1.2
+            }
+        }
+    },
+     {
+        "authors": "Pakr JE, Mansoor S, Ku K, Le AT, Tuan TT, K HC, Oh SSM, Baloch FS, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Cost effective image‑based phenotyping in Capsicum annuum germplasm for rapid assessment of traits",
+        "journal": {
+            "title": "Plant Biotechnology Reports",            
+            "indexing": {
+                "SCIE": true,
+                "impactFactor": 1.7
             }
         }
     },
