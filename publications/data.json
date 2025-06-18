@@ -1,6 +1,10 @@
 [
      {
         "authors": "Jeong Y, Kim SL, Thai TT, Le AT, Lee C, Bae HJ, Choi I, Mansoor S, Chung YS, Kim KH",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
         "year": 2025,
         "title": "Comparative Analysis of Adaptive and General Labeling Methods for Soybean Leaf Detection",
         "journal": {
