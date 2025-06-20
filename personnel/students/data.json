@@ -47,7 +47,25 @@
     "image": "../../images/personnel/students/Bhagya.jpg",
     "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
   },
-  
+  {
+    "name": "Nguyen Van Tien",
+    "position": "Intern Student",
+    "nationality": "Vietnamese",
+    "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
+    "University":"Ho Chi Minh City University of Technology, HCMUT"
+    "year": "From 2025 to present",
+    "image": "../../images/personnel/students/nguyenvantien.jpg",
+    "info": "https://github.com/vantien06"
+  },
+  {
+    "name": "Le Van Quang Vinh",
+    "position": "Intern Student",
+    "nationality": "Vietnamese",
+    "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
+    "University":"Ho Chi Minh City University of Technology, HCMUT"
+    "year": "From 2025 to present",
+    "image": "../../images/personnel/students/levanquangvinh.jpg"
+  },
   {
     "name": "Dr. Priscilla Nadalin",
     "position": "Previous Postdoctoral Researcher",
