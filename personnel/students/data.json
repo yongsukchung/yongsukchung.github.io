@@ -8,17 +8,7 @@
     "info": "https://apbs.mersin.edu.tr/profiles/275573",
     "image": "../../images/personnel/students/ProfFaheem.jpg",
     "year": "From 2024 to present"
-  },
-  {
-    "name": "Dr. Sheikh Mansoor Shafi",
-    "position": "Postdoctoral Researcher",
-    "nationality": "Kashmir, Indian",
-    "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
-    "email": "mansoorshafi@jejunu.ac.kr mansoorshafi21@gmail.com",
-    "info": "https://www.researchgate.net/profile/Sheikh-Mansoor",
-    "image": "../../images/personnel/students/mansoornew.jpg",
-    "year": "From 2023 to present"
-  },
+  },  
   {
     "name": "Dr. Thai Thanh Tuan",
     "position": "Postdoctoral Researcher",
@@ -72,6 +62,16 @@
     "University":"Ho Chi Minh City University of Technology, HCMUT",
     "year": "From 2025 to present",
     "image": "../../images/personnel/students/levanquangvinh.jpg"
+  },
+  {
+    "name": "Dr. Sheikh Mansoor Shafi",
+    "position": "Previous Postdoctoral Researcher",
+    "nationality": "Kashmir, Indian",
+    "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
+    "email": "mansoorshafi@jejunu.ac.kr mansoorshafi21@gmail.com",
+    "info": "https://www.researchgate.net/profile/Sheikh-Mansoor",
+    "image": "../../images/personnel/students/mansoornew.jpg",
+    "year": "From 2023 to present"
   },
   {
     "name": "Dr. Priscilla Nadalin",
