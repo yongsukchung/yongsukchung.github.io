@@ -1,11 +1,18 @@
 [    
   {
+    "name": "Fawad Ali",
+    "position": "Current Postdoctoral Researcher",
+    "nationality": "Pakistani",
+    "topic": "Crop Breeding and Genetics",
+    "year": "From 202 to present",
+    "info": "https://scholar.google.com/citations?user=jpTwHScAAAAJ"
+  },
+  {
     "name": "EMBM Karunathilake",
     "position": "Current Postdoctoral Researcher",
     "nationality": "Sri Lankan",
     "topic": "Plant Phenomics",
-    "year": "From 2022 to 2026",
-    "image": "../../images/personnel/students/Bhagya.jpg",
+    "year": "From 2022 to present",
     "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
   },
   {
