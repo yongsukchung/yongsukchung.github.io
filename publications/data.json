@@ -1,5 +1,95 @@
 [
      {
+        "authors": "Altaf MT, Nadeem MA, Ayten S, Aksoy E, Mansoor S, Karunathilake EM, Chung YS, Baloch FS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Genome-wide association study of common bean (Phaseolus vulgaris L.) unveils novel loci governing root-to-seed zinc allocation",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "15",
+            "pages": "21503"
+        }
+    },
+     {
+        "authors": "Lay L, Mansoor S, Khan W, Islam MS, Ghimire A, Jo H, Chung YS, Kim Y",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Advanced High-Throughput Root Phenotyping and GWAS Identifies Key Genomic Regions in Cowpea During Vegetative Growth Stage",
+        "journal": {
+            "title": "Physiologia Plantarum",
+            "volume": "177",
+            "pages": "e70375"
+        }
+    },
+     {
+        "authors": "Han GD, Kim TW, Yoo JH, Lee SM, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Trends and Future Challenges in Image Analysis for Digital Forecasting of Jeju Citrus Production",
+        "journal": {
+            "title": "Journal of Asian Agriculture and Biotechnology",
+            "volume": "41",
+            "pages": "1-16"
+        }
+    },
+     {
+        "authors": "Karunathilake EMBM, Tuan TT, Mansoor MS, Le AT, Baloch FS, Chung YS, Kim DW",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Limitation of RGB-Derived Vegetation Indices Using UAV Imagery for Biomass Estimation during Buckwheat Flowering",
+        "journal": {
+            "title": "Phyton-International Journal of Experimental Botany",
+            "volume": "94",
+            "pages": "2215-2228"
+        }
+    },
+     {
+        "authors": "Šucur R, Ali A, Mortazavi P, Altaf MT, Tatar M, Nadeem MA, Jockovic B, Mladenov V, Fragkostefankis S, Chung YS, Baloch FS",
+        "year": 2025,
+        "title": "Exploring the genetic diversity and population structure of Serbian and selected European bread wheat cultivars through iPBS-retrotransposon markers",
+        "journal": {
+            "title": "Turkish Journal of Agriculture and Forestry",
+            "volume": "49",
+            "pages": "661-672"
+        }
+    },
+     {
+        "authors": "Tatar M, Ali A, Ölmez F, Javed J, Nadeem MA, Chung YS, Gou JY, Ma J, Do MC, Baloch FS",
+        "year": 2025,
+        "title": " Molecular screening of stripe rust resistance genes in bread wheat cultivars and traditional landraces",
+        "journal": {
+            "title": "Plant Genetic Resources",
+            "volume": "1",
+            "pages": "1-1"
+        }
+    },
+     {
+        "authors": "Karunathilake EMBM, Park JE, Ku K, Mansoor MS, Sun HJ, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Evaluating herbicide resistance and cold tolerance in interspecific F1 hybrids of Zoysia Japonica and Zoysia Matrella using NDVI and percentage green cover",
+        "journal": {
+            "title": "Plant Growth Regulation",
+            "volume": "105",
+            "pages": "2007-2025"
+        }
+    },
+     {
         "authors": "Ha TT, Pham TN, Thai TT, Le AT, Mai TD, Chung YS",
         "additionalRole": {
             "author": "Chung YS",
