@@ -1,5 +1,60 @@
 [
      {
+        "authors": "Ha TT, Pham TN, Thai TT, Le AT, Mai TD, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Applying Machine Learning for Chili Pepper Phenotyping and Feature Extraction",
+        "journal": {
+            "title": "Smart Agricultural Technology",
+            "volume": "19",
+            "pages": "101458"
+        }
+    },
+     {
+        "authors": "Karunathilake EM, Mansoor S, Le AT, Thai TT, Chung YS, Sun HJ",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "UAV-RS/DIA as an efficient method to monitor nitrogen fertilization effects in Zoysia grass species (Hallagreen-2) (UAV-RS/DIA based monitoring of nitrogen in Zoysia Grass)",
+        "journal": {
+            "title": "Journal of Crop Science and Biotechnology",
+            "volume": "29",
+            "pages": "1-8"
+        }
+    },
+     {
+        "authors": "Baloch FS, Lee SM, Mansoor S, Morales A, Karunathilake EM, Nadeem MA, Cavagnaro PF, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "GBS-derived SNP and SilicoDArT markers reveals the genetic variation and population structure of Korean buckwheat (Fagopyrum esculentum) an underutilised crop",
+        "journal": {
+            "title": "BMC Plant Biology",
+            "volume": "25",
+            "pages": "1479"            
+        }
+    },
+     {
+        "authors": "Thai TT, Mansoor S, Van HT, Vu VG, Karunathilake EMBM, Le AT, Baloch FS, Chung YS, Kim JH",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2025,
+        "title": "Advanced phenotyping features utilizing deep learning techniques for automated analysis of stomatal guard cell orientation",
+        "journal": {
+            "title": "Scientific Reports",
+            "pages": "38578"
+        }
+    },
+     {
         "authors": "Jeong Y, Kim SL, Thai TT, Le AT, Lee C, Bae HJ, Choi I, Mansoor S, Chung YS, Kim KH",
         "additionalRole": {
             "author": "Chung YS",
