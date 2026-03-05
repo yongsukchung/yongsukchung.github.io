@@ -1,42 +1,7 @@
-[    
-  {
-    "name": "Fawad Ali",
-    "position": "Current Postdoctoral Researcher",
-    "nationality": "Pakistani",
-    "topic": "Crop Breeding and Genetics",
-    "year": "From 2026 to present",
-    "image": "../../images/personnel/students/Fawad Ali.jpg",
-    "info": "https://scholar.google.com/citations?user=jpTwHScAAAAJ"
-  },
-  {
-    "name": "EMBM Karunathilake",
-    "position": "Current Postdoctoral Researcher",
-    "nationality": "Sri Lankan",
-    "topic": "Plant Phenomics",
-    "year": "From 2022 to present",
-    "image": "../../images/personnel/students/Bhagya.jpg",
-    "info": "https://www.researchgate.net/profile/E-M-Karunathilake"
-  },
-  {
-    "name": "Dr. Thai Thanh Tuan",
-    "position": "Current Postdoctoral Researcher",
-    "nationality": "Vietnamese",
-    "topic": "Computer Vision, Plant Phenomics, Bugs Tracking, 3D Plant Reconstruction, Virtual Try On, Biometrics",
-    "email": "thaithanhtuan@jejunu.ac.kr thaithanhtuan1987@gmail.com",
-    "year": "From 2022 to present",
-    "image": "../../images/personnel/students/Thai Thanh Tuan.jpg",
-    "info": "https://thaithanhtuan.github.io/"
-  },  
-  {
-    "name": "Hye Seung Song",
-    "position": "Current Master Student",
-    "nationality": "Korean",
-    "year": "From 2025 to Present",
-    "image": "../../images/personnel/students/Hye Seung Song.jpg"
-  },   
+[      
   {
     "name": "Prof. Faheem Shehzad Baloch",
-    "position": "Before Visiting Professor",
+    "position": "Visiting Professor",
     "nationality": "Turkish",
     "topic": "Crop Genetics and Genomics",
     "email": "balochfaheem13@gmail.com ",
@@ -46,7 +11,7 @@
   },
   {
     "name": "Anh Tuan Le",
-    "position": "Before Postdoctoral Researcher",
+    "position": "Postdoctoral Researcher",
     "nationality": "Vietnamese",
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2025 to 2026",
@@ -55,7 +20,7 @@
   },
   {
     "name": "Dr. Sheikh Mansoor Shafi",
-    "position": "Before Postdoctoral Researcher",
+    "position": "Postdoctoral Researcher",
     "nationality": "Kashmir, Indian",
     "topic": "High throughput Phenomics, Transcriptomics, Metabolomics, Biotic/Abiotic Stress",
     "email": "mansoorshafi@jejunu.ac.kr mansoorshafi21@gmail.com",
@@ -65,7 +30,7 @@
   },
   {
     "name": "Dr. Priscilla Nadalin",
-    "position": "Before Postdoctoral Researcher",
+    "position": "Postdoctoral Researcher",
     "nationality": "Italian",
     "topic": "Crop science, Agrobacterium-mediated transformation, Pharmaceutical chemistry and technology",
     "email": "nadalinpriscilla@gmail.com",
@@ -75,7 +40,7 @@
   },
   {
     "name": "Dr. Shenawar Ali  Khan",
-    "position": "Before Postdoctoral Researcher",
+    "position": "Postdoctoral Researcher",
     "nationality": "Pakistan",
     "topic": "Flexible/bio-Electronics,  Wearable and Biosensing, Smart Agriculture",
     "email": "shenawaralikhan@gmail.com ",
@@ -85,7 +50,7 @@
   },  
   {
     "name": "Gyung Deok Han",
-    "position": "Before Postdoctoral Researcher",
+    "position": "Postdoctoral Researcher",
     "nationality": "Korean",
     "topic": "Phenomics; Post-harvest Control; Smart Farming; Plant Pathology; Agricultural Education; Practical Arts Education",
     "email": "hangds@cje.ac.kr",
@@ -96,7 +61,7 @@
   },
   {
     "name": "Seong Mun Lee",
-    "position": "Before Ph.D Student",
+    "position": "Ph.D Student",
     "nationality": "Korean",
     "topic": "Plant phenomics.",
     "year": "From 2022 to 2026",
@@ -105,7 +70,7 @@
   },
   {
     "name": "EMBM Karunathilake",
-    "position": "Before Ph.D Student",
+    "position": "Ph.D Student",
     "nationality": "Sri Lankan",
     "topic": "Plant Phenomics",
     "year": "From 2022 to 2026",
@@ -114,7 +79,7 @@
   },
   {
     "name": "Ji Eun Park",
-    "position": "Before Ph.D Student",
+    "position": "Ph.D Student",
     "nationality": "Korean",
     "topic": "Plant phenomics using an image based method.",
     "year": "From 2019 to 2023",    
@@ -123,7 +88,7 @@
   },
   {
     "name": "Anh Tuan Le",
-    "position": "Before Ph.D Student",
+    "position": "Ph.D Student",
     "nationality": "Vietnamese",
     "topic": "Plant phenomics under LED light conditions.",
     "year": "From 2021 to 2024",
@@ -132,7 +97,7 @@
   },
   {
     "name": "Minah Oh",
-    "position": "Before Master Student",
+    "position": "Master Student",
     "nationality": "Korean",
     "topic": "Buckwheat Breeding",
     "year": "From 2022 to 2024",
@@ -141,7 +106,7 @@
   },    
   {
     "name": "Jihyeon Jung",
-    "position": "Before Master Student",
+    "position": "Master Student",
     "nationality": "Korean",
     "topic": "Evaluating greenness using RGB images and multispectral images in turf",
     "year": "From 2020 to 2022",
@@ -149,14 +114,14 @@
   },
   {
     "name": "Jae Young Kim",
-    "position": "Before Master Student",
+    "position": "Master Student",
     "nationality": "Korean",
     "year": "From 2019 to 2021",
     "image": "../../images/personnel/students/Jae Young.jpg"
   },
   {
     "name": "Jeong Min Choi",
-    "position": "Before Master Student",
+    "position": "Master Student",
     "nationality": "Korean",
     "year": "From 2020 to 2022",
     "image": "../../images/personnel/students/Jeong Min Choi.jpg",
@@ -164,7 +129,7 @@
   },
   {
     "name": "Ki Bon Ku",
-    "position": " Before Researcher",
+    "position": " Researcher",
     "nationality": "Korean",
     "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
     "year": "From 2021 to 2024",
@@ -173,7 +138,7 @@
   },
   {
     "name": "Yun-Eon Song",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Korean",
     "topic": "Plant Science",
     "year": "From 2024 to 2025",
@@ -181,7 +146,7 @@
   },
   {
     "name": "Hun-Seok Heo",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Korean",
     "topic": "Plant Science",
     "year": "From 2024 to 2025",
@@ -189,7 +154,7 @@
   },
   {
     "name": "Misun Boo",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Korean",
     "topic": "Department of Maritime Industry Police",
     "year": "From 2023 to 2024",
@@ -197,7 +162,7 @@
   },
   {
     "name": "Dao Van Sang",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Vietnamese",
     "topic": "Information Technology",
     "year": "From 2023 to 2024",
@@ -205,7 +170,7 @@
   },
   {
     "name": "Yunseok Kim",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Korean",
     "topic": "Physical Computing, ML/DL, 3D printing, GIS",
     "year": "From 2019 to 2022",
@@ -214,7 +179,7 @@
   },
   {
     "name": "Vong Chanthib",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Cambodian",
     "topic": "Plant Science",
     "year": "From 2022 to 2025",
@@ -222,7 +187,7 @@
   },
   {
     "name": "Lee Hyeon Suk",
-    "position": "Before Undergraduate Student",
+    "position": "Undergraduate Student",
     "nationality": "Korean",
     "topic": "Plant Science",
     "year": "2022",
@@ -230,7 +195,7 @@
   },
   {
     "name": "Nguyen Van Tien",
-    "position": "Before Intern Student",
+    "position": "Intern Student",
     "nationality": "Vietnamese",
     "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
     "University": "Ho Chi Minh City University of Technology, HCMUT",
@@ -240,7 +205,7 @@
   },
   {
     "name": "Le Van Quang Vinh",
-    "position": "Before Intern Student",
+    "position": "Intern Student",
     "nationality": "Vietnamese",
     "topic": "Plant phenomics using Computer Vision and Machine Learning/Deep Learning.",
     "University": "Ho Chi Minh City University of Technology, HCMUT",
