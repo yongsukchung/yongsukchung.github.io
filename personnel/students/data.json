@@ -26,14 +26,21 @@
     "year": "From 2026 to present",
     "image": "../../images/personnel/students/Fawad Ali.jpg",
     "info": "https://scholar.google.com/citations?user=jpTwHScAAAAJ"
-  },
-  
+  },  
   {
     "name": "Hye Seung Song",
     "position": "Master Student",
     "nationality": "Korean",
     "year": "From 2025 to Present",
     "image": "../../images/personnel/students/Hye Seung Song.jpg"
+  },  
+  {
+    "name": "Lee Ho Jeoung",
+    "position": "Undergraduate Student",
+    "nationality": "Korean",
+    "topic": "Biology",
+    "year": "From 2026 to Present",
+    "image": "../../images/personnel/students/Lee Ho Jeoung.jpg"
   }
   
 ]
