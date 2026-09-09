@@ -1,5 +1,125 @@
 [
      {
+        "authors": "Jang G, Kim YH, Chung YS, Kim DW, Kim HJ",
+        "year": 2026,
+        "title": "Automatic preprocessing pipeline for individual-plant level (IPL) soybean growth monitoring through UAV multisource imagery",
+        "journal": {
+            "title": "Scientific Reports"
+        }
+    },
+     {
+        "authors": "Lee SM, Kim DW, Yoo JH, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Optimization analysis of productivity and seed input efficiency according to sowing methods in common buckwheat (Fagopyrum esculentum M.) cultivation",
+        "journal": {
+            "title": "Journal of Subtropical Agriculture and Biotechnology",
+            "volume": "41",
+            "pages": "47–60"
+        }
+    },
+     {
+        "authors": "Kwon SH, Chung YS, Ahn J, Park KJ, Thai TT",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "High-Precision Detection of Homona magnanima and Adoxophyes honmai in Mandarin Orchards Using Deep Learning",
+        "journal": {
+            "title": "ACS Agricultural Science & Technology"
+        }
+    },
+     {
+        "authors": "Karunathilake EM, Mansoor S, Lee SM, Han GD, Nguyen TN, Nguyen HT, Kittipadakul P, Vuttipongchaikij S, Do MC, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "RGB-UAV-based phenotyping reveals the influence of planting density on physiological traits, biomass, and yield in buckwheat",
+        "journal": {
+            "title": "BMC Plant Biology"
+        }
+    },
+     {
+        "authors": "Lee SM, Karunathilake EMBM, Ku KB, Baloch FS, Mansoor S, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Estimating buckwheat yield based on sowing methods with UAV-RGB imagery and time-series data",
+        "journal": {
+            "title": "Plant Growth Regulation"
+        }
+    },
+     {
+        "authors": "Mansoor S, Iqbal S, Abbas Z, K HM, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Ultrasensitive Biopolymer-MOF Composite-Based Pressure Sensor for Data-Driven Precision Agriculture",
+        "journal": {
+            "title": "ACS Materials Letters"
+        }
+    },
+     {
+        "authors": "Mensah EO, Song J, Oh H, Abebe AM, Chung YS, Baek J, Mansoor S",       
+        "year": 2026,
+        "title": "Digitalised phenotyping of pepper (Capsicum spp.) using effective RGB imaging and optimised camera positioning",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "16",
+            "pages": "18742"
+        }
+    },
+     {
+        "authors": "Choi NJ, Ku K, Mansoor S, Karunathilake EM, Lim J, Chung YS, Tuan TT",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Monitoring brown planthopper invasions in rice fields using UAV-based multispectral imaging",
+        "journal": {
+            "title": "Journal of King Saud University–Science"
+        }
+    },
+     {
+        "authors": "Park JE, Kim BH, Han GD, Kim W, Kittipadakul P, Vuttipongchaikij S, Baloch FS, Jo H, Ahn J, Chung YS",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "High-throughput phenomic survey of seed morphological diversity in common and tartary buckwheat germplasm",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "16",
+            "pages": "16866"
+        }
+    },
+     {
+        "authors": "Le AT, Park JE, Thai TT, Park SY, Kim MS, Chung YS, Kim JY",
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Exploring morphological traits related to potential milling yield based on image-analysis",
+        "journal": {
+            "title": "Scientific Reports",
+            "volume": "16",
+            "pages": "20523"
+        }
+    },
+     {
         "authors": "Hong JK, Mansoor S, Baek J, Song J, Kim SL, Lyu JI, Lee HS, Chung YS, Kim KH",
         "additionalRole": {
             "author": "Chung YS",
