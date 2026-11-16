@@ -1,5 +1,76 @@
 [
      {
+        "authors": "Mansoor S, Hamid S, Ali R, Do MC, Tantray SD, Yu JK, Chung YS",    
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Advances in Pangenome Construction and Analysis for Horticultural Crop Genomics",
+        "journal": {
+            "title": "Horticulture Research",
+            "volume": "457"
+        }
+    },
+     {
+        "authors": "Ali F, Ali A, Shah OU, Arif MA, Nadeem MA, Baloch FS, Jan SM, Chung YS",    
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Genetic foundations of copper stress tolerance in safflower: bridging heavy metal contamination and global warming challenges",
+        "journal": {
+            "title": "Plant Cell Reports",
+            "volume": "45",
+            "pages": "356"
+        }
+    },
+     {
+        "authors": "Song H, Park WP, Chung YS",    
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Sequential Phenotypic Prioritization of Herbicide-Selected Interspecific Zoysia F1 Plants for Winter Canopy Persistence Using UAV-Based Multispectral Phenotyping",
+        "journal": {
+            "title": "Journal of Asian Agriculture and Biotechnology",
+            "volume": "42",
+            "pages": "111-45"
+        }
+    },
+     {
+        "authors": "Ali F, Ali A, Nadeem MA, Baloch FS, Kurt C, Do MC, Yu JK, Chung YS",    
+        "additionalRole": {
+            "author": "Chung YS",
+            "role": "Corresponding author"
+        },
+        "year": 2026,
+        "title": "Omics-driven improvement of safflower (Carthamus tinctorius L.) for climate resilience, oil quality, and high-value metabolites under changing environments",
+        "journal": {
+            "title": "Plant Physiology and Biochemistry",
+            "volume": "16",
+            "pages": "111867"
+        }
+    },
+     {
+        "authors": "Bucksch A, Chung YS, Clarke JL, Gerth S, von Gillhaussen P, Guo W, Kholová J, Pariyar S, Pickering E, Sankaran S, Shafiee S",        
+        "year": 2026,
+        "title": "Plant Phenomics—the unrecognized rise of a scientific discipline",
+        "journal": {
+            "title": "Trends in Plant Science"
+        }
+    },
+     {
+        "authors": "Karunathilake EM, Mansoor S, Chung YS, Han GD",        
+        "year": 2026,
+        "title": "Monitoring growth and ground cover of turfgrass germplasm using a UAV-mounted multispectral sensor in a ground-based system",
+        "journal": {
+            "title": "Scientific Reports"
+        }
+    },
+     {
         "authors": "Jang G, Kim YH, Chung YS, Kim DW, Kim HJ",
         "year": 2026,
         "title": "Automatic preprocessing pipeline for individual-plant level (IPL) soybean growth monitoring through UAV multisource imagery",
